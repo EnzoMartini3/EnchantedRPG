@@ -1,0 +1,21 @@
+---------------------------------------------------------------
+# Plants have a lifetime mechanic: They spawn with a set age(which increases with playtime) and die automatically
+(Player can take care of them or kill directly). Also, instead of spawning directly, they have tiles at which they 
+can spawn, and it will take time to grow. Searching plants will grant you seeds (with a timed reset).
+
+>>> All Plants
+. Ipê: Decoration
+. Grass: Comes in different ages and types. Vivid grass can drop Fibergrass or other random items when cut. Tall 
+grass can be used to hide from wildlife and has a higher chance of dropping Fibergrass when destroyed. Dead or 
+dry grass only has a rare chance of dropping.
+. Weak Branches: Dead sapling. Can be cut down for wood.
+. Chinchona: Basic healing medicine.
+. Curare: Can be infused on weapons for paralyzing effects.
+. King Agave: Heals toxins
+. Bromelle
+. Snapdrake: Said to contain reminiscent fragments of dragon power, this mystic plant is particularly useful on the crafting of amulets.
+. Dragonvein: Dracofruit can be harvested
+. Kittail: Found in swamplands, produces silky fibers.
+. Palmy
+. Dahlia
+. Mandacaru: Cacto (armazena água para momentos de excassez)

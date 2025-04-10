@@ -1,0 +1,27 @@
+
+>> Upgrades (Requires blueprints. Try not to make them as weak, though rewarding as possible)
+
+> Bag
+. Crafting Kit: Allows for quick crafting, anywhere!
+. Extra Pockets: Increases storage space (base is already fine, expensive)
+
+> Sword 
+. Scary Handle: Increases your sword's intimidation power.
+. Polished Blade: Increases damage done to plants and objects.
+
+> Mining Equipment
+. Bright Lights: Visibility is further increased when in dark caves.
+. Pro Pick: Allows you to extract even the hardest ores!
+. Deep Drilling: Increases ore extraction speed.
+
+> Heart Jewel
+. II: Extra Mizule Pearl.
+. III: Extra Mizule Pearl. 
+. IV: Extra Mizule Pearl.
+
+> Sojourn Jewel
+. Citrine: Reduces incoming damage by 20% and increases knockback resistance (user won't be knocked down).
+. Topaz: Increases your speed by 12,5%.
+. Aquamarine: Increases jumping stamina by 30%.
+. Peridot: Increases random items spawn rate.
+. Tourmaline: Allows you to regenerate health.

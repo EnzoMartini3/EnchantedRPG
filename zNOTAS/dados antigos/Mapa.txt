@@ -1,0 +1,120 @@
+---------------------------Notes------------------------------
+.Seu objetivo é achar 5 Fragmentos Arcanos para construir um selo e salvar Haveros.
+O mapa é dividido em 5 áreas,que serão exploradas na campanha.
+.Caminhos diagonais
+.Em algumas cidades haverao arbustos,entao haverao ______ mesmo nas cidades.
+.Aparecer bixo selvagem em beiras de praia,poças e rios rasos
+---------------------------Areas------------------------------
+.Áreas existem para dividir Haveros em regiões.Cada área contém um altar e DUNGEONS.
+Area 1: Autumn Fields (Campos Folhosos)
+Area 2: Snow Coast (Litorais Glaciais)
+Area 3: Leaping Streets (Terras Dançantes)
+Area 4: Hot Hills (Colinópolis)
+Area 5: Oracle Storms (Templos do Oráculo)
+---------------------------Cidads-----------------------------
+.Tinymint Town
+.Cherrysilk City
+.Bripbale Town (Charmini)(Air-Parkour nas nuvem.Nuvems pretas)
+.Akairis City (Water-Termine o parkour antes de se molhar)
+.Nohawy Town (Frost-Congele o lago para passar)
+.Swampville
+.Serreak City (Dungeon Earth)
+.Ribeiriver
+.Rakelis City (Sound-Aumente o volume para aumentar o pulo)
+.Genevolt City
+.Faborem City (Dungeon Beast)
+.Evernight Town
+.Taygrem City (Fire-Evite a lava)
+.Edgeforth City (Dungeon Void)
+.Goiadan Town (Plant-Molhe,jogue nutrientes e luz no broto pra fazê-lo crescer;joao e o pe de feijao)
+.Gaverid Town (Ancient-Desenterre os fósseis e ponha nos pedestais)
+---------------------------Paths------------------------------
+.Mintsilk Field(Lizip+Capymint+Scorgi)
+.Rockwell Trail(Guinib+Dualith+Stegore)
+.Cloudy Strolls(Squarell+Dusnake+Banstray+Dreerie)
+.Waterfall Way(Gelotter+Soara+Maraya*Weemur)
+.Sunset Tunnel(Branbat+Marishock*Flarret*Smouser)
+.Galegush Cross(Wingish+Lunoon+Angloom)
+.Frolick Road(Dirtoise+Coulamb+Dramel)
+.Serreak Dunes (Valas de Serrique)
+.
+.
+.
+--------------------------Special----------------------------
+.Tangerite Cave(Colre+Cavunch+*Tangerab:Requires SKILL1)
+.The Mintgrove <BOSS:Lashtile> (Noisicada+Lobscarf+Hippond)
+.Blossom Garden(Lullusk*Foxave:Entrance from Mintgrove Woods)
+.Sacred Shore(Solob+Arbug) (Trunk Bay/Playa Paraiso)
+.Wonder Woods(Giregal+Twigator+Dreerie+Rootal) (Transamazonia)
+.Aurora Peak <BOSS:Lashtile> (Chinchine+Ribeam+Narpet)
+.
+.The Waterfall:
+.Astro Lounge:A small hotel for you to stay.
+.Undergrounds
+.
+.Scarlet Valley:
+.Scarlet Canyon:
+.
+.
+.Secret Tunnel:Shhh!It's a secret!
+.The Orchard(Goiadan)
+.
+.South Cavern:Home of The Great Crystal.(Maybe Mizurith too)
+.
+.Leaf Altar:Contains the first Arcane Fragment.
+.Frigid Altar:Contains the second Arcane Fragment.
+.Boggy Altar:Contains the third Arcane Fragment.
+.Steam Altar:Contains the fourth Arcane Fragment.
+.Mystic Altar:Contains the last Arcane Fragment.
+.
+.Ignis Shrine:Inside it,you will find one of the spectre gates,which can be accessed 
+using the ignis jewel,and will take you to the Ignis Temple.
+.Aqua Shrine:Inside it,you will find one of the spectre gates,which can be accessed 
+using the aqua jewel,and will take you to the Aqua Temple.
+.Terra Shrine:Inside it,you will find one of the spectre gates,which can be accessed 
+using the terra jewel,and will take you to the Terra Temple.
+.Caeli Shrine:Inside it,you will find one of the spectre gates,which can be accessed 
+using the caeli jewel,and will take you to the Caeli Temple.
+.Ignis Temple(Blayzal's Gate)
+.Aqua Temple(Zalflo's Gate)
+.Terra Temple(Sedikett's Gate)
+.Caeli Temple(Mistsol's Gate)
+.Heart Hearth(Zavieus' Gate)
+.Lumi Mountain(Nimphony' Gate)
+.The World's End(Darbyss' Gate)
+.The Tyrant's Den:Your final challenge.
+-----------------------Wild-Areas-----------------------------
+.Note:Some _____ can only be found behind trees,and you need to
+approach and press _ if you see their shadows to start an encounter.
+.Grass:If you go through them,be aware of shadows.They might try to chase you down.
+.Bushes:You may find an item or an encounter if you search them.
+-----------------------Relevant-Places------------------------
+-Lime Plaza:Heal your ______,talk with people and help citizens in need.
+All in a beautiful garden.Can be found on every town.
+-Lure Fields:Some places have a natural luring aroma,so the luring effect
+will be applied to you.
+-Aura Fields:There are specific places that have powerful auras.
+There are 6 different types of aura that gives you boosts and 
+causes certain species to evolve(Absolute Aura will always trigger this Growth).
+.Nature Aura:Increases max sp by 25%(Your ______ feel refreshed)
+.Thunder Aura:Increases offensive stats by 30%(Your ______ feel energized)
+.Snowy Aura:Buffs and debuffs will last 2 extra turns(Your ______ feel relaxed)
+.Distortion Aura:Nullifies weaknesses and resistences(Your ______ feel strange)
+.Twilight Aura:Decreases Mizule cost by 25%(Your ______ feel calm)
+.Absolute Aura:Increases xp gain by 50%(Your ______ feel powerful!)
+-Tourism Areas:The most beautiful places in Haveros.You should
+take a look at the Sacred Shore,it's unbelievable!You can even
+place a warp there,so you can enjoy the view it whenever you want.
+-Bakery:A small store that can be found in Bripbale Town.You can buy
+bread and treats for your partners,with a special discount!.
+-Akairis Resort:A little hotel,where you can rent a room and relax
+a little after a tiring day.
+-Gale's House:Found on Scarlet Valley,Gale will ask you if you want to learn how to fly.
+They need to be on PL 20 or more to fly,and your score is measured in stars.
+-Summoning Circle:Can be found on .You can sacrifice the some items
+to summon Phantad or get other items in exchange.If you sacrifice items
+5 times in a row and don't get anything in exchange,Darbyss will appear.
+-Enjoeneer's House:Can be found in Faborem Town.He will upgrade one
+of your tools if pay him.But he only accepts payment in fluffy balls!
+-Arcade:Play videogames,inside a videogame!Play Bouncy Adventures(Springi),Melody
+Mixer(Deedjay) and Snowdrift(Shivern)
