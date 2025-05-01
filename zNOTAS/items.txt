@@ -1,0 +1,34 @@
+----------------------All Items------------------------
+
+>> Tools
+
+> Lighter
+. Lights up a campfire for you, with 6 uses.
+. Can only be bought.
+----------------All Crafting Recipes---------------------
+> Firewood
+. Stick x3
+
+> Rope
+. Fibergrass x6
+
+> Yarn (Silk)
+. Soft Silk x2
+
+> Yarn (Kittail)
+. Kittail Fiber x4
+
+> Hot Fuel 
+. Coal x2 + Ember Amber
+
+> Poisonproof Elixir
+. King Agave x3
+
+
+
+
+-----------------Blueprint Packs-------------------------
+> Basic Survival Recipes
+. Rope,
+. Also teaches how to make a campfire(Requires Lighter, Firewood // Coal).
+. Can be collected from your room (dad will remind you).

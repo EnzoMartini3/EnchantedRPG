@@ -1,5 +1,11 @@
 extends KinematicBody2D
 
+onready var animationPlayer = $AnimationPlayer
+onready var animationTree = $AnimationTree
+onready var animationState = animationTree.get("parameters/playback")
+onready var swordHitbox = $HitboxPivot/SwordHitbox
+onready var hurtbox = $Hurtbox
+
 export var acceleration = 400 # antigo: 15
 export var maxSpeed = 100 # antigo: 135
 export var friction = 750 # antigo: 100
@@ -16,13 +22,11 @@ enum {
 var state = MOVE
 var velocity = Vector2.ZERO
 var roll_vector = Vector2.RIGHT
-
-onready var animationPlayer = $AnimationPlayer
-onready var animationTree = $AnimationTree
-onready var animationState = animationTree.get("parameters/playback")
-onready var swordHitbox = $HitboxPivot/SwordHitbox
+var stats = PlayerStats
 
 func _ready():
+	randomize()
+	stats.connect("noHealth", self , "queue_free")
 	animationTree.active = true
 	swordHitbox.knockback_vector = roll_vector
 
@@ -90,3 +94,8 @@ func roll_animation_finished():
 
 func attack_animation_finished():
 	state = MOVE
+
+func _on_Hurtbox_area_entered(area):
+	stats.health -= 1
+	hurtbox.makeImmortal(0.5)
+	hurtbox.createHitEffect()
