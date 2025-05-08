@@ -6,6 +6,7 @@ onready var playerSeekZone = $PlayerSeekZone
 onready var hurtbox = $Hurtbox
 onready var softCollision = $SoftCollision
 onready var wanderController = $WanderController
+onready var hitFlash = $HitFlash
 
 export var acceleration = 300
 export var maxSpeed = 50
@@ -78,9 +79,16 @@ func _on_Hurtbox_area_entered(area):
 	stats.health -= area.damage
 	knockback = area.knockback_vector * 105
 	hurtbox.createHitEffect()
+	hurtbox.makeImmortal(0.5)
 
 func _on_Stats_noHealth():
 	queue_free()
 	var enemyDeathEffect = EnemyDeathEffect.instance()
 	get_parent().add_child(enemyDeathEffect)
 	enemyDeathEffect.global_position = global_position
+	
+func _on_Hurtbox_immortalStart():
+	hitFlash.play("Start")
+
+func _on_Hurtbox_immortalEnd():
+	hitFlash.play("Stop")

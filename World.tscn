@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=64 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Bush.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Enemies/Bat.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/Tree.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Camera2D.tscn" type="PackedScene" id=10]
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -527,11 +528,14 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" parent="." instance=ExtResource( 10 )]
 position = Vector2( 120, 64 )
-current = true
-smoothing_enabled = true
-smoothing_speed = 9.0
+
+[node name="TopLeft" parent="Camera2D/Limits" index="0"]
+position = Vector2( -64, -64 )
+
+[node name="BottomRight" parent="Camera2D/Limits" index="1"]
+position = Vector2( 448, 256 )
 
 [node name="GrassBackground" type="Sprite" parent="."]
 texture = ExtResource( 3 )
@@ -609,13 +613,13 @@ position = Vector2( 16, 120 )
 position = Vector2( 160, 48 )
 
 [node name="Bat" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 224, 152 )
+position = Vector2( 218, 174 )
 
 [node name="Bat2" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 200, 16 )
+position = Vector2( 222, -14 )
 
 [node name="Bat3" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 40, 96 )
+position = Vector2( 7, 80 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -624,3 +628,5 @@ margin_left = 3.0
 margin_top = 3.0
 margin_right = 43.0
 margin_bottom = 43.0
+
+[editable path="Camera2D"]

@@ -5,6 +5,7 @@ const HitEffect = preload("res://Effects/HitEffect.tscn")
 var immortal = false setget setImmortal
 
 onready var timer = $Timer
+onready var collisionShape = $CollisionShape2D
 
 signal immortalStart
 signal immortalEnd
@@ -30,7 +31,7 @@ func _on_Timer_timeout():
 	self.immortal = false
 
 func _on_Hurtbox_immortalStart():
-	set_deferred("monitoring", false)
+	collisionShape.set_deferred("disabled", true)
 
 func _on_Hurtbox_immortalEnd():
-	monitoring = true
+	collisionShape.disabled = false

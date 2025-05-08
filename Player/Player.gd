@@ -5,6 +5,8 @@ onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
 onready var swordHitbox = $HitboxPivot/SwordHitbox
 onready var hurtbox = $Hurtbox
+onready var hitFlash = $HitFlash
+onready var collisionShape = $HitboxPivot/SwordHitbox/CollisionShape2D
 
 export var acceleration = 400 # antigo: 15
 export var maxSpeed = 100 # antigo: 135
@@ -26,6 +28,7 @@ var stats = PlayerStats
 
 func _ready():
 	randomize()
+	collisionShape.disabled = true
 	stats.connect("noHealth", self , "queue_free")
 	animationTree.active = true
 	swordHitbox.knockback_vector = roll_vector
@@ -76,12 +79,12 @@ func moveState(delta):
 		state = ROLL
 		stamina -= 40
 
-func rollState(delta):
+func rollState(_delta):
 	velocity = roll_vector * maxSpeed * 1.1
 	animationState.travel("Roll")
 	move()
 
-func attackState(delta):
+func attackState(_delta):
 	velocity = Vector2.ZERO
 	animationState.travel("Attack")
 	
@@ -96,6 +99,12 @@ func attack_animation_finished():
 	state = MOVE
 
 func _on_Hurtbox_area_entered(area):
-	stats.health -= 1
+	stats.health -= area.damage
 	hurtbox.makeImmortal(0.5)
 	hurtbox.createHitEffect()
+
+func _on_Hurtbox_immortalStart():
+	hitFlash.play("Start")
+
+func _on_Hurtbox_immortalEnd():
+	hitFlash.play("Stop")
