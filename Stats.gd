@@ -1,11 +1,14 @@
 extends Node
 
-export(int) var maxHealth = 1 setget setMaxHealth 
-var health = maxHealth setget setHealth
+export(int) var maxHealth = 1 setget setMaxHealth # HP MAXIMO
+var health = maxHealth setget setHealth # HP atual
 
 signal noHealth
 signal healthChanged(value)
 signal maxHealthChanged
+
+func healEntity(value):
+	setHealth(health + value)
 
 func setMaxHealth(value):
 	maxHealth = value

@@ -1,6 +1,7 @@
+class_name Enemy
 extends KinematicBody2D
 
-onready var sprite = $AnimatedSprite #herança
+onready var sprite = $AnimatedSprite
 onready var stats = $Stats
 onready var playerSeekZone = $PlayerSeekZone
 onready var hurtbox = $Hurtbox
@@ -12,7 +13,6 @@ export var acceleration = 300
 export var maxSpeed = 50
 export var friction = 300
 export var wanderTarget = 4
-
 const EnemyDeathEffect = preload("res://Effects/EnemyDeathEffect.tscn")
 
 enum {
@@ -53,7 +53,7 @@ func _physics_process(delta):
 				accelerateTowards(player.global_position, delta)
 			else:
 				state = IDLE
-
+				
 	if softCollision.isColliding():
 		velocity += softCollision.getPushVector() * delta * 500
 	velocity = move_and_slide(velocity)

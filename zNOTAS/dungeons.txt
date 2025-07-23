@@ -1,0 +1,66 @@
+-----------------------------------------
+>>> Locations
+
+. Heath
+
+-----------------------------------------
+>>> Dungeons
+. Specific symbol that will be seen on the screen when a "disruption" happens. (The "disruption" used to be a divine
+call to alert all citizens from natural disasters)
+. Dungeons give a lot of gold? Spread out on each floor?
+
+> Overgrown Grove [Gruta Silvestre]
+. Symbols Puzzle + (Winged Gremling that grabs logs and places them above you, disruption makes them roll. 
+Attack him when he lands to grab another)
+. Shock Damage: 10
+. Log Damage: 20
+. Completing the dungeon will reward you with a Foxave friendly encounter.
+
+> Cloudy Sanctum [Capela Nebulosa]
+. Dense fog significantly limits your vision and there are spikes to watch out for. Reach the ancient runes to light up the area around. Every disruption moves the spikes around.
+. Spike Damage: 30
+. Statue Jumpscare
+
+> Flooded Fortress [Fortaleza Inundada]
+. Everything looks normal, until you hear a noise that foreshadows the disruption that is about to happen, causing the water levels to rise quickly. Until the disruption, you will not be able to proceed to the next room. Watch out for gripping vines.
+. Vine Damage: 20
+
+> Briar Thicket [Matagal Traiçoeiro]
+. With overgrown moss making the floor slippery and ink attacks coming from all directions, defeating wildvines is
+surely going to be a lot harder.
+. Wildvine Damage: 35
+. Wildvine Shot Damage: 20
+. Wall Contact Damage: 25
+. Ink Damage: 10 (Also blocks sight for 5s)
+
+> Suburban Citadel [Cidadela Suburbana]
+. In this dungeon, you will see a meter above you, that charges up whenever you are not moving. Once the disruption starts, . It can be depleted by consuming a glowing mushroom from the first floor, but you only have three available, so be quick when solving puzzles!
+. Run-over Damage: 65
+. Overload Damage: 40
+
+> Shattered Reliquary [Relicário Ilusório]
+. Everything you see is mirrored! Going to the right takes you left, and going up makes you go down. The only thing that is crystal clear is that your eyes and instincs are going to have to be just as sharp as the glass shards!
+. Floor Shards Damage: 45
+. Shard Shot Damage: 25
+
+> Underbound Crucible [Caldeirão Subterrâneo]
+. Wow... that is a huge Cauldron! Feed it with fuel scattered around, but be careful: it will get hotter and hotter in 
+there the more you feed it!
+. Eruption Damage: 80
+
+> Caliginous Crypt [Cripta Caliginosa]
+. (guy jumpscare)
+. Referenced by the Overgrown Grove puzzle. Shows how many other dungeons are yet to be completed.
+
+.Tinymint Town
+.Cherrysilk City
+.Bripbale Town (Charmini)(Air-Parkour nas nuvem.Nuvems pretas)
+.Akairis City (Water-Termine o parkour antes de se molhar)
+.Nohawy Town (Frost-Congele o lago para passar)
+.Serreak City (Dungeon Earth)
+.Rakelis City (Sound-Aumente o volume para aumentar o pulo)
+.Faborem City (Dungeon Beast)
+.Taygrem City (Fire-Evite a lava)
+.Edgefort City (Dungeon Void)
+.Goiadan Town (Plant-Molhe,jogue nutrientes e luz no broto pra fazê-lo crescer;joao e o pe de feijao)
+.Gaverid Town (Ancient-Desenterre os fósseis e ponha nos pedestais)

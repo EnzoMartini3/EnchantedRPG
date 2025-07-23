@@ -44,8 +44,9 @@ animations = [ {
 "speed": 10.0
 } ]
 
-[sub_resource type="CircleShape2D" id=7]
+[sub_resource type="CapsuleShape2D" id=16]
 radius = 4.0
+height = 4.0
 
 [sub_resource type="Animation" id=13]
 length = 0.001
@@ -59,7 +60,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ true ]
+"values": [ false ]
 }
 
 [sub_resource type="Animation" id=14]
@@ -95,18 +96,17 @@ tracks/0/keys = {
 "values": [ false ]
 }
 
+[sub_resource type="CircleShape2D" id=7]
+radius = 4.0
+
+[sub_resource type="CircleShape2D" id=9]
+radius = 76.0066
+
 [sub_resource type="CircleShape2D" id=11]
 radius = 5.0
 
 [sub_resource type="CapsuleShape2D" id=8]
 radius = 7.0
-height = 4.0
-
-[sub_resource type="CircleShape2D" id=9]
-radius = 76.0066
-
-[sub_resource type="CapsuleShape2D" id=16]
-radius = 4.0
 height = 4.0
 
 [node name="Bat" type="KinematicBody2D"]
@@ -123,16 +123,33 @@ offset = Vector2( 0, -12 )
 [node name="Shadow" type="Sprite" parent="."]
 texture = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-shape = SubResource( 7 )
+[node name="Stats" parent="." instance=ExtResource( 5 )]
+maxHealth = 2
 
-[node name="WanderController" parent="." instance=ExtResource( 9 )]
+[node name="Hitbox" parent="." instance=ExtResource( 7 )]
+visible = false
+collision_mask = 4
+
+[node name="CollisionShape2D" parent="Hitbox" index="0"]
+position = Vector2( 0, -12 )
+rotation = 1.5708
+shape = SubResource( 16 )
 
 [node name="HitFlash" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 13 )
 anims/Start = SubResource( 14 )
 anims/Stop = SubResource( 15 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 7 )
+
+[node name="WanderController" parent="." instance=ExtResource( 9 )]
+
+[node name="PlayerSeekZone" parent="." instance=ExtResource( 6 )]
+
+[node name="CollisionShape2D" parent="PlayerSeekZone" index="0"]
+modulate = Color( 1, 1, 1, 0.466667 )
+shape = SubResource( 9 )
 
 [node name="SoftCollision" parent="." instance=ExtResource( 8 )]
 visible = false
@@ -148,31 +165,12 @@ collision_layer = 8
 position = Vector2( 0, -13 )
 shape = SubResource( 8 )
 
-[node name="Stats" parent="." instance=ExtResource( 5 )]
-maxHealth = 2
-
-[node name="PlayerSeekZone" parent="." instance=ExtResource( 6 )]
-visible = false
-
-[node name="CollisionShape2D" parent="PlayerSeekZone" index="0"]
-modulate = Color( 1, 1, 1, 0.466667 )
-shape = SubResource( 9 )
-
-[node name="Hitbox" parent="." instance=ExtResource( 7 )]
-visible = false
-collision_mask = 4
-
-[node name="CollisionShape2D" parent="Hitbox" index="0"]
-position = Vector2( 0, -12 )
-rotation = 1.5708
-shape = SubResource( 16 )
-
+[connection signal="noHealth" from="Stats" to="." method="_on_Stats_noHealth"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="immortalEnd" from="Hurtbox" to="." method="_on_Hurtbox_immortalEnd"]
 [connection signal="immortalStart" from="Hurtbox" to="." method="_on_Hurtbox_immortalStart"]
-[connection signal="noHealth" from="Stats" to="." method="_on_Stats_noHealth"]
 
+[editable path="Hitbox"]
+[editable path="PlayerSeekZone"]
 [editable path="SoftCollision"]
 [editable path="Hurtbox"]
-[editable path="PlayerSeekZone"]
-[editable path="Hitbox"]

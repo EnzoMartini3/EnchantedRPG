@@ -1,0 +1,21 @@
+{
+	"color": "#ff3182e2",
+	"description": "",
+	"display_name": "Ath",
+	"display_name_bool": true,
+	"id": "character-1747750210.json",
+	"mirror_portraits": false,
+	"name": "ath",
+	"nickname": "eeeee",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

@@ -1,0 +1,27 @@
+{
+	"events": [
+		{
+			"character": "character-1747750210.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": ""
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1753061645",
+			"index": 0,
+			"name": ""
+		},
+		{
+			"character": "character-1747750210.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "question"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1747750204.json",
+		"name": "timeline-1747750204.json"
+	}
+}

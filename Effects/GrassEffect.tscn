@@ -37,3 +37,5 @@ animation = "Animate"
 centered = false
 offset = Vector2( -8, -8 )
 script = ExtResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

@@ -1,27 +1,35 @@
+>>> Player
+>> Stats (Can all be upgraded to lv10)
+. Health: 50 (+5/lv)
+. Energy: 100 (+10/lvl)
+. Perception: 1 (+1/lvl)
 
->> Upgrades (Requires blueprints. Try not to make them as weak, though rewarding as possible)
+>>> Upgrades (Requires blueprints. Try not to make them as weak, though rewarding as possible)
 
-> Bag
+>> Bag
 . Crafting Kit: Allows for quick crafting, anywhere!
 . Extra Pockets: Increases storage space (base is already fine, expensive)
 
-> Sword 
+>> Sword
 . Scary Handle: Increases your sword's intimidation power.
-. Polished Blade: Increases damage done to plants and objects.
+. Polished Blade: Increases damage done to inanimate objects.
 
-> Mining Equipment
+>> Mining Equipment
 . Bright Lights: Visibility is further increased when in dark caves.
 . Pro Pick: Allows you to extract even the hardest ores!
 . Deep Drilling: Increases ore extraction speed.
 
-> Heart Jewel
-. II: Extra Mizule Pearl.
-. III: Extra Mizule Pearl. 
-. IV: Extra Mizule Pearl.
+>>> Reliquary
 
-> Sojourn Jewel
-. Citrine: Reduces incoming damage by 20% and increases knockback resistance (user won't be knocked down).
-. Topaz: Increases your speed by 12,5%.
+>> Heart Jewel
+. I: Unlock Mizule Pearls.
+. II: +1 Mizule Pearl.
+. III: +1 Mizule Pearl. 
+. IV: +1 Mizule Pearl.
+
+>> Sojourn Jewel
+. Citrine: Reduces overworld damage by 20% and increases knockback resistance (you won't be knocked down anymore).
 . Aquamarine: Increases jumping stamina by 30%.
+. Topaz: Increases your speed by 12,5%.
 . Peridot: Increases random items spawn rate.
 . Tourmaline: Allows you to regenerate health.

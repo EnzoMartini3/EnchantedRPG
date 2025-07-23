@@ -1,5 +1,5 @@
 extends Node2D
-
+# WANDERCONTROLLER: UM NÓ QUE CONTROLA A "MOVIMENTACAO AFK" DA CENA. DIMINUA "wanderRange" PARA FAZER A ENTIDADE SE MOVER MAIS OU MENOS
 export(int) var wanderRange = 32
 
 onready var startPosition = global_position

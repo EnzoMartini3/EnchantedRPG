@@ -1,0 +1,697 @@
+--------------------------------------------------------------------
+Name:BD/Mizule Cost/Attack Style(additional effects)
+--------------------------------------------------------------------
+Absorb:The user can absorb,skipping its turn to recover 40% Mizule.
+---------------------------Stats-------------------------------------
+Offense(OF):Represents the offensive stat.
+Stamina(ST):Represents the available Mizule.Note that high Mizule will give bonus SP.
+Agility(AG):Represents the attack priorities.Whoever has more,attacks first.
+Defense(DF):Represents the defensive stat.
+Wisdom(WI):Representes the users interactivity with Mizule Shields(?).
+---------------------------Fire-------------------------------------
+Scorch:22//M Chama
+Blaze Rush:39//M Avanço Queimado
+Cauterize:52//M (Target can't heal itself.Lasts 4 turns)Cauterizar
+Magma Bite:65//M(Halves the Mizule recovered by the target.Lasts 2 turns)Mordida De Magma
+Crossfire:77//M Fogo Cruzado
+Buried Burn:92//M(User can't use fire attacks.Lasts 6 turns)Calor Terrestre
+Burnout:101//M Fogaréu
+Lava Blade:120/51%/M Corte de Lava
+Flame Spit:19//R(In the next turn:Target loses 1/10 max sp)Cuspe Flamejante
+Combustion:40//R Combustão
+Fireball:53//R Bola de Fogo
+Molten Flare:67//R(Doubles damage if used against a frost target)Raio De Calor
+Firestorm:74//R Onda Incandescente
+Searing Blast:96/M+/R Tiro Fervente
+Ignite:L/I(Raises user's atk by 80%.Lasts 3 turns)Acender
+Blaze Drift:L+/I(Causes target to lose 1/15 sp and Mizule every turn.Lasts 6 turns)
+Chama Ascendente
+Smoke Field:MH/I(-Field changer- Halves the agility of the enemies and raises the
+cost of their attacks by 30%)Fumaceira
+Stretch:L+/I(Raises user's agility by 65%.Lasts 5 turns)Alongar
+Coal Power:/I(User's fire attacks will have +25 BD.Lasts 7 turns)Carv o Poderoso
+---------------------------Water------------------------------------
+Mizzle:13//R(If used in a double duel:+42 Base Damage)Respingo
+Liquid Bomb:30/L/R(If target gets hit by a frost attack,it will get frozen.
+Lasts 2 turns)Bomba Líquida
+Deluge:47//R(Heals all allies by 15% sp)Correnteza
+Cascade:58//R(25% recovering.This recovering also affects allies)Pé D'água
+Tidal Wave:69//R(Removes field changers)Maremoto
+Toxic Ooze:76/MH/R(Inflicts poison)Lodo Tóxico
+Downpour:85/UH-/R(Heals user by 20% sp)Temporal
+Geyser Swirl:99//R Gêiser Espiral
+Foam Gush:107/M+/R(Reduces user satk by 80% if used twice in a row)Rajada De Espuma
+Storming Tides:116//R Marés do Temporal
+Sticky Lick:3/UL/M(Snares and reduces target's agility by 33%)Lingrudenta
+Smooth Slap:10//M Tapa Molhado
+Surfing Sprint:28//M(Reduces target's def by 30%)Passos Submersos
+Liquid Bite:51//M(Reduces enemies' atk or satk by 40%.Lasts 2 turns)Mordida Líquida
+Aqua Smite:67//M(Reduces enemy's atk and spatk by 20%.Lasts 2 turns)Golpe Hídrico
+Tsunami Slam:94//M Pancada Tsunami
+Water Weight:145/UH/M Peso Subaquático
+Dew Spill:L-/I(User and allies are immune to indirect attacks.Lasts 4 turns)
+Pingos De Orvalho
+Crocodile Tears:L/I(Reduces target's atk and defense by 50%)
+Lágrimas De Crocodilo
+Swift Flow:L+/I(Raises the agility of user's team by 50%)Fluxo Rápido
+Quench:M-/I(Heals user or an ally by 40% sp)Hidratar
+Sea Heal:M+/I(Heals user by 60% max sp.Can't be used twice in a row)Cura Marinha
+Healing Pond:/I(User will dodge any attacks used against it.If it does,it will
+recover 20% sp)Po a De Cura
+Whirl Wave:/I(All field changers on the user's will be transferred to the enemy
+side and vice versa)Onda Reversora
+Clear Water:L+/I(Removes one status ailment and makes target immune to them.Lasts 7
+turns)Água Limpa
+---------------------------Earth------------------------------------
+Sand Swipe:16//M(Dodges the next ranged attack used by the target.Lasts 2 turns,
+has 1 turn cooldown)Corte de Areia
+Stone Leap:35//M(Raises user's def by 10%.Lasts 3 turns)Salto Rochoso
+Tremor:43//M(Reduces target's spatk by 35%.Lasts 2 turns)Tremor
+Rock Striker:59//M(Raises user's def by 20%.Lasts 3 turns)Golpe de Pedra
+Terra Ram:68//M(Reduces target's atk by 50%.Lasts 2 turns)Aríete de Terra
+Stalagmites:74//M Estalagmites
+Sandstone Bash:89//M Ataque De Arenito
+Boulder Crash:105//M(Target will dodge this attack if it has already attacked)
+Esmaga-Pedra
+Earth Shatter:135//M Rachador
+Dust Trap:13//R(Traps target and reduces its agility by 10%)V u de Poeira
+Rocky Rain:40//R Chuva de Pedra
+Sand Pit:52//R(Traps target and reduces its agility by 30%)Fosso De Areia
+Terraflow:60//R(Reduces own cost by 10% when used.Max 4 stacks)Terra-Fluxo
+Sediment Storm:71//R Tempestade de Sedimentos
+Mudslide:104//R Onda De Lama
+Dust Scatter:L/I(Raises the cost of the target's indirect attacks by 50%.Lasts 4
+turns)Poeira Dispersa
+Bury:L/I(User gets 20% extra sp.Lasts 3 turns)Enterrar
+Sand Sink:/I(Creates a field changer that reduces the agility of all non-earth
+allies and enemies by 75% and raise the cost of their attacks by 30%.Lasts 6 
+turns)Campo Arenoso
+Rock Block:/I(Raises user's def by 65%.Lasts 4 turns)Bloqueio Terrestre
+Tough Stone:/I(Raises user's def and sdef by 30%.Lasts 4 turns)Pedra Dura
+Wall:/I(Blocks the next melee attack used.Lasts 2 turns)Muro
+----------------------------Air-------------------------------------
+Breeze:11//R Brisa
+Air Pulse:28//R(Heals user for 10% of its max sp.Also has 10% recovering)
+Pulso de Vento
+Wind Whip:45/LM/R(The cost of this attacks can't be raised)Chicote de Ar
+Mist Shot:54//R(After used:User becomes immune to debuffs.Lasts 3 turns)
+Tiro de Névoa
+Jetstream:61/H/R(Creates a stream on the enemy side.All enemies will have its atk 
+reduced by 60%.Lasts 2 turns)Ventania
+Billow Blast:68//R searing burn blast Ira do Vendaval
+Vapor Vortex:81/M/R Vórtice de Vapor
+Wavewhirl:93//R Onda de Redemoinho
+Tempest Blow:112//R Sopro Tormenta
+Skyward Beam:121//R Feixe Celeste
+Tornado Twirl:8//M Giro Tornado
+Swoop:25//M Rasante
+Wind Plunge:44//M(quick swirl dive)Imersão de Vento
+Gale Scythe:50//M(Before attacking:Raises user atk by 40% for 2 turns)
+Foice dos Ventos
+Aero Burst:79//M Ataque Vendaval
+Meteor Dive:98//M Salto Cometa
+Speedstreak:120//M Turbilhão windcharge multicut
+Boosting Stream:L/I(Creates a stream on user's side.User and allies get 30% more 
+agility.Lasts 3 turns)Corrente Veloz
+Drift Away:L/I(User swaps out to create a Boosting Stream that lasts 1 turn)Retirada
+Reverse Flow:M+/I(Redirects any ranged attacks used against the user back to the
+attacker.Lasts 1 turn)Reversão
+Air Dodge:L/I(If target has used an indirect attack on the last turn,user will
+dodge the next attack used by them.This attack can't be dodged)Esquivar
+Let Loose:/I(Lowers the cost of all user attacks by 50%.Lasts 4 turns)Leveza
+Soaring:/I(For 4 turns,user will dodge any attacks that has 60 or less BD.Also,
+user's attacks will have their cost reduced by 20%)Pairar
+---------------------------Leaf------------------------------------
+Spore Shower:13//R Chuva De Esporos
+Pollen Bomb:29/Low+/R(Hits both enemies.Halves cost if used on a double duel)
+Bomba de Pólen
+Poison Ivy:45/MH/R(If the target is resistant to plant,this will deal 1/6 sp)Hera Venenosa
+Berry Burst:51//R(Plants a bomb on the enemy side.If an enemy swaps in,the bomb
+explodes,causing all enemies to lose 1/8 sp.Lasts 3 turns)slow bang Bombaga
+Vine Drain:56//R(Target loses 1/10 Mizule.Also has 10% recovering)Vinha Sugadora
+Toxic Leaves:62//R(Raises the cost of all target attacks by 25%.Lasts 2 turns)
+Folhagem Tóxica
+Seed Dispersal:67//R(Plants a seed on the target.The seed will bloom on the next
+turn,causing them to lose 15% max Mizule)Dispersão
+Flora Spread:72//R Florescimento
+Noxious Sap:90//R(Spreads venom on the enemy side.Any affected enemy will lose
+1/20 sp and Mizule per turn.Lasts 3 turns)Seiva Nociva
+Moss Slide:107/H/R(Reduces targets' agility by 20%)Musgo Massivo
+Biological Risk:118//R(Reduces damage caused by ranged attacks by 20% during 4
+turns)Risco Biol gico
+Powder Swipe:11//M(10% of target's remaining Mizule is consumed)P -De-Mico
+Leaf Attack:25//M Ataque De Folha
+Poison Prickles:42//M(Halves all Mizule recovered by the target.Lasts 2 turns)
+Espinhos De Rosa
+Wicked Vine:54//M(This attack ignores any kind of protection)Vinhas Corrompidas
+Thorn Lash:68/MH-/M(After used:Target takes extra damage,equal to 10% of its sp)
+Golpe de Espinheiro
+Venomous Bite:97//M(10% recovering)Mordida Venenosa
+Root Crush:114//M Raiz Gigante
+Sap Trap:M/I(Causes target to lose 10% max Mizule and inflicts snaring.In the
+next turn:Starts draining Mizule from the target.The draining lasts 3 turns and
+drains 5% of the target max Mizule and gives it to the user)Seivarada
+Germinate:M-/I(Reduces user's agility by 15% and raises its def,spdef and spatk by
+35%.Can be used again to double the effects)Germinar
+Blossom Bless:/I(Raises all of user's stats by 25%)
+Véu De Cerejeira
+Toxin Mix:/I(Target will either lose 10% or 30% max sp.If target loses 10% sp,
+it will lose 30% max sp in the next turn and vice versa)Mistura T xica
+Detox:/I(Removes all kinds of poison or harmful effects from the target.For each
+effect removed:Raises atk by 45% and heals by 35% sp.Stacks up 2)Dreno De Veneno
+Deadly Gas:M+/I(Knocks out every enemy or ally that has less than 50% max sp left)
+G s Letal
+Petal Aroma:MH-/I(Fully restores the Mizule of all allies and enemies in the field)
+Aroma De P tala
+Noxitox:/I(If target takes any damage,user will be healed by 10% max sp.
+Lasts 2 turns)Toxina Drenante
+Ambush:/I(If user is hit by a attack,it will use a random move with 
+50% less base damage or healing power,other than Ambush.Lasts 3 turns)Moita
+Noxious Garden:/I(Causes user,allies and enemies to lose 10% max sp every turn.
+Lasts 4 turns)Jardim Nocivo
+Herbal Cure:/I(Removes all ailments.If the ailment removed was poison,user/ally
+will also recover 40% max sp)Cura Herbal
+Nauseate:/I(If target has not absorbed on the last 2 turns,it will get nauseated,
+causing user to dodge all of its attacks.Lasts 4 turns.Absorbing will end this
+effect)Nausear
+Toxic Shroud:/I(Inflicts poison and reduces spdef)
+--------------------------Energy------------------------------------
+Zap Chain:19//R Choque Triplo
+Thunder Torrent:38//R(If used before the target attacks:+8 BD)Fluxo Relâmpago
+Jammer Pulse:51//R Pulso Elétrico
+Energy Beam:62//R(Reduces enemy's both def and spdef by 30%.Lasts 2 turns)Raio de Energia
+Spark Swirl:73//R Choque Espiral
+Energeyser:94//R(Hurts user if used twice in a row)Erupção De Energia
+Thunderclap:102//R Tempestade
+Plasma Blaze:114/40%/R Calor de Plasma
+Electrogash:128//R(User can't use energy attacks.Lasts 6 turns)Supercarga
+Taser Touch:16//M Toque Estático
+Jolt Steps:35//M Passo Elétrico
+Lightning Leap:51/M Salto Relâmpago
+Thunder Slash:68//M Rasgo Trovoada
+Spark Pummel:90//M fist charge strike thunder Pancada Elétrica
+Driving Drill:110//M Broca Energizada
+Jolly Jolt:L/I(Raises user's agility by 75%)Faísca Feliz
+Energize:25%/I(User recovers 33% max sp and its spatk is raised by 50%)
+Zap Screen:/I(If user is hit by a melee attack,the attacker will
+lose 1/8 max sp and has 50% chance of getting stunned.Lasts 4 turns)Zapeador
+Conversion:0/I(Consumes all of user's remaining Mizule.User gets sp equal
+to the amount of Mizule that was consumed)Convers o
+Power Surge:/I(Creates an electric zone that increases the base damage of any
+energy attacks by 25%.Lasts 4 turns)Surto Elétrico
+Speed Slide:/I(If this attack is used before the target attacks,user will dodge
+the next attack used by the target.This attack can't be dodged)Deslize Veloz
+Kilowatt
+---------------------------Frost------------------------------------
+Ice Slide:16//M Escorregar
+Hail Swipe:34//M Corte Granizo
+Cryo Goo:45//M(Reduces target's agility by 35%.Lasts 3 turns)Gosma Fria
+Ice Crystal:57//M Cristal De Gelo cristal strike snowflakes
+Polar Tusk:65/Low/M Presa Polar
+Frost Slammer:73//M For a Congelante
+Glacier Smash:98//M Quebra-Geleira
+Snowdrift:114//M Neve Massiva
+Cold Crush:126//M(User can't use frost attacks.Lasts 6 turns)Tundra
+Ice Dart:6/M/R(Inflicts poisoning and freezing)Dardo Gelado
+Snowball:12//R Bola de Neve
+Ice Star:25//R Estrela De Gelo
+Frozen Shot:49//R Tiro Congelado
+Winter Gust:58/-M/R(Reduces target's agility by 50%.Lasts 2 turns)Bola Viscosa
+Freeze Ray:67//R(Doubles damage if used against a fire target) Raio Congelante
+Snowstorm:70//R Nevasca
+Huge Snowball:82//R Bolada De Neve
+Frosted Riptide:100//R Maré Glacial
+Icy Floor:L/I(Target will attack last for the next 3 turns)
+Deep Freeze:/I(Frozen enemies will lose 1/8 max sp per turn. Can be casted even if
+enemies are not frozen.Lasts 6 turns)
+Barrier:/I(Blocks the next ranged attack used.Lasts 2 turns)Barreira
+Ice Guard:H-/I(Raises user's spdef and def by 100%.Lasts 3 turns)Armadura De Gelo
+Subzero
+---------------------------Void------------------------------------
+Magic Drain:19//R(10% recovering)Dreno Mágico
+Mystic Volley:36//R(Reduces target atk and def by 25% for 2 turns)Saraivada Mística
+Expansion:43//R(Active field changers will last 2 more turns)Expandir
+Fusion:50//R(This will land when another void attack is used)Fusão
+Voidburst:64//R(30% recovering)open pulse->shock Choque de Vácuo
+Raging Rifts:73//R(15% recovering) Fendas Furiosas
+Eternal Zone:85//R(Creates a prison affecting both sides.Neither user,enemies or
+allies can swap out.The effect only goes away when user gets knocked out)Zona Eterna
+Metaforce:107/H+/R(20% recovering)Metaforça
+Supernova:138//R Supernova
+Revealing Touch:15//M(Reveals one of the target's attacks and its passive)
+Toque Transparente
+Mystic Step:42//M(Makes user immune to indirect attacks.Lasts 2 turns)Passos Do Vazio
+Voidshred:71//M(Deals 75% more damage if target is hallucinating)Rasgo Místico
+Dimension Break:95//M Garra Dimensional
+Sixth Sense:L-/I(Raises user's spatk by 35%.Lasts 7 turns)Sexto Sentido
+Mystic Smoke:L+/I(If any melee attack is used,the attacker loses 20% Mizule.Lasts
+2 turns)Fumaça Mística
+Blank Space:/I(Causes user and the target to swap out)Em Branco
+Loop:L/I(Causes target to swap out,and then and swap in.Works even if target does
+not have any allies to swap in)Paradoxo
+Wave Surge:MH/I(Creates a zone that restores 15% max Mizule every turn.Affects
+allies and the user.Lasts 3 turns)Ondas Mágicas
+Evil Swap:/I(Swaps ailments with target)
+Distortion:/I(User's melee attacks will become ranged and vice versa)Distorcer
+Boost Trade:/I(Swaps target's buffs with the user's) Troca
+Mental Complex:/I(Blocks indirect attacks used against the user and raises the
+user's spatk by 45%.Lasts 8 turns)Complexo Mental
+Magic Focus:/I(User recovers 20% max sp and its atk is increased by 60%.Lasts 7 
+turns)Focalizar
+Power Trade:/I(User and target trade passives)Troca de Poder
+Unravel:/I(User's max Mizule becomes the same as the target's)Revelação
+Mesmerize
+---------------------------Sound-------------------------------------
+Shout:16//R(Raises user's spatk by 5% when used)Grito
+Chorus:34//R(Damage is increased by 80% if user has a sound ally)Coro
+Calm Melody:46//R(Reduces target's atk by 50%.Lasts 2 turns)Melodia Calmante
+Vibrant Voice:57//R(Deals 55% more damage if user has less than 50% max sp)
+Voz Vibrante
+Aurora Song:61/LM/R(Reduces target's sdef by 60%.Lasts 2 turns)Canção Aurora
+Sonar:65/LM/R(Raises user's spatk by 35% or reduces the targets' spdef by 45%)Sonar
+Forest Song:70//R Canção da Floresta
+Wrecking Wave:75//R Onda Estrondosa
+Orchestra:87//R Orquestra
+Power Chord:98//R(User loses 50% sp if this attack was weak against the target)Acorde Forte
+Deafening Screech:111//R(Targets becomes immune to sound attacks for 4 turns)
+Ensurdecer
+Grand Finale:123/H/R(All enemies,allies and user will have its ranged defense
+reduced by 75%.This attack ignores any changes on the target's spdef)
+Grand Finale
+Sonic Punch:13//M Soco Sônico
+Bell Bash:35//M(Raises user's def by 40% if the target has higher atk compared to
+the user)Bate-O-Sino
+Party Groove:54//M(Reduces the cost of user's attacks by 5%,stacks up to 5 times)
+Ritmo Festeiro
+Barrier Break:73//M(Damage is raised by 50% if target's defense is higher than
+user's atk)Quebra-Gelo
+Sonic Brawl:114//M Surra Sônica
+Lullaby:LM/I(Target's attacks now have -20 base damage.Lasts 3 turns)Ninar
+Maximum Volume:/I(Creates a sonic force affecting all teams.During this effect,
+all sound attacks will have +23 BD.Lasts 4 turns)Volume Máximo
+Clear Throat
+Ultrasound
+Party Time
+----------------------------Ore--------------------------------------
+Whack:13//M Baque
+Metal Bash:32//M Investida Metálica
+Marinite Slam:48//M(Creates a barrier on the user's side.All damage dealt by
+enemies will decrease by 15%.Lasts 4 turns)Pancada De Marinita
+Iron Horn:64//M(Raises user's atk by 40%)Chifre De Ferro
+Sawblade:70//M L minada
+Mineral Ram:84//M(Reduces the user's and the target's def by 40%.Lasts 2 turns)
+Aríete Mineral
+Impale:117//M(User loses 40% of its remaining sp)Empalar
+Crystal Crash:126/H/M Quebra-Cristal
+Sharp Shards:9//R Cacos Afiados
+Sebipine Shot:28//R Tiro de Sebipina
+Shard Volley:46//R Cacos de Metal
+Silver Beam:68//R Feixe de Prata
+Shard Storm:91//R Rajada Fragmentada
+Mirror:L/I(Redirects any debuffs to the casters.Lasts 3 turns)Espelhar
+Dome:/I(Creates a barrier affecting both teams.User's team will have its def raised
+by 50%,while enemies will have its def reduced by 50%.Lasts 4 turns)Domo
+Armor:/I(In this turn:Reduces damage by 80% and user recovers 10% max sp)Blindagem
+Repair:/I(User recovers 33% max sp and its agility is raised by 40%.Lasts 3 turns)Reparação
+Silver Guard:M/I(User gets 33% extra sp.Lasts 3 turns)Armadura De Prata
+Ultra Shield:LM-/I(User cannot lose sp.Lasts 1 turn) Ultra Escudo
+---------------------------Beast------------------------------------
+Chase:22//M Perseguir
+Clinch:38//M Agarrar
+Sharp Blow:44//M(Reduces target's defense by 30%)Pancadão
+Attack Combo:50//M(Base damage raises by 10 when used)Soco Progressivo
+Lacerate:61//M(If used twice in a row:Strikes again,with 50% BD)Dilacerar
+Daring Rush:66//M(Raises agility by 20%)Avanço Audaz
+Sweepstrike:71/M-/M Rasteira rasteira giro golpe
+Brutal Gash:78//M Rasgo Brutal
+Talon Rend:82/M/M Garra Aérea
+Rampage:93//M Destruir
+Knuckle Twister:96//M(User loses sp equal to this attack's cost)Soco-Tornado
+Bestial Bite:107//M(User loses 20% sp when using this.If user has 20% max sp
+or less left,and uses this attack,it will live on 1sp)Mordida Bestial
+Drill Kick:114//M Chute-Broca kickopenburst
+Fierce Strike:122//M(1 charge)Ataque Pesado
+Feral Assault:130//M Assalto Feral
+Mockjaw:999//M(Only works if target is trapped and has less atk than user)Devorar
+Brutal Beam:39//R Raio Brutal
+Feral Force:73//R Força Feral
+Fierce Glare:/I(Reduces target's agility by 25% and atk by 65%.Lasts 2 turns)
+Olhar Feroz
+Power Gather:/I(User's atk is raised by 100%.Lasts 3 turns)Acumular Poder
+Hidden Beast:/I(Increases atk and agility by 45%.Lasts 3 turns)Besta Oculta
+Imbalance:/I(In the next turn,user's attacks will deal 50% less damage,but after
+that,user's atk will raise by 75% for 4 turns)Desequil brio
+Break Free:L-/I(Removes Freezing and Snaring)Libertar
+Berserk
+--------------------------Ancient-----------------------------------
+Past Strike:5//M(Base damage raises by 5 for every turn passed.Max:120)
+Ataque Do Passado
+Archaic Sprint:16//M Sombra Arc ica
+Runic Ram:44//M Ar ete R nico
+Time Assault:71//M Assalto Ancestral
+Primal Rend:102//M Rasgo Primitivo
+Temple Crush:125//M Demoli  o
+Primal Pulse:11//R Pulso Primitivo
+Archaic Power:39//R Poder Arcaico
+Ancient Blast:68//R Feiti o Ancestral
+Runic Cannon:90//R Canh o R nico
+Aztec Laser:116//R Laser Asteca
+Lapse:L/I(Causes 2 turns to pass)Lapso
+Rift:/I(Causes the target to swap out.Then the enemy that spent the least time in
+the field will swap in)Fenda
+Elemental Shot:/I(Inflicts a random status condition on the target)Tiro Elemental
+Time Leap:/I(Heals 80% of all damage taken from the last attack)Salto No Tempo
+Primal Power:/I(Raises user's atk by 60%.Lasts 3 turns)Poder Primitivo
+Future Force:/I(Raises user's atk by 85%.Lasts 2 turns)For a Futur stica
+Timeless Shroud:/I(User becomes immune to any attacks.Also,time won't pass on
+this turn)Barreira Atemporal
+---------------------------Light------------------------------------
+Illuminate:19//R Iluminar
+Sparkle Bomb:38//R Bomba Reluzente
+Mix Pulse:56//R(This attack will always have user boost) Pulso Misturado 
+Refractive Glow:60//R(After hitting an enemy,this attack will also deal damage
+to another enemy,but with 40% more base damage)Luz Refrativa
+Torchlight:62/25%/R(Damage is raised by 50% if a Fire/Light ally was or is on the
+field.Stacks up to 100%)Cora  o Brilhoso
+Bright Soul:70/M/R(50% recovering)Alma Luminosa
+Glitter Blast:76//R Lança-Glíter
+Sunbeam:89//R(Overshadow)Raio De Sol
+Yang Force:Lumiglow:100/100/R(Raises all of user stats by 50%)Ultra Yang:Estrela
+Radiante
+Phosphor Gleam:113//R Clarão Cintilante
+Starlight:135//R Ilumina  o Divina
+Glitter Dash:15//M Investida De Gl ter
+Radiant Blow:47//M Cabe ada Radiante
+Mix Attack:64//M(This attack's element will match with the user's first element)
+Ataque Misturado
+Luminous Rend:72//M(If target has 75% max sp or less remaining,its passive becomes
+Lumified)L mina
+Rainbow Rush:80//M(No extra effect)Ataque- ris
+Healing Glow:M-/I(Causes user and allies to recover by 10% Mizule per turn.Lasts 6
+turns)Brilho Da Cura
+Stunning Bomb:L+/I(Inflicts stunning.Sound elements also learn this)Bomba Atordoante
+Color Clean:/I(Nullifies the target's element)Limpa-Cor
+Color Copy:/I(Copies the target's elements)Cor Copiada
+Colorchange:/I(User and target trade elements)Troca-Cor
+Rebirth:UH-/I(Revives the first ally on your team with 50% max sp and 65% max
+Mizule.This can only be used once a duel)Renascimento
+Sacred Lock:/I(Locks one of target's attacks.Lock changes every turn.3 turns)
+Cadeado Sagrado
+Divine Banishment:50/I(Target is forced to swap out.It can't be swapped in for next
+2 turns.This can only be used twice a duel)Banimento Divino
+Glisten:/I(User will dodge the next attack used against it.Lasts 1 turn)Clar o
+Vivify:/I(For the next 5 turns,weak attacks user against the user will get
+weaker and strong attacks become stronger)Vivenciar
+Amusement:/I(User and allies will have its spatk and spdef raised by 70%)Animar
+Devote:/I(Only works on allies.75% of the damage dealt to the ally will be transferred
+to the user,causing them both to regain 20% Mizule)Zelo
+Adapt
+Shimmer
+--------------------------Phantom-----------------------------------
+Living Shadow:19//M Sombra Viva
+Shadow Gash:38//M(User becomes inaffected by any field changers.Lasts 2 turns)Golpe Escuro
+Ghastly Grip:50//M(Damage raises by 12 for each debuff on the target)Aperto Fantasma
+Dreary Claw:61//M(This attack will ignore any kind of buffs or debuffs)
+Garra Oculta
+Spectral Rage:70//M(50% recovering)Fúria Fantama
+Breaking Point:76//M(Nullifies special effects of target's attacks for 2 turns)
+Ponto De Ruptura
+Overshadow:89//M Sobre-Sombra
+Yin Force:Nightfall:100/100/M(Reduces all of targets stats by 75%)Ultra Yin:Obscurescência
+Spirit Shade:113//M ghost storm Noite Espiritual
+Phantom Blade:135//M Lâmina Fantasma dark omen upper slash
+Dark Spell:15//R(Target's spatk decreases by 15% every turn.Lasts 6 turns)
+Chuva Escura
+Gloomy Pulse:47//R Pulso da Noite
+Obscure Force:72//R V u Das Trevas
+Spectral Veil:109//R Desalmar
+Dead Glare:?/0/R(Target loses 15% max sp)Olhar Morto
+Goosebunker:/I(User hides.If a melee attack is targeted against the hidden user,the attacker gets spooked,
+losing SP equal to 25% of the attacks damage)
+Midnight:/I(User loses 15% max sp.In 2 turns,all enemies will lose 30% max sp.If no
+one gets knocked out,user,allies and enemies will lose 50% max sp in 2 turns)
+Obscurecer
+Spooky Trade:/I(Swaps user's first attack with target's first attack)
+Troca De Ataque
+Soul Exchange:/I(Drains all Mizule of a fainted ally and converts it into sp)
+Necromancia
+Sinister Spell:/I(Indirect attacks used by the target will last -1 turn.Lasts 6
+turns)Feitiço Sinistro
+Ectoplasm:/I(Lowers target agility by 33% for 2 turns.If user attacked first than
+the target,this also inflicts hallucination and the agility reduction will last 2
+more turns)Ectoplasma
+Haunt:/I(This attack will become one of target's attacks.The target won't be
+able to use the stolen attack.Lasts 3 turns)Assombrar
+Nullify:/I(Removes target's second element if it has 2 elements.If target has only
+1 element,it will become elementless)Anular
+Manipulate:/I(Target will use the last attack used by the user.Lasts 2 turns)Manipular
+Doppelganger
+-------------------------Properties-------------------------------------------
+-Passive bonuses according to the body aspects of a monster.
+.Spiky
+.Hovering
+.Coral-Sharp:
+.Sticky
+.Shadow Heads
+--------------------------Passives--------------------------------------------
+-Passive:Adicional boost that can be unlocked. Every monster has two,and they can
+only have passives of their respective elements,which are pre-selected.Monsters 
+with only one element will have both passives of the same element.
+.Dead End:<Sem Saída>
+.Lumified/Light:Does nothing.
+.Sharp Prickles/Plant:If user is hit by a melee attack,the attacker will lose sp
+equal to user's 10% Def.
+.Sharp Coral/Water:If user is hit by a melee attack,the attacker will lose sp 
+equal to user's 10% Def.
+.Predator/Beast:User's attacks will deal 30% more damage against weaker enemies.
+.Courage/Air:User's attacks will deal 30% more damage against stronger enemies.
+.Friendly Glow/Light:Allies recover 25% sp when absorbing.
+.Blessing/Plant:User restores 10% max sp at the end of every turn.
+.Soul Devour/Shadow:User heals itself by 50% max sp when knocks out an enemy.
+.Sea Hunter/Water:User will deal 50% more damage against water enemies.
+.Terra Shroud/Earth:User's def will raise by 25% every turn user is not attacked
+directly.
+.Back Off/Earth:attacks used against the user will deal 25% less damage if 
+user has already attacked.
+.Vex/Shadow:User's direct shadow attacks will inflict hallucination.
+.Eagle Eye/Air:Ignores dodging.
+.Purify/Water:User's Water attacks will heal allies by 15%.
+.Mesmerize/Void:Negative effects inflicted by user won't dissipate if target swaps out.
+.Incendiary/Fire:User's fire attacks will deal 20% more damage.(Incandescente)
+.Breeze Surf/Air:User gets 25% more agility when entering a duel.
+.Earthshaker/Earth:User's earth attacks decreases the target's agility by 20%.
+.Expansive Fog/Air:Field changers created by user will last 2 more turns.
+.Sonic Barrier/Sound:User becomes immune to sound attacks.
+.Percussive Shock/Sound:User's sound attacks will be based on the target's defense
+instead of the user's attack.
+.Eye Lock/Light:When user enters field,a foe is marked.If user ever swaps in,so will the
+marked foe.This effect can only trigger once.
+.Cacophony/Sound:User's sound attacks gets 20% stronger each time they are used.
+.Mysticism/Void:User's Void attacks now have +20% recovering.
+.Long-Lived/Ancient:User is immune to poisoning or any harmful effect.
+.Overcharge/Energy:User recovers 1/8 Mizule when hit by an attack.
+.Generator/Energy:User's direct energy attacks will cost 35% less Mizule.
+.Sebipined/Metal:User's plant attacks will get 50% stronger.
+.Minimalism/Plant:User's attacks will cost 40% less Mizule,but will also get 15%
+weaker.
+.Patience/Ancient:User's spatk will raise by 25% every turn they doesn't use a
+direct attack,but this boost will end after using a direct attack.Stacks up to
+5 times.
+.Saurian Power/Ancient:User's melee ancient attacks will cost 25% less Mizule.
+.Steam Stream/Water:Halves damage from water and fire attacks.
+.Spikes Out/Earth:When user enters the field,they release a volley of spikes,
+damaging everyone in the field except for themselves.Targets will lose 1/16 max sp.
+.Anger/Beast:User's atk increases by 30% when user is hit by a direct attack.
+.Opportunism/Shadow:Enemy loses 25% max sp if one of its attacks fails or is 
+dodged.
+.Cooling/Frost:While user is on the field,others' RD is decreased by 35%.
+.Daredevil/Beast:User's agility and atk is boosted by 75% when sp is below 25%.
+.Dark Ammo/Shadow:Summons dark ammo every turn.When user attacks,the ammo will fade
+away attacking one more time with 20% of the BD.Stacks up to 4 times.
+.Cruel Whips/Beast:Every turn user is not hurt directly,a whip is summoned.When
+user attacks directly,the whips will fade away but the attack will become 25%
+stronger per whip lost.Stacks up to 2 times.
+.Noxiousness/Plant:Harmful effects/poisoning caused by user's plant attacks will
+last 1 extra turn.
+.Primitive/Ancient:User's attacks gets 40% stronger,but will they also get 
+15% weaker each turn user is in the field(does not reset upon swapping).
+.Reflection/Metal:If user is hit by a ranged attack,the attacker will lose 10%
+max sp.
+.Power Plant/Energy:Increases allied energy attacks by 40% and Mizule recovery by 20%.
+.Permafrost/Frost:Frozen enemies will remain frozen two more turns.
+.Multicolor/Light:User's light attacks will ignore resistences.
+.Slip Away/Water:If user is hit by a attack,it will swap out at the end of the 
+turn, recovering 30% sp.
+.Waterbound/Water:User's water attacks will cost 30% less Mizule.
+.Soothsay/Void:User's indirect attacks will cost no Mizule.
+.Vocalization/Sound:User has immunity to indirect shadow and light attacks,while
+its own attacks cannot be dodged.
+.Wither/Shadow:Causes all non-shadow enemies/allies to lose 1/15 max Mizule every
+turn.
+.Heavy Wings/Air:User's air melee attacks will cost 20% less Mizule.
+.Invisibility/Light:When entering the field, user will be immune to all damage for the turn. Only works once.
+.Frostbite/Frost:Frost attacks will deal double damage to targets with ailments.
+.Heat Stroke/Fire:Fire attacks will deal double damage to targets with ailments.
+.Golden Guard/Metal:Reduces damage taken by any attacks that cost __ or more by
+40%.
+.Mischievous/Shadow:Enemies with status ailments will have its atk reduced by 40%.
+.Fearless/Beast:If user uses an attack,its base damage will increase by 30%
+for the following turn. 2 uses.
+.Wise Shield/Ancient:User is immune to any conditions.
+.Light Speed/Light:User's agility is raised by 100% when entering the field.Lasts
+1 turn.After the effect is gone:Raises BD of user's light attacks by 20.
+.Tune Up/Sound:If user uses a sound attack that has more than 70 BD,the next
+sound attack used by the user will have its BD changed to 110.
+.Formation/Earth:User alternates between Full and Core styles.While in Full style:
+Reduces all damage by 50%.If hit by a attack:Changes to Core style.While
+in Core style:Raises agility by 20%.After 2 turns:Changes to Full style.
+.Heavyweight/Metal:If user's def is higher than atk,user's atk is raised by 40%.
+.Guardian/Energy:User will recover 1/20 Mizule each turn,even if it is not in the
+field.
+.Spread/Plant:If user has a status condition,at the end of the turn,adjacent enemies
+or allies will also get the condition.
+.Burning Soul/Fire:Doubles the damage dealt by the scorched condition.
+.Intangibility/Ancient:Blocks melee attacks.
+.Unstability/Ancient:Blocks ranged attacks.
+.Bright Shield/Light:User is immune to shadow attacks.
+.Hard Rock/Earth:Reduce melee damage by 25%.
+.Photosynthesizer/Plant:Converts lumi damage into healing for all plant allies.
+.Alloy Armor/Metal:User receives 25% less damage from ranged attacks.
+.Sponge/Water:Heals 1/4 when affected by water.
+.Malware:Nullifies all other passives while on the field.
+.Stone Curse/Earth:Conditions inflicted by the user will get cursed.
+.First Friend/Fire:Before swapping out,user will recover 40% max Mizule.Can be
+used 4 times.
+.First Friend/Water:Before swapping out,user will recover 40% max Mizule.Can be
+used 4 times.
+.First Friend/Earth:Before swapping out,user will recover 40% max Mizule.Can be
+used 4 times.
+.First Friend/Air:Before swapping out,user will recover 40% max Mizule.Can be
+used 4 times.
+.Forceful Flame/Fire:Doubles all Mizule recovered.
+.Forceful Flow/Water:Doubles all Mizule recovered.
+.Forceful Rock/Earth:Doubles all Mizule recovered.
+.Forceful Gust/Air:Doubles all Mizule recovered.
+.Structures/Ancient:After being in the field for a turn,user becomes Frost/Ancient.
+All attacks deal 20% more damage.
+.Spite/Beast:If user and an enemy were in the field for 2 turns or more,that enemy
+will receive 50% more damage from the user.
+.Headstart/Energy:Allies get a 35% agility boost if they enter the field together,for
+that turn only.
+.Envy/Beast:Deals 30% more damage if target has higher rarity than user.
+.Sunset/Light:Increases the cost of enemies' water and shadow attacks by 30%.
+.Hot Sneeze/Fire:If user is attacked,it fights back with a bonus Flame Spit attack.
+.Sing Along/Sound:A sound attack used by an ally will get a bonus 15% damage
+based on user's ranged attack.
+.Grooving Vibe/Sound:Allies' sound attacks cost 15% less Mizule.
+.Toxic Halo/Void:User's melee attacks drain 10% Mizule from the target.
+=========================Unreleased=============================================
+.Flock/Air:
+.Grounded/Earth:
+.Power Gems/Metal:
+.Penumbra/Shadow:
+.Spotlight/Light:
+.Power Puncher/Beast:
+.Strong-Willed/
+.Duplicate/Void:User clones itself every turn.
+.First Aid/Beast:User recovers 20% max sp when its sp is below 25%.2 uses.
+================================================================================
+-------------------------Exclusive----------------------------------
+(Onihowl/Beast)Mega Maelstrom:
+(Nessight/Void)Magic Maraud:68//R(Reduces target's spatk by 33% and raises the
+user's by 33%.This effect can be stacked up to 5 times)Assalto Astral
+(Harex/Shadow)Cursed Chop:74//M(If user knocks out an enemy with this attack,
+user will use this attack against the next enemy sent out with 50% BD)
+Manopla Mal fica
+(Harprey/Energy)
+(Lashtile/Air)Whip Catch:/I(Catches target,making them unable to attack.While target
+is caught,neither user or the target can swap out.After used:Turns into Whiplash.
+User cant use other attacks while catching a target)Amarrar
+(Lashtile/Air)Whiplash:78//R(When used:Releases target and turns back to Whip Catch)
+Chicotada
+(Elzien/Ancient)Elder's Wisdom:/I(Raises def,spdef and agility of the target by 55%)
+Sabedoria Do Ancião
+(Majestail/Light)Glossy Glow:63//R(User and allies recover 15% max Mizule)
+Chicote Charmoso
+(Searaya/Fire)Incineration:37/L/M(In the next 3 turns,this attack will be used
+again at the end of the turn,even if the user has already attacked)Incinera  o
+(Sentirock/Earth)Pebble Storm:90//R(User loses 25% max sp.If user is currently on
+Core style,it will lose 15% max sp)Calhau Canalizado
+(Drakace/Earth)Mace Sweep:140/MH/M(Charges for a turn,then attacks both foes)
+(Liligera/Plant)Floral Effect:/I(User and allies will recover 10% max sp when losing
+Mizule by any source.Lasts 10 turns)Floress ncia
+(Shivern/Frost)Frostbite:70//()Calafrio
+(Rumistem/Plant)Blooming Bolt:66//R(Stuns all enemies that have buffs)Rosa-Choque
+(Archieti/Metal)Steelborne:110/UH-/M(Stuns target)
+(Deedjay/Sound)Cheery Chirp:62//R(BD increases by 20 for each positive effect on
+allies,stacks up to 122 BD)Piado Animado
+(Murumu/Sound)Echoed Whisper:
+(Tenegrip/Shadow)Unleash:/I(If user attacks or is attacked,the target/attacker will
+lose 1/15 sp.If one of user's indirect attack leaves the target with 15% sp or
+less,it will get knocked out instead.Lasts 8 turns)
+(Dermagoo/Frost)Slimy Slide:58//R(Raises user's agility by 30%.User will also dodge
+any attacks coming from the target if its stats are reduced.Lasts 2 turns)
+(Altagem/Energy)Surge Drain:65//R(Hits all allies and enemies.Makes them lose 10%
+max Mizule and user recovers Mizule equal to the amount lost by them)pulse
+(Surigaze/Light)Stare Flash:/I
+(Sandehog/Metal)Needle Trap:/I(If user gets hit by a direct attack,allies and
+enemies will get hit,as if user was using an earth attack that has 10 BD and
+hits twice.User will dodge the attack if it has less than 40 BD,but will still
+hurt enemies and allies.Lasts 1 turn)Agulha Sens vel
+(Drimodon/Light)Daydream:/I(If user attacks first:Restores 25% HP and Mizule.
+If user attacks last:Raises spatk by 125%)Devaneio
+(Springi/Plant)Seedfall:55//M(When used:User heals itself by 33% max sp.When used
+twice in a row:Also raises user's atk and agility by 50%.Stacks up to 4 times,but
+the healing will not be increased)Sementes Voadoras
+(Menteleon/Light)Color Blast:67//R(This will always have user boost)Tiro De Cor
+(Beastle/Sound)Bashbeat:110//M(User's atk is lowered by 60%.Lasts 3 turns)Bibatida
+(Monkrash/Earth)Boulder Fist:71//M(Either raises user's def by 60% or atk by 50%)
+Punho Pedregulho
+(Scorperial/Metal)Tin Sting:99/H+/M(Inflicts Poison)Ferr o De Ferro
+(Hackzor/Energy)Hack Disc:L/I(Target cannot swap out.Lasts 9 turns)Erro De Disco
+(Bleitzal/Fire)Olympic Blaze:70/M-/M Chama Ol mpica
+(Zalflo/Water)Olympic Stream:70/M-/R Onda Ol mpica
+(Sediket/Earth)Olympic Quake:70/M-/M Vala Ol mpica
+(Mistsol/Air)Olympic Draft:70/M-/R Brisa Ol mpica
+(Oblaiss/Light)Color Beam:72//R(This will always have user boost)Feixe De Cor
+(Darbyss/Shadow)Bane:H/I(Reduces targets' atk,spatk and agility by 33%.Also,if the
+target use an indirect attack in the next turn,they will lose 25% max Mizule)
+Perdi  o
+(Cronodon/Ancient)Chrono Buster:100//M(After 2 turns,user will use Runic Ram on
+itself and on its allies)Destruidor Cronos
+(Kaligin-Sealed/Void)Power Regain:75/UH/R(3 turns after using this attack,all
+allies in the field will recover 100% max Mizule)Ciclo de Poder
+(Kaligin-Origin/Void)Cruel Fate:200/UH+/R Destino Cruel
+------------------Conditions/Mechanics---------------------
+-Conditions em volta da barra de sp e mudanças na tela.Each mon can have up to 2
+conditions.
+.Poisoned:Consumes 10% sp every turn.
+.Ensnared:Unables swapping and nullifies passives.
+.Stunned:Nullifies any positive effects and reduces agility by 45%.
+.Frozen:Attacks will have no effect.Lasts 3 turns.
+.Weakened:Reduces atk,def,spatk,and spdef by 33%.
+.Hallucinating:Unables healing,stat raising and consumes 10% max Mizule every turn.
+-----------------------------XP--------------------------------------
+.Quando um escudo é destruido,ele se transforma em xp,que vem para
+o monstro que o derrotou.Drops de xp vem em pequenas orbes que s o
+absorvidas pelo seu monstro.
+.Max leveled mons wont take any xp.If another mon also got xp from the same kill,
+it will get 25% extra xp.
+.Xp obtained:Xp is obtained if you get a kill.
+
+.BONUSES:You get extra xp if:
+->Brave Warrior(If the enemy had higher level)10% per level.
+->One-Shot(100% dealt in one attack)5% bonus
+->Inflicted Effects(Any negative effect/stats decreased inflicted)10% for each one
+
+.ASSISTENCES:Mons will also get xp if they:
+->Assistant 1(Entered the duel)
+->Assistant 2(1%-25% inflicted)
+->Assistant 3(50%-99% inflicted)
+->Venomous 1(Inflicted a negative effect)
+->Venomous 2(Inflicted 2 or more negative effects)
+------------------------Damage-Formula-------------------------------
+(User's Offensive-Target's Defense x BD + 17)
+Changes = (Effectiveness) x UB(35%) x attacks x Passive x (Condition)
+-----------------------Stat-Calculation------------------------------
+Base x Fruit Points x Star Stat

@@ -2,7 +2,7 @@
 Rarities(Stats):Common(500),Exotic(520),Rare(540),Hybrid(560),and Banshee(600)
 --------------------------------------------------------------
 Crotao-Light/Shadow()
-Chromater-Light/Shadow()
+Dragonowl-Light/Shadow()
 --------------------------------------------------------------
 Flamad-Fire/Beast(Flame+Nomad)
 Onihowl-Fire/Beast(Omni/Oni+Howl)-E
@@ -88,7 +88,7 @@ Soara-Air(Soar+Arara)
 <Florara-Air/Leaf(Flora+Arara)
 <Majestail-Air/Light(Majestic+Tail)
 --------------------------------------------------------------
-Ribeam-Air(Ribbon+Beaming)
+Plumin-Air(Plume+Luminous)
 <Majestail-Air/Light(Majestic+Tail)
 <Florara-Air/Leaf(Flora+Arara)
 --------------------------------------------------------------
