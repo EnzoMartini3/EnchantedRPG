@@ -16,11 +16,13 @@ export var friction = 750 # antigo: 100
 export var staminaRecoveryRate = 15
 export var maxStamina = 90
 var stamina = maxStamina
+var enemyTrapping = null
 
 enum {
 	MOVE,
 	ROLL,
-	ATTACK
+	ATTACK,
+	TRAPPED
 }
 
 var state = MOVE
@@ -44,12 +46,15 @@ func _physics_process(delta):
 	match state: #basicamente um switch case, funcionaria também com if-else
 		MOVE: #se o state matches MOVE, execute movestate, etc.
 			moveState(delta)
-
+			
 		ROLL:
 			rollState(delta)
-
+			
 		ATTACK:
 			attackState(delta)
+			
+		TRAPPED:
+			trappedState(delta)
 
 func moveState(delta):
 	var input_vector = Vector2.ZERO
@@ -111,3 +116,21 @@ func _on_Hurtbox_immortalStart():
 
 func _on_Hurtbox_immortalEnd():
 	hitFlash.play("Stop")
+
+func trappedState(_delta):
+	velocity = Vector2.ZERO
+	# animationState.travel("Preso")
+	if Input.is_action_just_pressed("interact"):
+		if enemyTrapping:
+			enemyTrapping.onPlayerInteraction()
+
+func setTrappedState(isTrapped: bool, trappingEntity = null):
+	if isTrapped:
+		state = TRAPPED
+		velocity = Vector2.ZERO
+		#animationState.travel("Preso") # Ou uma animação de "idle" presa
+		enemyTrapping = trappingEntity # Guarda a referência do inimigo que prendeu
+	else:
+		state = MOVE
+		#animationState.travel("Idle")
+		enemyTrapping = null

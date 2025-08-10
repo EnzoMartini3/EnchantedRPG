@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=2]
+[gd_scene load_steps=64 format=2]
 
 [ext_resource path="res://World/GrassBackground.png" type="Texture" id=1]
 [ext_resource path="res://World/DirtTileset.png" type="Texture" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://Enemies/HeartEntity.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Grass.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Enemies/Bat.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Helpers/Warp.tscn" type="PackedScene" id=9]
+[ext_resource path="res://World/MapLimits.tscn" type="PackedScene" id=10]
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -543,10 +545,6 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -65526, 0, 0, -65525, 0, 2, 10, 0, 65536, 11, 0, 65538, 65546, 0, 65536, 65547, 0, 65538, 131082, 0, 65536, 131083, 0, 65538, 196618, 0, 65536, 196619, 0, 65538, 262144, 0, 0, 262145, 0, 1, 262146, 0, 2, 262154, 0, 131072, 262155, 0, 9, 262156, 0, 1, 262157, 0, 1, 262158, 0, 2, 327680, 0, 65536, 327681, 0, 65537, 327682, 0, 131077, 327683, 0, 2, 327691, 0, 65536, 327692, 0, 65537, 327693, 0, 65537, 327694, 0, 262149, 327695, 0, 196609, 327696, 0, 196609, 327697, 0, 196609, 327698, 0, 196609, 327699, 0, 196609, 327700, 0, 196610, 393216, 0, 65536, 393217, 0, 65537, 393218, 0, 65537, 393219, 0, 131077, 393220, 0, 1, 393221, 0, 2, 393227, 0, 131072, 393228, 0, 131073, 393229, 0, 131073, 393230, 0, 131074, 458752, 0, 131072, 458753, 0, 131073, 458754, 0, 131073, 458755, 0, 131073, 458756, 0, 131073, 458757, 0, 131074, 524298, 0, 0, 524299, 0, 1, 524300, 0, 2, 589834, 0, 65536, 589835, 0, 65537, 589836, 0, 65538, 655370, 0, 131072, 655371, 0, 131073, 655372, 0, 196613, 655373, 0, 196609, 655374, 0, 196609, 655375, 0, 196610 )
 
-[node name="Transition" type="Area2D" parent="."]
-
-[node name="Arrival" type="Position2D" parent="."]
-
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Grass" type="YSort" parent="YSort"]
@@ -562,6 +560,18 @@ position = Vector2( 288, 64 )
 
 [node name="Grass4" parent="YSort/Grass" instance=ExtResource( 7 )]
 position = Vector2( 48, 32 )
+
+[node name="Grass10" parent="YSort/Grass" instance=ExtResource( 7 )]
+position = Vector2( 0, 48 )
+
+[node name="Grass11" parent="YSort/Grass" instance=ExtResource( 7 )]
+position = Vector2( 16, 48 )
+
+[node name="Grass12" parent="YSort/Grass" instance=ExtResource( 7 )]
+position = Vector2( 16, 80 )
+
+[node name="Grass13" parent="YSort/Grass" instance=ExtResource( 7 )]
+position = Vector2( 0, 80 )
 
 [node name="Grass5" parent="YSort/Grass" instance=ExtResource( 7 )]
 position = Vector2( 80, 32 )
@@ -603,3 +613,19 @@ position = Vector2( 192, 80 )
 
 [node name="Bat" parent="YSort" instance=ExtResource( 8 )]
 position = Vector2( 240, 16 )
+
+[node name="MapLimits" parent="." instance=ExtResource( 10 )]
+
+[node name="Warps" type="Node" parent="."]
+
+[node name="To Tinymint Town" parent="Warps" instance=ExtResource( 9 )]
+position = Vector2( 8, 72 )
+targetScene = "Tinymint Town"
+targetWarp = "From Mintsilk Path"
+spawnDirection = "left"
+
+[node name="From Tinymint Town" type="Position2D" parent="."]
+position = Vector2( 32, 72 )
+
+[editable path="MapLimits"]
+[editable path="Warps/To Tinymint Town"]

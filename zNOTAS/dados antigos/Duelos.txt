@@ -30,6 +30,7 @@ Smoke Field:MH/I(-Field changer- Halves the agility of the enemies and raises th
 cost of their attacks by 30%)Fumaceira
 Stretch:L+/I(Raises user's agility by 65%.Lasts 5 turns)Alongar
 Coal Power:/I(User's fire attacks will have +25 BD.Lasts 7 turns)Carv o Poderoso
+Flaring Flurry
 ---------------------------Water------------------------------------
 Mizzle:13//R(If used in a double duel:+42 Base Damage)Respingo
 Liquid Bomb:30/L/R(If target gets hit by a frost attack,it will get frozen.
@@ -202,6 +203,7 @@ energy attacks by 25%.Lasts 4 turns)Surto Elétrico
 Speed Slide:/I(If this attack is used before the target attacks,user will dodge
 the next attack used by the target.This attack can't be dodged)Deslize Veloz
 Kilowatt
+Lightning Charge
 ---------------------------Frost------------------------------------
 Ice Slide:16//M Escorregar
 Hail Swipe:34//M Corte Granizo
@@ -234,6 +236,7 @@ Expansion:43//R(Active field changers will last 2 more turns)Expandir
 Fusion:50//R(This will land when another void attack is used)Fusão
 Voidburst:64//R(30% recovering)open pulse->shock Choque de Vácuo
 Raging Rifts:73//R(15% recovering) Fendas Furiosas
+Empty Head:80//R(Target is unable to make non-movement attacks and its WISDOM is set to 0 for 3 turns)
 Eternal Zone:85//R(Creates a prison affecting both sides.Neither user,enemies or
 allies can swap out.The effect only goes away when user gets knocked out)Zona Eterna
 Metaforce:107/H+/R(20% recovering)Metaforça
@@ -378,7 +381,7 @@ Glitter Blast:76//R Lança-Glíter
 Sunbeam:89//R(Overshadow)Raio De Sol
 Yang Force:Lumiglow:100/100/R(Raises all of user stats by 50%)Ultra Yang:Estrela
 Radiante
-Phosphor Gleam:113//R Clarão Cintilante
+Phosphor Flash:113//R Clarão Cintilante
 Starlight:135//R Ilumina  o Divina
 Glitter Dash:15//M Investida De Gl ter
 Radiant Blow:47//M Cabe ada Radiante
@@ -407,6 +410,7 @@ Devote:/I(Only works on allies.75% of the damage dealt to the ally will be trans
 to the user,causing them both to regain 20% Mizule)Zelo
 Adapt
 Shimmer
+Phosphor Flash
 --------------------------Phantom-----------------------------------
 Living Shadow:19//M Sombra Viva
 Shadow Gash:38//M(User becomes inaffected by any field changers.Lasts 2 turns)Golpe Escuro

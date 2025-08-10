@@ -10,7 +10,7 @@ onready var wanderController = $WanderController
 onready var hitFlash = $HitFlash
 
 export var acceleration = 300
-export var maxSpeed = 50
+export var maxSpeed = 55
 export var friction = 300
 export var wanderTarget = 4
 const EnemyDeathEffect = preload("res://Effects/EnemyDeathEffect.tscn")

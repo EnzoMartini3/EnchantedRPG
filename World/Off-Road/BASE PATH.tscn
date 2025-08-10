@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=2]
+[gd_scene load_steps=64 format=2]
 
 [ext_resource path="res://World/GrassBackground.png" type="Texture" id=1]
 [ext_resource path="res://World/DirtTileset.png" type="Texture" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://Enemies/Bat.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Enemies/HeartEntity.tscn" type="PackedScene" id=7]
 [ext_resource path="res://World/Grass.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Helpers/Warp.tscn" type="PackedScene" id=9]
+[ext_resource path="res://World/MapLimits.tscn" type="PackedScene" id=10]
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -600,6 +602,13 @@ position = Vector2( 197, 14 )
 [node name="HeartEntity" parent="YSort" instance=ExtResource( 7 )]
 position = Vector2( 192, 80 )
 
-[node name="Transition" type="Area2D" parent="."]
+[node name="MapLimits" parent="." instance=ExtResource( 10 )]
 
-[node name="Arrival" type="Position2D" parent="."]
+[node name="Warps" type="Node" parent="."]
+
+[node name="Warp1" parent="Warps" instance=ExtResource( 9 )]
+
+[node name="FROM XXX" type="Position2D" parent="."]
+
+[editable path="MapLimits"]
+[editable path="Warps/Warp1"]

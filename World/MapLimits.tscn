@@ -1,0 +1,9 @@
+[gd_scene format=2]
+
+[node name="MapLimits" type="Node"]
+
+[node name="TopLeft" type="Position2D" parent="."]
+position = Vector2( -128, -128 )
+
+[node name="BottomRight" type="Position2D" parent="."]
+position = Vector2( 448, 256 )
