@@ -1,8 +1,8 @@
 [gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Enemies/Direbriar.png" type="Texture" id=1]
-[ext_resource path="res://Shadows/MediumShadow.png" type="Texture" id=2]
-[ext_resource path="res://Stats.tscn" type="PackedScene" id=3]
+[ext_resource path="res://SPRITES/Shadows/MediumShadow.png" type="Texture" id=2]
+[ext_resource path="res://Helpers/Stats.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Overlaps/Hurtbox.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Enemies/WanderController.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Enemies/PlayerSeekZone.tscn" type="PackedScene" id=6]

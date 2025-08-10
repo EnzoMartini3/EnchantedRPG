@@ -5,10 +5,10 @@
 [ext_resource path="res://Overlaps/Hitbox.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Player/SwordHitbox.gd" type="Script" id=4]
 [ext_resource path="res://Overlaps/Hurtbox.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Shadows/MediumShadow.png" type="Texture" id=6]
+[ext_resource path="res://SPRITES/Shadows/MediumShadow.png" type="Texture" id=6]
 [ext_resource path="res://Music and Sounds/Sword Swing.wav" type="AudioStream" id=7]
 [ext_resource path="res://Music and Sounds/Evade.wav" type="AudioStream" id=8]
-[ext_resource path="res://WhiteShader.tres" type="Shader" id=9]
+[ext_resource path="res://Overlaps/WhiteShader.tres" type="Shader" id=9]
 [ext_resource path="res://Overlaps/SoftCollision.tscn" type="PackedScene" id=10]
 
 [sub_resource type="ShaderMaterial" id=49]

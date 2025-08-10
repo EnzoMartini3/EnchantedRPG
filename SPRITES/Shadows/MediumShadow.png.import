@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bush.png-e6c7045aef00a6078175429b8ba5a2c5.stex"
+path="res://.import/MediumShadow.png-d436e1de003888086f98c072620578ad.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World/Base Assets/Bush.png"
-dest_files=[ "res://.import/Bush.png-e6c7045aef00a6078175429b8ba5a2c5.stex" ]
+source_file="res://SPRITES/Shadows/MediumShadow.png"
+dest_files=[ "res://.import/MediumShadow.png-d436e1de003888086f98c072620578ad.stex" ]
 
 [params]
 

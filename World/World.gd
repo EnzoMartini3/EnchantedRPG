@@ -6,7 +6,7 @@ onready var currentMapNode = $CurrentMap
 var currentMapInstance = null
 var nextWarp = ""
 const sceneTinymintTown = preload("res://World/Towns/Tinymint/Tinymint Town.tscn")
-const sceneMintsilkPath = preload("res://World/Off-Road/Mintsilk Path/Mintsilk Path.tscn")
+const sceneMintsilkPath = preload("res://World/Pathways/Mintsilk Path/Mintsilk Path.tscn")
 
 func _ready():
 	loadMap(sceneTinymintTown, Vector2(50, 50))

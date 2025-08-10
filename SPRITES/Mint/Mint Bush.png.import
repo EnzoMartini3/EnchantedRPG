@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/LargeShadow.png-f9f465d3bd6a830d0053dcccc744b5ab.stex"
+path="res://.import/Mint Bush.png-5fb3c7f07413e7bb903239494be45638.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Shadows/LargeShadow.png"
-dest_files=[ "res://.import/LargeShadow.png-f9f465d3bd6a830d0053dcccc744b5ab.stex" ]
+source_file="res://SPRITES/Mint/Mint Bush.png"
+dest_files=[ "res://.import/Mint Bush.png-5fb3c7f07413e7bb903239494be45638.stex" ]
 
 [params]
 

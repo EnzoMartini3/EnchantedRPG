@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DirtTileset.png-4e52e2a032d2a3147ded644a2054b3ec.stex"
+path="res://.import/Mint Tree.png-562c9f9102dcaf7f6cd13067c8683f3b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World/DirtTileset.png"
-dest_files=[ "res://.import/DirtTileset.png-4e52e2a032d2a3147ded644a2054b3ec.stex" ]
+source_file="res://SPRITES/Mint/Mint Tree.png"
+dest_files=[ "res://.import/Mint Tree.png-562c9f9102dcaf7f6cd13067c8683f3b.stex" ]
 
 [params]
 
