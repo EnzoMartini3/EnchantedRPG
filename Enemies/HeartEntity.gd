@@ -1,7 +1,7 @@
 class_name HeartEntity
-
 extends Area2D
 
+onready var respawnTimer = $RespawnTimer
 export var healing = 1
 
 const HealerDeathEffect = preload("res://Effects/EnemyDeathEffect.tscn")

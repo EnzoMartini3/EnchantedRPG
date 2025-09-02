@@ -2,6 +2,7 @@ class_name Player
 
 extends KinematicBody2D
 
+const crystalArmorScene = preload("res://Powers & Gems/Crystal Armor.tscn")
 onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
@@ -9,13 +10,14 @@ onready var hurtbox = $Hurtbox
 onready var hitFlash = $HitFlash
 onready var swordHitbox = $HitboxPivot/SwordHitbox
 onready var collisionShape = $HitboxPivot/SwordHitbox/CollisionShape2D
-
 export var acceleration = 400 # antigo: 15
 export var maxSpeed = 100 # antigo: 135
 export var friction = 750 # antigo: 100
 export var staminaRecoveryRate = 15
-export var maxStamina = 90
-var stamina = maxStamina
+export var maxJumpStamina = 90
+var jumpStamina = maxJumpStamina
+var armorActive = false
+var crystalArmorInstance = crystalArmorScene.instance()
 var enemyTrapping = null
 
 enum {
@@ -38,10 +40,15 @@ func _ready():
 	swordHitbox.knockback_vector = roll_vector
 
 func _physics_process(delta):
-	if stamina < maxStamina:
-		stamina += staminaRecoveryRate * delta
-		if stamina > maxStamina:
-			stamina = maxStamina
+	if jumpStamina < maxJumpStamina:
+		jumpStamina += staminaRecoveryRate * delta
+		if jumpStamina > maxJumpStamina:
+			jumpStamina = maxJumpStamina
+	if Input.is_action_just_pressed("crystalArmor") and not armorActive:
+		activateCrystalArmor()
+	elif Input.is_action_just_pressed("crystalArmor"):
+		crystalArmorInstance.deactivateArmor()
+		
 
 	match state: #basicamente um switch case, funcionaria também com if-else
 		MOVE: #se o state matches MOVE, execute movestate, etc.
@@ -82,9 +89,9 @@ func moveState(delta):
 	if Input.is_action_just_pressed("attack"):
 		state = ATTACK
 	
-	if Input.is_action_just_pressed("roll") and stamina >= 40:
+	if Input.is_action_just_pressed("roll") and jumpStamina >= 40:
 		state = ROLL
-		stamina -= 40
+		jumpStamina -= 40
 
 func rollState(_delta):
 	velocity = roll_vector * maxSpeed * 1.1
@@ -116,6 +123,21 @@ func _on_Hurtbox_immortalStart():
 
 func _on_Hurtbox_immortalEnd():
 	hitFlash.play("Stop")
+
+func activateCrystalArmor():
+	armorActive = true
+	crystalArmorInstance = crystalArmorScene.instance()
+	add_child(crystalArmorInstance)
+	
+	var hudNode = get_tree().get_root().find_node("HUD", true, false)
+	crystalArmorInstance.connect("armorFuelChanged", hudNode, "updateFuel")
+	
+	crystalArmorInstance.activateArmor(self)
+	crystalArmorInstance.connect("armorDeactivated", self, "onArmorDeactivated")
+
+func onArmorDeactivated():
+	armorActive = false
+	crystalArmorInstance = null
 
 func trappedState(_delta):
 	velocity = Vector2.ZERO

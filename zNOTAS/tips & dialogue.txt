@@ -2,3 +2,41 @@
 >> Loading Screen Tips
 . Talking to people might be more beneficial than you'd expect.
 . Stay on a town for longer! Every place has its own story.
+
+
+---------------------------------
+>> Meeting Trent
+. MC: So your name is Trent...
+. Trent: That's right!
+. MC: And you are trying to sell me....
+. Trent: A Tent!
+. MC: ...
+. Trent: I don't get it.
+. MC: Doesn't matter. So, how much does it cost?
+. Trent: You see, this is not just some ordinary item...
+. MC: Oh gosh. You know, I'm not rich or anything.
+. Trent: Calm down, young one. Your mundane currency is useless to me, really.
+. Trent: So, the way that I like to do business is through trading.
+. MC: Seems fair.
+. MC: Anything specific you're looking for?
+. Trent: Actually, yes. I want you to find me a FLUFFOBALL.
+. MC: A fluffoball?
+. Trent: No, a FLUFFOBALL.
+. MC: ... Right.
+. Trent: As I don't have access to your world, and I need those to preserve my well-being.
+. MC: Wow, that sounds important. What kind of powers does a "FLUFFOBALL" contain?
+. Trent: None.
+. MC: What?
+. Trent: I just like them.
+. MC: ... Huh?
+. Trent: DO YOU WANT THE TENT OR NOT?
+. MC: I do! Geez, chill dude.
+. Trent: Awesome! In order to make a FLUFFOBALL, you will need a couple of things that I'm sure you HAVEROSIANS should have in your cute little huts. This list should help.
+. MC: I'm going to take that and pretend that you just said something very nice and polite to me. I will you see you later, Mr. Interdimensional.
+. Trent: That is not my name-
+
+. MC: Let's see.
+. MC: Wow, that guy's handwriting is abismal.
+. MC: I'm assuming that this means I'll need some Yarn, ITEMMMM1 and ITEMMMMM2
+*unlocks recipe*
+--------

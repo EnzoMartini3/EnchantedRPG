@@ -3,13 +3,13 @@
 . Stick x3
 
 > Rope
-. Fibergrass x6
+. Fibergrass x5
 
-> Yarn (Silk)
+> Yarn
 . Soft Silk x2
 
-> Yarn (Kittail)
-. Kittail Fiber x5
+> Yarn (x2)
+. Kittail Fiber x6
 
 > Hot Fuel 
 . Coal x2

@@ -63,6 +63,7 @@ Whirl Wave:/I(All field changers on the user's will be transferred to the enemy
 side and vice versa)Onda Reversora
 Clear Water:L+/I(Removes one status ailment and makes target immune to them.Lasts 7
 turns)Água Limpa
+Bubble Extorsion(Damages all enemies, and 50% of the damage dealt is converted to its facing enemy)
 ---------------------------Earth------------------------------------
 Sand Swipe:16//M(Dodges the next ranged attack used by the target.Lasts 2 turns,
 has 1 turn cooldown)Corte de Areia
@@ -122,6 +123,7 @@ dodge the next attack used by them.This attack can't be dodged)Esquivar
 Let Loose:/I(Lowers the cost of all user attacks by 50%.Lasts 4 turns)Leveza
 Soaring:/I(For 4 turns,user will dodge any attacks that has 60 or less BD.Also,
 user's attacks will have their cost reduced by 20%)Pairar
+Eye of the Storm:(Creates a void in the opposing middleground that pulls in enemies)
 ---------------------------Leaf------------------------------------
 Spore Shower:13//R Chuva De Esporos
 Pollen Bomb:29/Low+/R(Hits both enemies.Halves cost if used on a double duel)

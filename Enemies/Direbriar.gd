@@ -9,7 +9,8 @@ onready var hurtbox = $Hurtbox
 onready var softCollision = $SoftCollision
 onready var wanderController = $WanderController
 onready var hitbox = $Hitbox
-onready var damageTimer = $DamageTimer 
+onready var damageTimer = $DamageTimer
+onready var respawnTimer = $RespawnTimer
 
 export var acceleration = 45
 export var maxSpeed = 45
@@ -101,7 +102,7 @@ func _on_Stats_noHealth(): #MORRER
 	var enemyDeathEffect = EnemyDeathEffect.instance()
 	get_parent().add_child(enemyDeathEffect)
 	enemyDeathEffect.global_position = global_position
-	
+
 ## HITFLASH IMORTALIDADE
 func _on_Hurtbox_immortalStart():
 	hitFlash.play("Start")

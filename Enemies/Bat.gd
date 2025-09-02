@@ -8,6 +8,7 @@ onready var hurtbox = $Hurtbox
 onready var softCollision = $SoftCollision
 onready var wanderController = $WanderController
 onready var hitFlash = $HitFlash
+onready var respawnTimer = $RespawnTimer
 
 export var acceleration = 300
 export var maxSpeed = 55

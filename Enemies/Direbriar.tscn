@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Enemies/Direbriar.png" type="Texture" id=1]
 [ext_resource path="res://SPRITES/Shadows/MediumShadow.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Enemies/Direbriar.gd" type="Script" id=7]
 [ext_resource path="res://Overlaps/SoftCollision.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Overlaps/Hitbox.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Helpers/RespawnTimer.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Shader" id=13]
 code = "shader_type canvas_item;
@@ -171,6 +172,8 @@ position = Vector2( 0, 1 )
 shape = SubResource( 12 )
 
 [node name="DamageTimer" type="Timer" parent="."]
+
+[node name="RespawnTimer" parent="." instance=ExtResource( 10 )]
 
 [connection signal="noHealth" from="Stats" to="." method="_on_Stats_noHealth"]
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]

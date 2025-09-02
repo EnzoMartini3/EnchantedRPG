@@ -1,0 +1,6 @@
+[gd_scene format=2]
+
+[node name="RespawnTimer" type="Timer"]
+wait_time = 30.0
+
+[node name="RespawnPosition" type="Position2D" parent="."]

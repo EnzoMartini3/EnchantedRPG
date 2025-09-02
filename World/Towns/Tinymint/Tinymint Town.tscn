@@ -7,7 +7,7 @@
 [ext_resource path="res://Enemies/Bat.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Enemies/Direbriar.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/BASE SCENES/Grass.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Helpers/Warp.tscn" type="PackedScene" id=8]
+[ext_resource path="res://World/Warp.tscn" type="PackedScene" id=8]
 
 [node name="Tinymint Town" type="Node2D"]
 

@@ -51,7 +51,7 @@ func goToScene(sceneTag: String, targetTag: String):
 
 func adjustMapLimits(mapScene: Node):
 	var mapLimitsContainer = mapScene.find_node("MapLimits", true, false)
-
+	
 	if mapLimitsContainer:
 		var topLeft = mapLimitsContainer.find_node("TopLeft", true, false)
 		var bottomRight = mapLimitsContainer.find_node("BottomRight", true, false)

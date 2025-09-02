@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Helpers/Camera2D.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/World.gd" type="Script" id=4]
+[ext_resource path="res://UI/Crystal Bar.tscn" type="PackedScene" id=5]
+[ext_resource path="res://UI/HUD.gd" type="Script" id=6]
 
 [node name="World" type="Node2D"]
 script = ExtResource( 4 )
@@ -11,13 +13,17 @@ script = ExtResource( 4 )
 [node name="PlayerCamera" parent="." instance=ExtResource( 1 )]
 position = Vector2( 120, 64 )
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource( 6 )
 
-[node name="HealthUI" parent="CanvasLayer" instance=ExtResource( 3 )]
+[node name="HealthUI" parent="HUD" instance=ExtResource( 3 )]
 margin_left = 3.0
 margin_top = 3.0
 margin_right = 43.0
 margin_bottom = 43.0
+
+[node name="CrystalBar" parent="HUD" instance=ExtResource( 5 )]
+script = null
 
 [node name="AudioManager" type="Node" parent="."]
 
