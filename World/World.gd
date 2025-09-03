@@ -61,3 +61,9 @@ func adjustMapLimits(mapScene: Node):
 			camera.limit_bottom = bottomRight.global_position.y
 			camera.limit_left = topLeft.global_position.x
 			camera.limit_right = bottomRight.global_position.x 
+
+func _on_InventoryUI_inventoryOpened():
+	get_tree().paused = true
+
+func _on_InventoryUI_inventoryClosed():
+	get_tree().paused = false

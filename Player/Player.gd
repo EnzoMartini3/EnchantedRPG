@@ -2,7 +2,6 @@ class_name Player
 
 extends KinematicBody2D
 
-const crystalArmorScene = preload("res://Powers & Gems/Crystal Armor.tscn")
 onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
@@ -10,14 +9,22 @@ onready var hurtbox = $Hurtbox
 onready var hitFlash = $HitFlash
 onready var swordHitbox = $HitboxPivot/SwordHitbox
 onready var collisionShape = $HitboxPivot/SwordHitbox/CollisionShape2D
-export var acceleration = 400 # antigo: 15
-export var maxSpeed = 100 # antigo: 135
-export var friction = 750 # antigo: 100
-export var staminaRecoveryRate = 15
+
+export var acceleration = 400
+export var maxSpeed = 100
+export var friction = 750
 export var maxJumpStamina = 90
+export var staminaRecoveryRate = 15
 var jumpStamina = maxJumpStamina
+
+const crystalArmorScene = preload("res://Powers & Gems/Crystal Armor.tscn")
+signal armorFuelChanged(value)
+export var maxArmorFuel = 120
+export var fuelUsage = 15
+export var armorRegen = 10
+var crystalArmorInstance = null
+var armorFuel = maxArmorFuel setget setArmorFuel
 var armorActive = false
-var crystalArmorInstance = crystalArmorScene.instance()
 var enemyTrapping = null
 
 enum {
@@ -29,29 +36,41 @@ enum {
 
 var state = MOVE
 var velocity = Vector2.ZERO
-var roll_vector = Vector2.RIGHT
+var rollVector = Vector2.RIGHT
 var stats = PlayerStats
 
 func _ready():
 	randomize()
-	collisionShape.disabled = true
-	stats.connect("noHealth", self , "queue_free")
+	#collisionShape.disabled = true
+	stats.connect("noHealth", self, "queue_free")
 	animationTree.active = true
-	swordHitbox.knockback_vector = roll_vector
+	swordHitbox.knockback_vector = rollVector
+	var hudNode = get_tree().get_root().find_node("HUD", true, false)
+	connect("armorFuelChanged", hudNode, "updateFuel")
+	hudNode.updateFuel(armorFuel)
 
 func _physics_process(delta):
-	if jumpStamina < maxJumpStamina:
+	if jumpStamina < maxJumpStamina: # LÓGICA DE STAMINA DE SALTO
 		jumpStamina += staminaRecoveryRate * delta
 		if jumpStamina > maxJumpStamina:
 			jumpStamina = maxJumpStamina
+	
 	if Input.is_action_just_pressed("crystalArmor") and not armorActive:
-		activateCrystalArmor()
+		activateArmor()
 	elif Input.is_action_just_pressed("crystalArmor"):
-		crystalArmorInstance.deactivateArmor()
+		deactivateArmor()
+	#print(armorFuel) #LÓGICA DE ARMADURA
+	if armorActive: 
+		self.armorFuel -= delta * fuelUsage
+		if armorFuel <= 0:
+			deactivateArmor()
+	elif armorFuel < maxArmorFuel:
+			self.armorFuel += armorRegen * delta
+			if armorFuel > maxArmorFuel + fuelUsage: 
+				self.armorFuel = maxArmorFuel + fuelUsage
 		
-
-	match state: #basicamente um switch case, funcionaria também com if-else
-		MOVE: #se o state matches MOVE, execute movestate, etc.
+	match state: #switch case
+		MOVE: #se state = MOVE, execute movestate, etc.
 			moveState(delta)
 			
 		ROLL:
@@ -68,7 +87,7 @@ func moveState(delta):
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	input_vector = input_vector.normalized()
-	roll_vector = input_vector
+	rollVector = input_vector
 	
 	if input_vector != Vector2.ZERO:
 		swordHitbox.knockback_vector = input_vector * 1.05
@@ -94,7 +113,7 @@ func moveState(delta):
 		jumpStamina -= 40
 
 func rollState(_delta):
-	velocity = roll_vector * maxSpeed * 1.1
+	velocity = rollVector * maxSpeed * 1.1
 	animationState.travel("Roll")
 	move()
 
@@ -124,19 +143,24 @@ func _on_Hurtbox_immortalStart():
 func _on_Hurtbox_immortalEnd():
 	hitFlash.play("Stop")
 
-func activateCrystalArmor():
+func setArmorFuel(value):
+	armorFuel = value
+	emit_signal("armorFuelChanged", armorFuel)
+
+func activateArmor():
 	armorActive = true
+	if armorFuel >= 0:
+		self.armorFuel -= fuelUsage # gasto inicial, buffer
+	else: 
+		self.armorFuel = 0
 	crystalArmorInstance = crystalArmorScene.instance()
 	add_child(crystalArmorInstance)
-	
-	var hudNode = get_tree().get_root().find_node("HUD", true, false)
-	crystalArmorInstance.connect("armorFuelChanged", hudNode, "updateFuel")
-	
-	crystalArmorInstance.activateArmor(self)
-	crystalArmorInstance.connect("armorDeactivated", self, "onArmorDeactivated")
+	crystalArmorInstance.armorAmplification(self)
 
-func onArmorDeactivated():
+func deactivateArmor():
 	armorActive = false
+	crystalArmorInstance.removeAmplification(self)
+	crystalArmorInstance.queue_free()
 	crystalArmorInstance = null
 
 func trappedState(_delta):
