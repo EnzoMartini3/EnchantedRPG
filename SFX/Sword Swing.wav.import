@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/EnemyDie.wav-a486c87c5ffce10facfdaf6e118ee22d.sample"
+path="res://.import/Sword Swing.wav-d5e5270dc3ad61303b53622eb7877e42.sample"
 
 [deps]
 
-source_file="res://Music and Sounds/EnemyDie.wav"
-dest_files=[ "res://.import/EnemyDie.wav-a486c87c5ffce10facfdaf6e118ee22d.sample" ]
+source_file="res://SFX/Sword Swing.wav"
+dest_files=[ "res://.import/Sword Swing.wav-d5e5270dc3ad61303b53622eb7877e42.sample" ]
 
 [params]
 

@@ -1,15 +1,16 @@
-[gd_scene load_steps=64 format=2]
+[gd_scene load_steps=65 format=2]
 
-[ext_resource path="res://Player/Player.gd" type="Script" id=1]
+[ext_resource path="res://SCRIPTS/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.png" type="Texture" id=2]
 [ext_resource path="res://Overlaps/Hitbox.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Player/SwordHitbox.gd" type="Script" id=4]
+[ext_resource path="res://SCRIPTS/SwordHitbox.gd" type="Script" id=4]
 [ext_resource path="res://Overlaps/Hurtbox.tscn" type="PackedScene" id=5]
 [ext_resource path="res://SPRITES/Shadows/MediumShadow.png" type="Texture" id=6]
-[ext_resource path="res://Music and Sounds/Sword Swing.wav" type="AudioStream" id=7]
-[ext_resource path="res://Music and Sounds/Evade.wav" type="AudioStream" id=8]
+[ext_resource path="res://SFX/Sword Swing.wav" type="AudioStream" id=7]
+[ext_resource path="res://SFX/Evade.wav" type="AudioStream" id=8]
 [ext_resource path="res://Overlaps/WhiteShader.tres" type="Shader" id=9]
 [ext_resource path="res://Overlaps/SoftCollision.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Player/playerInventory.tres" type="Resource" id=11]
 
 [sub_resource type="ShaderMaterial" id=49]
 shader = ExtResource( 9 )
@@ -815,6 +816,7 @@ tracks/0/keys = {
 collision_layer = 2
 collision_mask = 65
 script = ExtResource( 1 )
+inventory = ExtResource( 11 )
 
 [node name="ShadowSprite" type="Sprite" parent="."]
 position = Vector2( -1, 1 )

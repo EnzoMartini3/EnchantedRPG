@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Pause.wav-2283faeb42b74e3f6e4809669cc9a8ab.sample"
+path="res://.import/Evade.wav-e96e8c9308b2e9784cd23be24d1b3ab3.sample"
 
 [deps]
 
-source_file="res://Music and Sounds/Pause.wav"
-dest_files=[ "res://.import/Pause.wav-2283faeb42b74e3f6e4809669cc9a8ab.sample" ]
+source_file="res://SFX/Evade.wav"
+dest_files=[ "res://.import/Evade.wav-e96e8c9308b2e9784cd23be24d1b3ab3.sample" ]
 
 [params]
 

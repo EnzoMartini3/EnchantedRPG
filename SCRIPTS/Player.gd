@@ -25,6 +25,8 @@ export var armorRegen = 10
 var crystalArmorInstance = null
 var armorFuel = maxArmorFuel setget setArmorFuel
 var armorActive = false
+
+export var inventory: Resource
 var enemyTrapping = null
 
 enum {

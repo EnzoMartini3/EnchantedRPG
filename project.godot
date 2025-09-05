@@ -59,30 +59,45 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/dialogic/Other/DialogicUtil.gd"
 }, {
-"base": "KinematicBody2D",
+"base": "Reference",
 "class": "Enemy",
 "language": "GDScript",
-"path": "res://Enemies/Bat.gd"
+"path": "res://SCRIPTS/Bat.gd"
 }, {
 "base": "Area2D",
+"class": "GroundItem",
+"language": "GDScript",
+"path": "res://SCRIPTS/GroundItem.gd"
+}, {
+"base": "Reference",
 "class": "HeartEntity",
 "language": "GDScript",
-"path": "res://Enemies/HeartEntity.gd"
+"path": "res://SCRIPTS/HeartEntity.gd"
 }, {
 "base": "PanelContainer",
 "class": "HistoryRow",
 "language": "GDScript",
 "path": "res://addons/dialogic/Example Assets/History/HistoryRow.gd"
 }, {
-"base": "KinematicBody2D",
+"base": "Resource",
+"class": "Inventory",
+"language": "GDScript",
+"path": "res://SCRIPTS/Inventory.gd"
+}, {
+"base": "Resource",
+"class": "InventoryItem",
+"language": "GDScript",
+"path": "res://SCRIPTS/InventoryItem.gd"
+}, {
+"base": "Reference",
 "class": "Player",
 "language": "GDScript",
-"path": "res://Player/Player.gd"
+"path": "res://SCRIPTS/Player.gd"
 }, {
 "base": "Area2D",
-"class": "Warp",
+"class": "SunCollectable",
 "language": "GDScript",
-"path": "res://World/Warp.gd"
+"path": "res://SCRIPTS/SunCollectable.gd"
 } ]
 _global_script_class_icons={
 "DTS": "",
@@ -96,17 +111,20 @@ _global_script_class_icons={
 "DialogicResources": "",
 "DialogicUtil": "",
 "Enemy": "",
+"GroundItem": "",
 "HeartEntity": "",
 "HistoryRow": "",
+"Inventory": "",
+"InventoryItem": "",
 "Player": "",
-"Warp": ""
+"SunCollectable": ""
 }
 
 [application]
 
 config/name="EnchantedRPG"
 run/main_scene="res://World/World.tscn"
-config/icon="res://World/icon.png"
+config/icon="res://icon.png"
 
 [autoload]
 
@@ -231,7 +249,7 @@ dialogic_default_action={
 2d_physics/layer_4="EnemyHurtbox"
 2d_physics/layer_5="Enemy"
 2d_physics/layer_6="SoftCollisions"
-2d_physics/layer_7="Collectables"
+2d_physics/layer_7="Items"
 
 [physics]
 

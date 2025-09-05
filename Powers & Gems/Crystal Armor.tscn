@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Powers & Gems/Crystal Armor.gd" type="Script" id=1]
+[ext_resource path="res://SCRIPTS/Crystal Armor.gd" type="Script" id=1]
 [ext_resource path="res://Powers & Gems/Crystal Armor.png" type="Texture" id=2]
 
 [sub_resource type="AtlasTexture" id=1]

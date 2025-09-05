@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://SCRIPTS/Effect.gd" type="Script" id=1]
+[ext_resource path="res://SFX/MenuSelect.wav" type="AudioStream" id=2]
+[ext_resource path="res://Effects/Plim.png" type="Texture" id=3]
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 3 )
+region = Rect2( 16, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 3 )
+region = Rect2( 32, 0, 16, 16 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"loop": true,
+"name": "Animate",
+"speed": 8.0
+} ]
+
+[node name="PlimEffect" type="AnimatedSprite"]
+frames = SubResource( 3 )
+animation = "Animate"
+playing = true
+offset = Vector2( 0, -8 )
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+autoplay = true
