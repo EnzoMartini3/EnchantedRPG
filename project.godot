@@ -59,7 +59,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/dialogic/Other/DialogicUtil.gd"
 }, {
-"base": "Reference",
+"base": "KinematicBody2D",
 "class": "Enemy",
 "language": "GDScript",
 "path": "res://SCRIPTS/Bat.gd"
@@ -89,7 +89,12 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://SCRIPTS/InventoryItem.gd"
 }, {
-"base": "Reference",
+"base": "Resource",
+"class": "InventorySlot",
+"language": "GDScript",
+"path": "res://SCRIPTS/InventorySlot.gd"
+}, {
+"base": "KinematicBody2D",
 "class": "Player",
 "language": "GDScript",
 "path": "res://SCRIPTS/Player.gd"
@@ -116,6 +121,7 @@ _global_script_class_icons={
 "HistoryRow": "",
 "Inventory": "",
 "InventoryItem": "",
+"InventorySlot": "",
 "Player": "",
 "SunCollectable": ""
 }

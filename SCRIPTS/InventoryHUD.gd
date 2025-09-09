@@ -8,11 +8,11 @@ var isOpen: bool = false
 
 func _ready():
 	inventory.connect("inventoryChanged", self, "itemShift")
-	itemShift()
+	#itemShift()
 
-func itemShift():
-	for i in range(min(inventory.items.size(), slots.size())):
-		slots[i].itemShift(inventory.items[i])
+#func itemShift():
+#	for i in range(min(inventory.items.size(), slots.size())):
+#		slots[i].itemShift(inventory.items[i])
 
 func openInventory():
 	visible = true

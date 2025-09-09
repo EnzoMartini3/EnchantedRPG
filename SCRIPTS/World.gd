@@ -12,6 +12,7 @@ func _ready():
 	loadMap(sceneTinymintTown, Vector2(50, 50))
 	var playerRemoteTransform = player.find_node("RemoteTransform2D", true, false)
 	playerRemoteTransform.remote_path = "/root/World/PlayerCamera"
+	player.connectToHUD()
 
 func loadMap(sceneResource: PackedScene, playerSpawnPos: Vector2):
 	if player.get_parent() != self: # Se o player NÃO é filho direto de World (ou seja, ele está no YSort do mapa anterior)

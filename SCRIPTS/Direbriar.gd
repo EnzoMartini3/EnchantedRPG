@@ -91,7 +91,7 @@ func newRandomState(stateList):
 
 func _on_Hurtbox_area_entered(area):
 	stats.health -= area.damage
-	knockback = area.knockback_vector * 105
+	knockback = area.knockbackVector * 105
 	hurtbox.createHitEffect()
 	hurtbox.makeImmortal(0.5)
 

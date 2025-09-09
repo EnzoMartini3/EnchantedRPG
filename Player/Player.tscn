@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=2]
+[gd_scene load_steps=78 format=2]
 
 [ext_resource path="res://SCRIPTS/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.png" type="Texture" id=2]
@@ -10,7 +10,7 @@
 [ext_resource path="res://SFX/Evade.wav" type="AudioStream" id=8]
 [ext_resource path="res://Overlaps/WhiteShader.tres" type="Shader" id=9]
 [ext_resource path="res://Overlaps/SoftCollision.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Player/playerInventory.tres" type="Resource" id=11]
+[ext_resource path="res://Powers & Gems/Crystal Armor.tscn" type="PackedScene" id=13]
 
 [sub_resource type="ShaderMaterial" id=49]
 shader = ExtResource( 9 )
@@ -46,7 +46,7 @@ tracks/1/keys = {
 } ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("HitboxPivot:rotation_degrees")
+tracks/2/path = NodePath("SwordHitboxPivot:rotation_degrees")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -58,7 +58,7 @@ tracks/2/keys = {
 "values": [ 90.0 ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("HitboxPivot/SwordHitbox/CollisionShape2D:disabled")
+tracks/3/path = NodePath("SwordHitboxPivot/SwordHitbox/CollisionShape2D:disabled")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -114,7 +114,7 @@ tracks/1/keys = {
 } ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("HitboxPivot:rotation_degrees")
+tracks/2/path = NodePath("SwordHitboxPivot:rotation_degrees")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -126,7 +126,7 @@ tracks/2/keys = {
 "values": [ 180.0 ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("HitboxPivot/SwordHitbox/CollisionShape2D:disabled")
+tracks/3/path = NodePath("SwordHitboxPivot/SwordHitbox/CollisionShape2D:disabled")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -182,7 +182,7 @@ tracks/1/keys = {
 } ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("HitboxPivot:rotation_degrees")
+tracks/2/path = NodePath("SwordHitboxPivot:rotation_degrees")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -194,7 +194,7 @@ tracks/2/keys = {
 "values": [ 0.0 ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("HitboxPivot/SwordHitbox/CollisionShape2D:disabled")
+tracks/3/path = NodePath("SwordHitboxPivot/SwordHitbox/CollisionShape2D:disabled")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -250,7 +250,7 @@ tracks/1/keys = {
 } ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("HitboxPivot:rotation_degrees")
+tracks/2/path = NodePath("SwordHitboxPivot:rotation_degrees")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -262,7 +262,7 @@ tracks/2/keys = {
 "values": [ 270.0 ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("HitboxPivot/SwordHitbox/CollisionShape2D:disabled")
+tracks/3/path = NodePath("SwordHitboxPivot/SwordHitbox/CollisionShape2D:disabled")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -352,6 +352,278 @@ tracks/0/keys = {
 "values": [ 6 ]
 }
 
+[sub_resource type="Animation" id=55]
+resource_name = "PunchDown"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 20 ]
+}
+tracks/1/type = "audio"
+tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 8 )
+} ],
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ArmorHitboxPivot:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 90.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ArmorHitboxPivot/ArmorHitbox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ false, true ]
+}
+tracks/4/type = "method"
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "attack_animation_finished"
+} ]
+}
+
+[sub_resource type="Animation" id=56]
+resource_name = "PunchLeft"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 14 ]
+}
+tracks/1/type = "audio"
+tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 8 )
+} ],
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ArmorHitboxPivot:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 180.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ArmorHitboxPivot/ArmorHitbox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ false, true ]
+}
+tracks/4/type = "method"
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "attack_animation_finished"
+} ]
+}
+
+[sub_resource type="Animation" id=57]
+resource_name = "PunchRight"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 5 ]
+}
+tracks/1/type = "audio"
+tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 8 )
+} ],
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ArmorHitboxPivot:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ArmorHitboxPivot/ArmorHitbox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ false, true ]
+}
+tracks/4/type = "method"
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "attack_animation_finished"
+} ]
+}
+
+[sub_resource type="Animation" id=58]
+resource_name = "PunchUp"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 11 ]
+}
+tracks/1/type = "audio"
+tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 8 )
+} ],
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ArmorHitboxPivot:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 270.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ArmorHitboxPivot/ArmorHitbox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ false, true ]
+}
+tracks/4/type = "method"
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "attack_animation_finished"
+} ]
+}
+
 [sub_resource type="Animation" id=2]
 length = 0.001
 tracks/0/type = "value"
@@ -367,7 +639,7 @@ tracks/0/keys = {
 "values": [ 0 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("HitboxPivot:rotation_degrees")
+tracks/1/path = NodePath("SwordHitboxPivot:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -377,6 +649,30 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ArmorHitboxPivot:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ArmorHitboxPivot/ArmorHitbox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
 }
 
 [sub_resource type="Animation" id=37]
@@ -674,6 +970,29 @@ min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
+[sub_resource type="AnimationNodeAnimation" id=59]
+animation = "PunchLeft"
+
+[sub_resource type="AnimationNodeAnimation" id=60]
+animation = "PunchDown"
+
+[sub_resource type="AnimationNodeAnimation" id=61]
+animation = "PunchRight"
+
+[sub_resource type="AnimationNodeAnimation" id=62]
+animation = "PunchUp"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id=63]
+blend_point_0/node = SubResource( 59 )
+blend_point_0/pos = Vector2( -1, 0 )
+blend_point_1/node = SubResource( 60 )
+blend_point_1/pos = Vector2( 0, 1 )
+blend_point_2/node = SubResource( 61 )
+blend_point_2/pos = Vector2( 1, 0 )
+blend_point_3/node = SubResource( 62 )
+blend_point_3/pos = Vector2( 0, -1 )
+blend_mode = 1
+
 [sub_resource type="AnimationNodeAnimation" id=41]
 animation = "RollLeft"
 
@@ -734,18 +1053,24 @@ blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=47]
 
+[sub_resource type="AnimationNodeStateMachineTransition" id=64]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=65]
+
 [sub_resource type="AnimationNodeStateMachine" id=16]
 states/Attack/node = SubResource( 33 )
 states/Attack/position = Vector2( 364.409, 173.667 )
 states/Idle/node = SubResource( 15 )
 states/Idle/position = Vector2( 364.434, 68.3992 )
+states/PowerPunch/node = SubResource( 63 )
+states/PowerPunch/position = Vector2( 148.098, 174.112 )
 states/Roll/node = SubResource( 45 )
-states/Roll/position = Vector2( 136.961, 67.9481 )
+states/Roll/position = Vector2( 131.628, 67.2162 )
 states/Run/node = SubResource( 22 )
-states/Run/position = Vector2( 579, 68.0864 )
-transitions = [ "Idle", "Run", SubResource( 23 ), "Run", "Idle", SubResource( 24 ), "Idle", "Attack", SubResource( 34 ), "Attack", "Idle", SubResource( 35 ), "Roll", "Idle", SubResource( 46 ), "Idle", "Roll", SubResource( 47 ) ]
+states/Run/position = Vector2( 572.333, 68.7039 )
+transitions = [ "Idle", "Run", SubResource( 23 ), "Run", "Idle", SubResource( 24 ), "Idle", "Attack", SubResource( 34 ), "Attack", "Idle", SubResource( 35 ), "Roll", "Idle", SubResource( 46 ), "Idle", "Roll", SubResource( 47 ), "PowerPunch", "Idle", SubResource( 64 ), "Idle", "PowerPunch", SubResource( 65 ) ]
 start_node = "Idle"
-graph_offset = Vector2( -68.7054, 0 )
+graph_offset = Vector2( -161.399, -6.42916 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=17]
 
@@ -755,6 +1080,16 @@ height = 0.0
 
 [sub_resource type="CapsuleShape2D" id=36]
 height = 12.0
+
+[sub_resource type="GDScript" id=66]
+script/source = "extends \"res://SCRIPTS/Hitbox.gd\"
+
+export var knockbackVector = Vector2.ZERO * 2
+"
+
+[sub_resource type="CapsuleShape2D" id=54]
+radius = 8.0
+height = 34.0
 
 [sub_resource type="CapsuleShape2D" id=48]
 radius = 7.0
@@ -816,7 +1151,11 @@ tracks/0/keys = {
 collision_layer = 2
 collision_mask = 65
 script = ExtResource( 1 )
-inventory = ExtResource( 11 )
+
+[node name="CrystalArmor" parent="." instance=ExtResource( 13 )]
+
+[node name="Animation" parent="CrystalArmor" index="0"]
+visible = false
 
 [node name="ShadowSprite" type="Sprite" parent="."]
 position = Vector2( -1, 1 )
@@ -837,6 +1176,10 @@ anims/IdleDown = SubResource( 4 )
 anims/IdleLeft = SubResource( 5 )
 anims/IdleRight = SubResource( 6 )
 anims/IdleUp = SubResource( 7 )
+anims/PunchDown = SubResource( 55 )
+anims/PunchLeft = SubResource( 56 )
+anims/PunchRight = SubResource( 57 )
+anims/PunchUp = SubResource( 58 )
 anims/RESET = SubResource( 2 )
 anims/RollDown = SubResource( 37 )
 anims/RollLeft = SubResource( 38 )
@@ -851,10 +1194,11 @@ anims/RunUp = SubResource( 10 )
 tree_root = SubResource( 16 )
 anim_player = NodePath("../AnimationPlayer")
 parameters/playback = SubResource( 17 )
-parameters/Attack/blend_position = Vector2( 1, 0 )
-parameters/Idle/blend_position = Vector2( 1, 0 )
-parameters/Roll/blend_position = Vector2( 1, 0 )
-parameters/Run/blend_position = Vector2( 1, 0 )
+parameters/Attack/blend_position = Vector2( 0, 0 )
+parameters/Idle/blend_position = Vector2( 0, 0 )
+parameters/PowerPunch/blend_position = Vector2( 0, 0 )
+parameters/Roll/blend_position = Vector2( 0, 0 )
+parameters/Run/blend_position = Vector2( 0, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
@@ -862,21 +1206,42 @@ position = Vector2( 0, -2 )
 rotation = -1.5708
 shape = SubResource( 1 )
 
-[node name="HitboxPivot" type="Position2D" parent="."]
+[node name="SwordHitboxPivot" type="Position2D" parent="."]
 visible = false
 position = Vector2( 0, -4 )
 __meta__ = {
 "_gizmo_extents_": 8.0
 }
 
-[node name="SwordHitbox" parent="HitboxPivot" instance=ExtResource( 3 )]
+[node name="SwordHitbox" parent="SwordHitboxPivot" instance=ExtResource( 3 )]
 position = Vector2( 15, 0 )
 collision_mask = 8
 script = ExtResource( 4 )
+knockbackVector = Vector2( 0, 0 )
 
-[node name="CollisionShape2D" parent="HitboxPivot/SwordHitbox" index="0"]
+[node name="CollisionShape2D" parent="SwordHitboxPivot/SwordHitbox" index="0"]
 shape = SubResource( 36 )
 disabled = true
+__meta__ = {
+"_edit_pinned_properties_": [ "disabled" ]
+}
+
+[node name="ArmorHitboxPivot" type="Position2D" parent="."]
+position = Vector2( 0, -10 )
+__meta__ = {
+"_gizmo_extents_": 8.0
+}
+
+[node name="ArmorHitbox" parent="ArmorHitboxPivot" instance=ExtResource( 3 )]
+collision_mask = 8
+script = SubResource( 66 )
+knockbackVector = Vector2( 0, 0 )
+
+[node name="CollisionShape2D" parent="ArmorHitboxPivot/ArmorHitbox" index="0"]
+position = Vector2( 13, 1 )
+rotation = 1.5708
+shape = SubResource( 54 )
+disabled = false
 __meta__ = {
 "_edit_pinned_properties_": [ "disabled" ]
 }
@@ -899,7 +1264,7 @@ visible = false
 shape = SubResource( 53 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 7 )
+stream = ExtResource( 8 )
 
 [node name="HitFlash" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 52 )
@@ -910,6 +1275,8 @@ anims/Stop = SubResource( 51 )
 [connection signal="immortalEnd" from="Hurtbox" to="." method="_on_Hurtbox_immortalEnd"]
 [connection signal="immortalStart" from="Hurtbox" to="." method="_on_Hurtbox_immortalStart"]
 
-[editable path="HitboxPivot/SwordHitbox"]
+[editable path="CrystalArmor"]
+[editable path="SwordHitboxPivot/SwordHitbox"]
+[editable path="ArmorHitboxPivot/ArmorHitbox"]
 [editable path="Hurtbox"]
 [editable path="SoftCollision"]

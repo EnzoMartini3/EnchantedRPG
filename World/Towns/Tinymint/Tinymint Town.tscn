@@ -81,5 +81,11 @@ position = Vector2( 0, 80 )
 [node name="Evil Husk" parent="YSort" instance=ExtResource( 10 )]
 position = Vector2( 160, 80 )
 
+[node name="Evil Husk3" parent="YSort" instance=ExtResource( 10 )]
+position = Vector2( 192, 80 )
+
+[node name="Evil Husk2" parent="YSort" instance=ExtResource( 10 )]
+position = Vector2( 176, 80 )
+
 [editable path="MapLimits"]
 [editable path="Warps/To Mintsilk Path"]
