@@ -10,7 +10,7 @@
 [ext_resource path="res://SFX/Evade.wav" type="AudioStream" id=8]
 [ext_resource path="res://Overlaps/WhiteShader.tres" type="Shader" id=9]
 [ext_resource path="res://Overlaps/SoftCollision.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Powers & Gems/Crystal Armor.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Gimmicks/Crystal Armor.tscn" type="PackedScene" id=13]
 
 [sub_resource type="ShaderMaterial" id=49]
 shader = ExtResource( 9 )

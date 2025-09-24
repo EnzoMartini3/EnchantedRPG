@@ -4,7 +4,7 @@ extends Area2D
 onready var respawnTimer = $RespawnTimer
 export var healing = 1
 
-const HealerDeathEffect = preload("res://Effects/EnemyDeathEffect.tscn")
+const HealerDeathEffect = preload("res://Effects/HeartyHealEffect.tscn")
 
 func _on_HeartEntity_area_entered(area):
 	if area.get_parent() is Player:

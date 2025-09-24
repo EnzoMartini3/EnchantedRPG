@@ -1,0 +1,5 @@
+[gd_scene format=2]
+
+[node name="DreamTent" type="Node"]
+
+[node name="CosmosBackground" type="Sprite" parent="."]

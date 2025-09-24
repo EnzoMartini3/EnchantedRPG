@@ -51,16 +51,3 @@ there the more you feed it!
 > Caliginous Crypt [Cripta Caliginosa]
 . (guy jumpscare)
 . Referenced by the Overgrown Grove puzzle. Shows how many other dungeons are yet to be completed.
-
-.Tinymint Town
-.Cherrysilk City
-.Bripbale Town (Charmini)(Air-Parkour nas nuvem.Nuvems pretas)
-.Akairis City (Water-Termine o parkour antes de se molhar)
-.Nohawy Town (Frost-Congele o lago para passar)
-.Serreak City (Dungeon Earth)
-.Rakelis City (Sound-Aumente o volume para aumentar o pulo)
-.Faborem City (Dungeon Beast)
-.Taygrem City (Fire-Evite a lava)
-.Edgefort City (Dungeon Void)
-.Goiadan Town (Plant-Molhe,jogue nutrientes e luz no broto pra fazê-lo crescer;joao e o pe de feijao)
-.Gaverid Town (Ancient-Desenterre os fósseis e ponha nos pedestais)

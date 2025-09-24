@@ -1,0 +1,34 @@
+-----------------------------------------------
+>>>> Mainline Flux
+. Tinymint
+
+
+>>> Towns
+. Tinymint Town
+. Cherrysilk City
+. Bripbale Town (Charmini)(Air-Parkour nas nuvem. Nuvems pretas)
+. Akairis City (Water-Termine o parkour antes de se molhar)
+. Nohawy Town (Frost-Congele o lago para passar)
+. Serreak City (Dungeon Earth)
+. Rakelis City (Sound-Aumente o volume para aumentar o pulo)
+. Faborem City (Dungeon Beast)
+. Taygrem City (Fire-Evite a lava)
+. Edgefort City (Dungeon Void)
+. Goiadan Town (Plant-Molhe,jogue nutrientes e luz no broto pra fazê-lo crescer;joao e o pe de feijao)
+. Gaverid Town (Ancient-Desenterre os fósseis e ponha nos pedestais)
+
+
+
+>>> Pathways
+. Mintsilk Path
+. Coastal Blazeland (Replaces Sunset Tunnel)
+. Scarlet Valley
+. Scarlet Canyon
+
+
+>>> Driftside Locations
+. Dreamshard Cave + Dreamshard Quarry
+. Sea Cave + Sea Crystal Cove
+. Volcano + Volcanic Caldera
+. Scarlet Abyss
+. Trenches

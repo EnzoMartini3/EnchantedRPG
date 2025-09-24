@@ -177,7 +177,7 @@ func deactivateArmor():
 func armoredAttackState(_delta):
 	velocity = Vector2.ZERO
 	animationState.travel("PowerPunch")
-	armorAnimations.play("Punch")
+	#armorAnimations.play("Punch")
 
 func trappedState(_delta):
 	velocity = Vector2.ZERO

@@ -1,0 +1,48 @@
+>>>> Ores
+. Ores can spawn in any cave quarry (or specific cave tiles)
+. Trench ores can be found anywhere as well.
+. Earthblood can be exchanged for rare gemstones.
+. Ores have tiers and values: C tier(80), B tier(160), A tier(320), S tier(640). SS tier(2000).
+. Mining an ore will give you a random amount of ore nuggets in which you have to combine a few to make a chunk, to then smelt it into an ingot or refine it into a gemstone. If you are lucky, you may get a whole chunk when mining! Upgrade your pickaxe for better chunk chances.
+. At random times, an ore surge will start, increasing your chances of finding ores massively. Having a weather radar will tell you when the surge is happening.
+
+>> Trenches
+. Spiderbone (C)
+. Hotrod (C)
+. Sandstone (C)
+. Granite (C)
+. Amber (B)
+. Quartz (B)
+. Dreamstone (B) (Reduced)
+. Meteorite (B)
+. Aquamarine (B) (Reduced)
+. Refined Basalt (A)
+. Ruby (A) (Reduced)
+. Permafrost Crystal (A)
+. Indigolite (A)
+. Jade (A)
+. Spinel (S)
+. Emerald (S)
+. Earthblood (S) [Fluorite]
+. Aurora Wind (S) 
+. Rose Quartz (SS) [Minimally acessible via Quest]
+. Golden Meteor (SS) [Minimally acessible via Quest]
+. Black Diamond (SS)
+
+>> Dreamshard Quarry
+. Light Marble (C)
+. Dreamstone (B)(Increased)
+. Amethyst (A)
+. Wavy Jade (S)
+
+>> Sea Crystal Cove
+. Limestone (C)
+. Aquamarine (B)(Increased)
+. Sapphire (A)
+. Black Pearl (S)
+
+>> Volcanic Caldera
+. Basalt (C)
+. Obsidian (B)
+. Ruby (A)(Increased)
+. Fire Opal (S)

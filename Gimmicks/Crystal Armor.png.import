@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Crystal Armor.png-dbed125e963ab545f5ad75b9ce939e20.stex"
+path="res://.import/Crystal Armor.png-bc1eb64ca8d4584735a2ff4fa3401a34.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Powers & Gems/Crystal Armor.png"
-dest_files=[ "res://.import/Crystal Armor.png-dbed125e963ab545f5ad75b9ce939e20.stex" ]
+source_file="res://Gimmicks/Crystal Armor.png"
+dest_files=[ "res://.import/Crystal Armor.png-bc1eb64ca8d4584735a2ff4fa3401a34.stex" ]
 
 [params]
 

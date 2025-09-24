@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PowerPunch.png-779e814344547a6a486aa14d5b30e7b5.stex"
+path="res://.import/HeartyHeal.png-bca3b363afa502753e5f83b4165a9e85.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Powers & Gems/PowerPunch.png"
-dest_files=[ "res://.import/PowerPunch.png-779e814344547a6a486aa14d5b30e7b5.stex" ]
+source_file="res://Effects/HeartyHeal.png"
+dest_files=[ "res://.import/HeartyHeal.png-bca3b363afa502753e5f83b4165a9e85.stex" ]
 
 [params]
 
