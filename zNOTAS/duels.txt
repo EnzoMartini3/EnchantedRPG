@@ -1,0 +1,19 @@
+------------------------------------
+
+------------------------------------
+>>> Aspects
+. Shock Response
+. Hot Sneeze If the user is attacked it fights back with Flame Spit (bonus attack).
+
+>>> Enchantments
+> Equipable passives for every type
+. Lightspeed All your light skills are Kinectic.
+. Spiky Spine When attacked by a rushing skill the attacker takes damage equal to 15% of user Defense.
+. Vanguard User receives 30% less damage when in an advanced position.
+. Scout Deals 15% extra damage when in the rear.
+
+
+>>> Exploration Passives
+. With Fire power you can light up campfires without the use of a Lighter.
+. Plant affinity creatures can help you overlook your garden.
+. Water powered creatures can water your plants and overlook water plants.

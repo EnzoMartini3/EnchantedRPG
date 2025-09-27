@@ -7,11 +7,10 @@ onready var animationState = animationTree.get("parameters/playback")
 onready var hurtbox = $Hurtbox
 onready var hitFlash = $HitFlash
 onready var crystalArmor = $CrystalArmor
-onready var crystalSprite = $CrystalArmor/Animation
 onready var swordHitbox = $SwordHitboxPivot/SwordHitbox
 onready var armorHitbox = $ArmorHitboxPivot/ArmorHitbox
 onready var armorHitboxBug = $ArmorHitboxPivot/ArmorHitbox/CollisionShape2D #BUG
-onready var armorAnimations = $CrystalArmor/AnimationPlayer
+onready var armorAnimations = $CrystalArmor/IdleAnimation
 
 export var acceleration = 400
 export var maxSpeed = 100

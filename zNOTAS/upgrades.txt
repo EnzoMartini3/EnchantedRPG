@@ -1,8 +1,9 @@
+----------------------------------
 >>> Player
 >> Stats (Can all be upgraded to lv10)
 . Health: 50 (+5/lv)
 . Energy: 100 (+10/lvl)
-. Perception: 1 (+1/lvl)
+. Insight: 1 (+1/lvl)
 
 >>> Upgrades (Requires blueprints. Try not to make them as weak, though rewarding as possible)
 

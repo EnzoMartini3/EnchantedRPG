@@ -135,6 +135,7 @@ config/icon="res://icon.png"
 [autoload]
 
 PlayerStats="*res://Player/PlayerStats.tscn"
+AudioManager="*res://SCRIPTS/AudioManager.gd"
 
 [display]
 

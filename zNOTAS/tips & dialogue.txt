@@ -3,6 +3,14 @@
 . Talking to people might be more beneficial than you'd expect.
 . Stay on a town for longer! Every place has its own story.
 
+---------------------------------
+>> Mintsilk Path Sign
+. Sign: "Mintsilk Path"
+. MC: What does that even mean... How can you make silk out of a plant? [weirded out]
+. Sign: "Named to celebrate the collaboration between Tinymint & Cherrysilk!"
+. MC: Oh, i guess that makes sense.
+. MC: Wait, doesn't that imply that Cherrysilk City... [thinking]
+. MC: I should probably stop worrying about stupid stuff. [had enough]
 
 ---------------------------------
 >> Meeting Trent

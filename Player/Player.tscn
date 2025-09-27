@@ -1154,9 +1154,6 @@ script = ExtResource( 1 )
 
 [node name="CrystalArmor" parent="." instance=ExtResource( 13 )]
 
-[node name="Animation" parent="CrystalArmor" index="0"]
-visible = false
-
 [node name="ShadowSprite" type="Sprite" parent="."]
 position = Vector2( -1, 1 )
 texture = ExtResource( 6 )
@@ -1227,6 +1224,7 @@ __meta__ = {
 }
 
 [node name="ArmorHitboxPivot" type="Position2D" parent="."]
+visible = false
 position = Vector2( 0, -10 )
 __meta__ = {
 "_gizmo_extents_": 8.0
