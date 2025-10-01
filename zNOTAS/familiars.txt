@@ -3,21 +3,90 @@
 .
 - Washout
 - Flourish
-- River Flow
 - Serenity Steps
+- River Flow
 - Lotus Grace
 - BLOSSOM BLESSING
 
-
+-----------
 >> Capymint
 .
 - Snowroll
 - Pollinate
-- 
-- 
-- 
-- BLOSSOM BLESSING
+- Frosty Floor
+- Herbal Cure
+- Snowstorm
+- CHILL STEAM
 
+-----------
+>> Nessight
+.
+- Water Bomb
+- Sixth Sense
+- Cascade
+- Oceanic Gush
+- Metaforce
+- GEYSER SWIRL
+
+-----------
+>> Solug
+.
+- Spotlight
+- Leaf Attack
+- Sunbeam
+- Verdant Shield (Deals damage back)
+- 
+- PHOTOSYMPHONY (Increases plant damage)
+
+-----------
+>> Squarrel
+.
+- Breeze
+- Mystic Smoke
+- Mist Shot
+- Voidburst
+- Tempest Blow
+- EYE OF THE STORM
+
+-----------
+>> Dark Sentient
+.
+- Broken Blade
+- Gear Up (Defensive)
+- Ghastly Grip
+- Bravery Stance (Defensive + Slight offense)
+- Mighty Slash
+- SWORD OF INQUISTION
+
+-----------
+>> Perimoth
+.
+- Sharp Shards
+- Wingstream (Stops target from rushing for 1 turn)
+- Gemstone Glass
+- Crystal Cocoon
+- Shard Storm
+- ULTIMATE
+
+-----------
+>> Majestail
+.
+- Vivify
+- Wingstream (Stops target from rushing for 1 turn)
+- Sunbeam?
+- 
+- 
+- ULTIMATE
+
+-------------
+>> Angloom
+.
+- Deep Bite
+- Dark Flash
+- Tail Slammer (2x)
+- Tough Skin
+- Fang Maul
+- GAZE OF THE DEEP
 
 -------------
 >>> Move ideas

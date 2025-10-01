@@ -37,6 +37,7 @@ frames = SubResource( 6 )
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource( 1 )
 
 [node name="Spawnpoint" type="Position2D" parent="."]

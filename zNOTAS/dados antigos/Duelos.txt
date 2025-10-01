@@ -3,11 +3,11 @@ Name:BD/Mizule Cost/Attack Style(additional effects)
 --------------------------------------------------------------------
 Absorb:The user can absorb,skipping its turn to recover 40% Mizule.
 ---------------------------Stats-------------------------------------
-Offense(OF):Represents the offensive stat.
-Stamina(ST):Represents the available Mizule.Note that high Mizule will give bonus SP.
-Agility(AG):Represents the attack priorities.Whoever has more,attacks first.
-Defense(DF):Represents the defensive stat.
-Wisdom(WI):Representes the users interactivity with Mizule Shields(?).
+Health(HP):Represents your health stat.
+Attack(ATK):Represents the offensive stat.
+Agility(AGI):Represents the attack priorities.Whoever has more,attacks first.
+Stamina(STA):Represents the available Mizule. Note that high Mizule will give bonus SP.
+Wisdom(WIS):Representes the users interactivity with Mizule Shields(?).
 ---------------------------Fire-------------------------------------
 Scorch:22//M Chama
 Blaze Rush:39//M Avanço Queimado
