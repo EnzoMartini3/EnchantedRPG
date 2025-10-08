@@ -2,11 +2,11 @@
 
 [ext_resource path="res://SPRITES/Default Green/GrassBackground.png" type="Texture" id=1]
 [ext_resource path="res://Helpers/MapLimits.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Enemies/HeartEntity.tscn" type="PackedScene" id=3]
-[ext_resource path="res://World/BASE SCENES/Bush.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Enemies/Bat.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Enemies/Direbriar.tscn" type="PackedScene" id=6]
-[ext_resource path="res://World/BASE SCENES/Grass.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Entities/HeartEntity.tscn" type="PackedScene" id=3]
+[ext_resource path="res://World/Decoration Scenes/Bush.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Entities/Bat.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Entities/Direbriar.tscn" type="PackedScene" id=6]
+[ext_resource path="res://World/Decoration Scenes/Grass.tscn" type="PackedScene" id=7]
 [ext_resource path="res://World/Warp.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Items/Sun Collectable.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Items/EvilHusk.tscn" type="PackedScene" id=10]
@@ -20,76 +20,89 @@ texture = ExtResource( 1 )
 centered = false
 region_enabled = true
 region_rect = Rect2( -1, -296, 1099, 562 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="TileMap" type="TileMap" parent="."]
 format = 1
 
-[node name="MapLimits" parent="." instance=ExtResource( 2 )]
+[node name="YSort" type="YSort" parent="."]
 
-[node name="BottomRight" parent="MapLimits" index="1"]
+[node name="Houses" type="YSort" parent="YSort"]
+
+[node name="Decorations" type="YSort" parent="YSort"]
+
+[node name="Bush" parent="YSort/Decorations" instance=ExtResource( 4 )]
+position = Vector2( 0, 64 )
+
+[node name="Bush2" parent="YSort/Decorations" instance=ExtResource( 4 )]
+position = Vector2( 128, 0 )
+
+[node name="Bush3" parent="YSort/Decorations" instance=ExtResource( 4 )]
+position = Vector2( 320, 64 )
+
+[node name="Grass" parent="YSort/Decorations" instance=ExtResource( 7 )]
+position = Vector2( 160, 8 )
+
+[node name="Grass2" parent="YSort/Decorations" instance=ExtResource( 7 )]
+position = Vector2( 240, 24 )
+
+[node name="Grass3" parent="YSort/Decorations" instance=ExtResource( 7 )]
+position = Vector2( 240, -8 )
+
+[node name="Grass4" parent="YSort/Decorations" instance=ExtResource( 7 )]
+position = Vector2( 224, -8 )
+
+[node name="Grass5" parent="YSort/Decorations" instance=ExtResource( 7 )]
+position = Vector2( 224, 24 )
+
+[node name="Entities" type="YSort" parent="YSort"]
+
+[node name="Direbriar" parent="YSort/Entities" instance=ExtResource( 6 )]
+position = Vector2( 200, -24 )
+
+[node name="NPC" type="KinematicBody2D" parent="YSort/Entities"]
+
+[node name="HeartEntity" parent="YSort/Entities" instance=ExtResource( 3 )]
+position = Vector2( 120, 24 )
+
+[node name="Bat" parent="YSort/Entities" instance=ExtResource( 5 )]
+position = Vector2( 272, 112 )
+
+[node name="Items" type="YSort" parent="YSort"]
+
+[node name="Collectable" parent="YSort/Items" instance=ExtResource( 9 )]
+position = Vector2( 0, 80 )
+
+[node name="Evil Husk" parent="YSort/Items" instance=ExtResource( 10 )]
+position = Vector2( 144, 96 )
+
+[node name="Evil Husk3" parent="YSort/Items" instance=ExtResource( 10 )]
+position = Vector2( 176, 96 )
+
+[node name="Evil Husk2" parent="YSort/Items" instance=ExtResource( 10 )]
+position = Vector2( 160, 96 )
+
+[node name="Map Specs" type="Node" parent="."]
+
+[node name="MapLimits" parent="Map Specs" instance=ExtResource( 2 )]
+
+[node name="BottomRight" parent="Map Specs/MapLimits" index="1"]
 position = Vector2( 384, 192 )
 
-[node name="Warps" type="Node" parent="."]
+[node name="Warps" type="Node" parent="Map Specs"]
 
-[node name="To Mintsilk Path" parent="Warps" instance=ExtResource( 8 )]
+[node name="To Mintsilk Path" parent="Map Specs/Warps" instance=ExtResource( 8 )]
 position = Vector2( 248, 16 )
 targetScene = "Mintsilk Path"
 targetWarp = "From Tinymint Town"
 
-[node name="Dreambox" parent="Warps" instance=ExtResource( 11 )]
+[node name="Dreambox" parent="Map Specs/Warps" instance=ExtResource( 11 )]
 position = Vector2( 72, -24 )
 
-[node name="From Mintsilk Path" type="Position2D" parent="."]
+[node name="From Mintsilk Path" type="Position2D" parent="Map Specs"]
 position = Vector2( 224, 16 )
 
-[node name="YSort" type="YSort" parent="."]
-
-[node name="Direbriar" parent="YSort" instance=ExtResource( 6 )]
-position = Vector2( 200, -24 )
-
-[node name="NPC" type="KinematicBody2D" parent="YSort"]
-
-[node name="HeartEntity" parent="YSort" instance=ExtResource( 3 )]
-position = Vector2( 120, 24 )
-
-[node name="Bat" parent="YSort" instance=ExtResource( 5 )]
-position = Vector2( 272, 112 )
-
-[node name="Bush" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 0, 64 )
-
-[node name="Bush2" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 128, 0 )
-
-[node name="Bush3" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 320, 64 )
-
-[node name="Grass" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 160, 8 )
-
-[node name="Grass2" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 240, 24 )
-
-[node name="Grass3" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 240, -8 )
-
-[node name="Grass4" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 224, -8 )
-
-[node name="Grass5" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 224, 24 )
-
-[node name="Collectable" parent="YSort" instance=ExtResource( 9 )]
-position = Vector2( 0, 80 )
-
-[node name="Evil Husk" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( 160, 80 )
-
-[node name="Evil Husk3" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( 192, 80 )
-
-[node name="Evil Husk2" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( 176, 80 )
-
-[editable path="MapLimits"]
-[editable path="Warps/To Mintsilk Path"]
+[editable path="Map Specs/MapLimits"]
+[editable path="Map Specs/Warps/To Mintsilk Path"]

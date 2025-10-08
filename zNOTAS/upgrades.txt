@@ -15,10 +15,10 @@
 . Scary Handle: Increases your sword's intimidation power.
 . Polished Blade: Increases damage done to inanimate objects.
 
->> Mining Equipment
-. Bright Lights: Visibility is further increased when in dark caves.
-. Pro Pick: Allows you to extract even the hardest ores!
-. Deep Drilling: Increases ore extraction speed.
+>> Crystal Armor
+. Slick Look: Bright lights will shine when in the dark.
+. Shield Bash: Attack when using Buster Shield for a stone-breaking strike!
+. CRYSTAL SMASH!: Jump when using Buster Shield to jump in the air and smash everything upon landing!
 
 >>> Reliquary
 

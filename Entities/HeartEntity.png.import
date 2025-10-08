@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Direbriar.png-1085e326b766cd287ad2624e747b204b.stex"
+path="res://.import/HeartEntity.png-5d29a928db02bcb50615b8fa22697cd3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemies/Direbriar.png"
-dest_files=[ "res://.import/Direbriar.png-1085e326b766cd287ad2624e747b204b.stex" ]
+source_file="res://Entities/HeartEntity.png"
+dest_files=[ "res://.import/HeartEntity.png-5d29a928db02bcb50615b8fa22697cd3.stex" ]
 
 [params]
 

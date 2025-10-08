@@ -1,16 +1,17 @@
 ------------------------------------
 >> Lotus Kitsune
-.
+. Origin: 
 - Washout
 - Flourish
 - Serenity Steps
 - River Flow
 - Lotus Grace
 - BLOSSOM BLESSING
+. Synergies: Water, Wild, Flowy
 
 -----------
 >> Capymint
-.
+. Origin: Mundane
 - Snowroll
 - Pollinate
 - Frosty Floor
@@ -20,7 +21,7 @@
 
 -----------
 >> Nessight
-.
+. Origin:
 - Water Bomb
 - Sixth Sense
 - Cascade
@@ -30,7 +31,8 @@
 
 -----------
 >> Solug
-.
+. Origin: Abnormal
+. Synergies:
 - Spotlight
 - Leaf Attack
 - Sunbeam
@@ -40,7 +42,7 @@
 
 -----------
 >> Squarrel
-.
+. Origin: Mundane
 - Breeze
 - Mystic Smoke
 - Mist Shot
@@ -50,7 +52,7 @@
 
 -----------
 >> Dark Sentient
-.
+. Origin:
 - Broken Blade
 - Gear Up (Defensive)
 - Ghastly Grip
@@ -60,7 +62,7 @@
 
 -----------
 >> Perimoth
-.
+. Origin:
 - Sharp Shards
 - Wingstream (Stops target from rushing for 1 turn)
 - Gemstone Glass
@@ -70,7 +72,7 @@
 
 -----------
 >> Majestail
-.
+. Origin:
 - Vivify
 - Wingstream (Stops target from rushing for 1 turn)
 - Sunbeam?
@@ -80,13 +82,23 @@
 
 -------------
 >> Angloom
-.
+. Origin:
 - Deep Bite
 - Dark Flash
 - Tail Slammer (2x)
 - Tough Skin
 - Fang Maul
 - GAZE OF THE DEEP
+
+-------------
+>> Menacing Centipede
+. Origin: Spiritual
+- Horn Impale
+- Blind Fishing
+- Spikeback
+- Troublemakers
+- Cruel Wrath
+- PINCER CRUSH
 
 -------------
 >>> Move ideas

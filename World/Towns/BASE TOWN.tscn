@@ -9,14 +9,6 @@
 [node name="TileMap" type="TileMap" parent="."]
 format = 1
 
-[node name="Houses" type="YSort" parent="."]
-
-[node name="Node2D" type="Node2D" parent="Houses"]
-
-[node name="NPCs" type="YSort" parent="."]
-
-[node name="KinematicBody2D" type="KinematicBody2D" parent="NPCs"]
-
 [node name="GrassBackground" type="Sprite" parent="."]
 position = Vector2( -344, -208 )
 texture = ExtResource( 1 )
@@ -24,13 +16,27 @@ centered = false
 region_enabled = true
 region_rect = Rect2( -1, -296, 1099, 562 )
 
-[node name="MapLimits" parent="." instance=ExtResource( 3 )]
+[node name="YSort" type="YSort" parent="."]
 
-[node name="Warps" type="Node" parent="."]
+[node name="Houses" type="YSort" parent="YSort"]
 
-[node name="Warp1" parent="Warps" instance=ExtResource( 2 )]
+[node name="Node2D" type="Node2D" parent="YSort/Houses"]
 
-[node name="FROM XXX" type="Position2D" parent="."]
+[node name="Entities" type="YSort" parent="YSort"]
 
-[editable path="MapLimits"]
-[editable path="Warps/Warp1"]
+[node name="KinematicBody2D" type="KinematicBody2D" parent="YSort/Entities"]
+
+[node name="Decorations" type="YSort" parent="YSort"]
+
+[node name="Map Specs" type="Node" parent="."]
+
+[node name="MapLimits" parent="Map Specs" instance=ExtResource( 3 )]
+
+[node name="Warps" type="Node" parent="Map Specs"]
+
+[node name="Warp1" parent="Map Specs/Warps" instance=ExtResource( 2 )]
+
+[node name="FROM XXX" type="Position2D" parent="Map Specs"]
+
+[editable path="Map Specs/MapLimits"]
+[editable path="Map Specs/Warps/Warp1"]

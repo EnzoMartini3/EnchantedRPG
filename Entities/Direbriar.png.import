@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bat.png-38405154cd5b8ff1c5e2fcf1cef1c3e6.stex"
+path="res://.import/Direbriar.png-809d9a0f0d0b0e5912ca46880a29e38e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemies/Bat.png"
-dest_files=[ "res://.import/Bat.png-38405154cd5b8ff1c5e2fcf1cef1c3e6.stex" ]
+source_file="res://Entities/Direbriar.png"
+dest_files=[ "res://.import/Direbriar.png-809d9a0f0d0b0e5912ca46880a29e38e.stex" ]
 
 [params]
 

@@ -103,6 +103,16 @@ _global_script_classes=[ {
 "class": "SunCollectable",
 "language": "GDScript",
 "path": "res://SCRIPTS/SunCollectable.gd"
+}, {
+"base": "Area2D",
+"class": "Warp",
+"language": "GDScript",
+"path": "res://SCRIPTS/Warp.gd"
+}, {
+"base": "Area2D",
+"class": "WarpDungeon",
+"language": "GDScript",
+"path": "res://SCRIPTS/WarpDungeon.gd"
 } ]
 _global_script_class_icons={
 "DTS": "",
@@ -123,7 +133,9 @@ _global_script_class_icons={
 "InventoryItem": "",
 "InventorySlot": "",
 "Player": "",
-"SunCollectable": ""
+"SunCollectable": "",
+"Warp": "",
+"WarpDungeon": ""
 }
 
 [application]
