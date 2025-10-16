@@ -44,13 +44,12 @@ var rollVector = Vector2.RIGHT
 var stats = PlayerStats
 
 func _ready():
-	randomize()
 	stats.connect("noHealth", self, "queue_free")
 	animationTree.active = true
-	swordHitbox.knockbackVector = rollVector
-	armorHitbox.knockbackVector = rollVector * 1.5
+	swordHitbox.knockbackVector = rollVector #knockback padrão, por isso nao precisamos multiplicar por knockbackPower
+	armorHitbox.knockbackVector = rollVector * armorHitbox.knockbackPower
 	armorHitboxBug.disabled = true
-	
+
 func _physics_process(delta):
 	if jumpStamina < maxJumpStamina: # LÓGICA DE STAMINA DE SALTO
 		jumpStamina += staminaRecoveryRate * delta
@@ -141,7 +140,7 @@ func attack_animation_finished():
 	state = MOVE
 
 func _on_Hurtbox_area_entered(area):
-	if area.get_parent() is Enemy:
+	if "damage" in area:
 		stats.health -= area.damage
 		hurtbox.makeImmortal(0.5)
 		hurtbox.createHitEffect()

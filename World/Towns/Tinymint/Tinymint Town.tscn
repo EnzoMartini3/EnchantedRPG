@@ -1,16 +1,17 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://SPRITES/Default Green/GrassBackground.png" type="Texture" id=1]
 [ext_resource path="res://Helpers/MapLimits.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Entities/HeartEntity.tscn" type="PackedScene" id=3]
-[ext_resource path="res://World/Decoration Scenes/Bush.tscn" type="PackedScene" id=4]
+[ext_resource path="res://World/Obstacles/Bush.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Entities/Bat.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Entities/Direbriar.tscn" type="PackedScene" id=6]
-[ext_resource path="res://World/Decoration Scenes/Grass.tscn" type="PackedScene" id=7]
-[ext_resource path="res://World/Warp.tscn" type="PackedScene" id=8]
+[ext_resource path="res://World/Obstacles/Grass.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Helpers/Warp.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Items/Sun Collectable.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Items/EvilHusk.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Buildings/Dream Tent/Dreambox.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Nature/SandBurst.tscn" type="PackedScene" id=12]
 
 [node name="Tinymint Town" type="Node2D"]
 
@@ -70,6 +71,9 @@ position = Vector2( 120, 24 )
 [node name="Bat" parent="YSort/Entities" instance=ExtResource( 5 )]
 position = Vector2( 272, 112 )
 
+[node name="Sand Geyser" parent="YSort/Entities" instance=ExtResource( 12 )]
+position = Vector2( -88, 48 )
+
 [node name="Items" type="YSort" parent="YSort"]
 
 [node name="Collectable" parent="YSort/Items" instance=ExtResource( 9 )]
@@ -99,7 +103,7 @@ targetScene = "Mintsilk Path"
 targetWarp = "From Tinymint Town"
 
 [node name="Dreambox" parent="Map Specs/Warps" instance=ExtResource( 11 )]
-position = Vector2( 72, -24 )
+position = Vector2( 48, -24 )
 
 [node name="From Mintsilk Path" type="Position2D" parent="Map Specs"]
 position = Vector2( 224, 16 )

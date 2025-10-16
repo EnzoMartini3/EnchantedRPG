@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Warp.png-ff539f536d40e3dfdd20cc4b44056d8b.stex"
+path="res://.import/TEMP sandgeyser.png-aaf967ecef525107d11cdee28a4f3160.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World/Warp.png"
-dest_files=[ "res://.import/Warp.png-ff539f536d40e3dfdd20cc4b44056d8b.stex" ]
+source_file="res://Nature/TEMP sandgeyser.png"
+dest_files=[ "res://.import/TEMP sandgeyser.png-aaf967ecef525107d11cdee28a4f3160.stex" ]
 
 [params]
 

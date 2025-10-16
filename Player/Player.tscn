@@ -1,9 +1,8 @@
-[gd_scene load_steps=78 format=2]
+[gd_scene load_steps=76 format=2]
 
 [ext_resource path="res://SCRIPTS/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.png" type="Texture" id=2]
 [ext_resource path="res://Overlaps/Hitbox.tscn" type="PackedScene" id=3]
-[ext_resource path="res://SCRIPTS/SwordHitbox.gd" type="Script" id=4]
 [ext_resource path="res://Overlaps/Hurtbox.tscn" type="PackedScene" id=5]
 [ext_resource path="res://SPRITES/Shadows/MediumShadow.png" type="Texture" id=6]
 [ext_resource path="res://SFX/Sword Swing.wav" type="AudioStream" id=7]
@@ -66,7 +65,7 @@ tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0.1, 0.3 ),
 "transitions": PoolRealArray( 1, 1 ),
-"update": 1,
+"update": 0,
 "values": [ false, true ]
 }
 tracks/4/type = "audio"
@@ -134,7 +133,7 @@ tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0.1, 0.3 ),
 "transitions": PoolRealArray( 1, 1 ),
-"update": 1,
+"update": 0,
 "values": [ false, true ]
 }
 tracks/4/type = "audio"
@@ -202,7 +201,7 @@ tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0.1, 0.3 ),
 "transitions": PoolRealArray( 1, 1 ),
-"update": 1,
+"update": 0,
 "values": [ false, true ]
 }
 tracks/4/type = "audio"
@@ -270,7 +269,7 @@ tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0.1, 0.3 ),
 "transitions": PoolRealArray( 1, 1 ),
-"update": 1,
+"update": 0,
 "values": [ false, true ]
 }
 tracks/4/type = "audio"
@@ -1081,12 +1080,6 @@ height = 0.0
 [sub_resource type="CapsuleShape2D" id=36]
 height = 12.0
 
-[sub_resource type="GDScript" id=66]
-script/source = "extends \"res://SCRIPTS/Hitbox.gd\"
-
-export var knockbackVector = Vector2.ZERO * 2
-"
-
 [sub_resource type="CapsuleShape2D" id=54]
 radius = 8.0
 height = 34.0
@@ -1198,13 +1191,11 @@ parameters/Roll/blend_position = Vector2( 0, 0 )
 parameters/Run/blend_position = Vector2( 0, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2( 0, -2 )
 rotation = -1.5708
 shape = SubResource( 1 )
 
 [node name="SwordHitboxPivot" type="Position2D" parent="."]
-visible = false
 position = Vector2( 0, -4 )
 __meta__ = {
 "_gizmo_extents_": 8.0
@@ -1213,8 +1204,6 @@ __meta__ = {
 [node name="SwordHitbox" parent="SwordHitboxPivot" instance=ExtResource( 3 )]
 position = Vector2( 15, 0 )
 collision_mask = 8
-script = ExtResource( 4 )
-knockbackVector = Vector2( 0, 0 )
 
 [node name="CollisionShape2D" parent="SwordHitboxPivot/SwordHitbox" index="0"]
 shape = SubResource( 36 )
@@ -1224,7 +1213,6 @@ __meta__ = {
 }
 
 [node name="ArmorHitboxPivot" type="Position2D" parent="."]
-visible = false
 position = Vector2( 0, -10 )
 __meta__ = {
 "_gizmo_extents_": 8.0
@@ -1232,8 +1220,7 @@ __meta__ = {
 
 [node name="ArmorHitbox" parent="ArmorHitboxPivot" instance=ExtResource( 3 )]
 collision_mask = 8
-script = SubResource( 66 )
-knockbackVector = Vector2( 0, 0 )
+knockbackPower = 4.0
 
 [node name="CollisionShape2D" parent="ArmorHitboxPivot/ArmorHitbox" index="0"]
 position = Vector2( 13, 1 )

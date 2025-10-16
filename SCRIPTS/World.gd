@@ -7,12 +7,13 @@ var currentMapInstance = null
 var nextWarp = ""
 var returnScenePath = ""
 var returnPosition = Vector2.ZERO # Quando o jogador usa a Dreambox, o jogo salva a Cena e a Posição que ele deve retornar
-var dreamboxHolder: Node = null 
+var dreamboxHolder: Node = null
 const sceneDreamTent = preload("res://Buildings/Dream Tent/DreamHouse.tscn")
 const sceneTinymintTown = preload("res://World/Towns/Tinymint/Tinymint Town.tscn")
 const sceneMintsilkPath = preload("res://World/Open Areas/Mintsilk Path/Mintsilk Path.tscn")
 
 func _ready():
+	randomize()
 	loadMap(sceneTinymintTown, Vector2(50, 50))
 	var playerRemoteTransform = player.find_node("RemoteTransform2D", true, false)
 	playerRemoteTransform.remote_path = "/root/World/PlayerCamera"
