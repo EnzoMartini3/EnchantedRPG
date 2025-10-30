@@ -155,7 +155,6 @@ shape = SubResource( 7 )
 [node name="WanderController" parent="." instance=ExtResource( 9 )]
 
 [node name="PlayerSeekZone" parent="." instance=ExtResource( 6 )]
-visible = false
 
 [node name="CollisionShape2D" parent="PlayerSeekZone" index="0"]
 modulate = Color( 1, 1, 1, 0.466667 )

@@ -95,6 +95,11 @@ _global_script_classes=[ {
 "path": "res://SCRIPTS/InventorySlot.gd"
 }, {
 "base": "KinematicBody2D",
+"class": "NPC",
+"language": "GDScript",
+"path": "res://SCRIPTS/NPC.gd"
+}, {
+"base": "KinematicBody2D",
 "class": "Player",
 "language": "GDScript",
 "path": "res://SCRIPTS/Player.gd"
@@ -132,6 +137,7 @@ _global_script_class_icons={
 "Inventory": "",
 "InventoryItem": "",
 "InventorySlot": "",
+"NPC": "",
 "Player": "",
 "SunCollectable": "",
 "Warp": "",
@@ -269,6 +275,7 @@ dialogic_default_action={
 2d_physics/layer_5="Enemy"
 2d_physics/layer_6="SoftCollisions"
 2d_physics/layer_7="Items"
+2d_physics/layer_8="NPCs"
 
 [physics]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TEMP sandgeyser.png-aaf967ecef525107d11cdee28a4f3160.stex"
+path="res://.import/BaseNPC.png-cb2d439bf72a0793cc5bdf6ad8cb0755.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Nature/TEMP sandgeyser.png"
-dest_files=[ "res://.import/TEMP sandgeyser.png-aaf967ecef525107d11cdee28a4f3160.stex" ]
+source_file="res://Entities/BaseNPC.png"
+dest_files=[ "res://.import/BaseNPC.png-cb2d439bf72a0793cc5bdf6ad8cb0755.stex" ]
 
 [params]
 

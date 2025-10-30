@@ -1,27 +1,63 @@
 {
 	"events": [
 		{
-			"character": "character-1747750210.json",
+			"character": "character-1760624206.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "yooooooo hello there "
 		},
 		{
 			"event_id": "dialogic_015",
 			"id": "anchor-1753061645",
 			"index": 0,
-			"name": ""
+			"name": "Trent's Question"
 		},
 		{
-			"character": "character-1747750210.json",
+			"character": "character-1760624206.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "do you know what my favorite food is?"
+		},
+		{
+			"choice": "apple",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1760624206.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "question"
+			"text": "that is right!"
+		},
+		{
+			"choice": "orange",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1760624206.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "that is wrong!"
+		},
+		{
+			"anchor_id": "anchor-1753061645",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.5.1",
 		"file": "timeline-1747750204.json",
-		"name": "timeline-1747750204.json"
+		"name": "Trent Test 1"
 	}
 }

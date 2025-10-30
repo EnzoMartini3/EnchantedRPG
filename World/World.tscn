@@ -27,7 +27,7 @@ margin_bottom = 43.0
 
 [node name="CrystalBar" parent="HUD" instance=ExtResource( 5 )]
 
-[node name="InventoryUI" parent="HUD" instance=ExtResource( 7 )]
+[node name="InventoryHUD" parent="HUD" instance=ExtResource( 7 )]
 visible = false
 anchor_left = 0.5
 anchor_top = 0.5
@@ -55,8 +55,8 @@ position = Vector2( 120, 64 )
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
 remote_path = NodePath("../../PlayerCamera")
 
-[connection signal="inventoryClosed" from="HUD/InventoryUI" to="." method="_on_InventoryUI_inventoryClosed"]
-[connection signal="inventoryOpened" from="HUD/InventoryUI" to="." method="_on_InventoryUI_inventoryOpened"]
+[connection signal="inventoryClosed" from="HUD/InventoryHUD" to="." method="_on_InventoryUI_inventoryClosed"]
+[connection signal="inventoryOpened" from="HUD/InventoryHUD" to="." method="_on_InventoryUI_inventoryOpened"]
 
 [editable path="PlayerCamera"]
 [editable path="PlayerCamera/MapLimits"]

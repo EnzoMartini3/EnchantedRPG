@@ -10,42 +10,48 @@ call to alert all citizens from natural disasters)
 . Dungeons give a lot of gold? Spread out on each floor?
 
 > Overgrown Grove [Gruta Silvestre]
-. Symbols Puzzle + (Winged Gremling that grabs logs and places them above you, disruption makes them roll. 
+. Match the Symbols Puzzle + (Winged Gremlin that grabs logs and places them above you, disruption makes them roll. 
 Attack him when he lands to grab another)
 . Shock Damage: 10
 . Log Damage: 20
-. Completing the dungeon will reward you with a Foxave friendly encounter.
+. Rewards: Foxave Nest
 
 > Cloudy Sanctum [Capela Nebulosa]
-. Dense fog significantly limits your vision and there are spikes to watch out for. Reach the ancient runes to light up the area around. Every disruption moves the spikes around.
-. Spike Damage: 30
+. Dense fog significantly limits your vision and there are ancient turrets all around, that shoot will down quickly if you get close. Reach the shiny runes to light up the area, and when the disruption starts, make sure to have cover.
+. DISRUPTION: Turrets activate flashlights to increase line of sight.
+. Turret Damage: 30/s
+. Line of Sight Increase: 250%
 . Statue Jumpscare
 
 > Flooded Fortress [Fortaleza Inundada]
-. Everything looks normal, until you hear a noise that foreshadows the disruption that is about to happen, causing the water levels to rise quickly. Until the disruption, you will not be able to proceed to the next room. Watch out for gripping vines.
-. Vine Damage: 20
+. Everything looks normal, until you hear a noise that foreshadows the quick rise of the water levels. Just make sure not to step over the thick moss.
+. DISRUPTION: Water levels rise and the door to the next room is opened.
+. Ramming Gremlin Damage: 25
+. Thick Moss Slowdown: 70%
+
+> Suburban Citadel [Cidadela Suburbana]
+. In this dungeon, you will see a meter above you, that charges up whenever you are not moving. Once the disruption starts, . It can be depleted by consuming a glowing mushroom from the first floor, but you only have three available, so be quick when solving puzzles!
+. Run Over Damage: 65
+. Overload Damage: 40
 
 > Briar Thicket [Matagal Traiçoeiro]
 . With overgrown moss making the floor slippery and ink attacks coming from all directions, defeating wildvines is
 surely going to be a lot harder.
+. DISRUPTION: Spawns multiple Wildvines in the area.
 . Wildvine Damage: 35
 . Wildvine Shot Damage: 20
 . Wall Contact Damage: 25
 . Ink Damage: 10 (Also blocks sight for 5s)
 
-> Suburban Citadel [Cidadela Suburbana]
-. In this dungeon, you will see a meter above you, that charges up whenever you are not moving. Once the disruption starts, . It can be depleted by consuming a glowing mushroom from the first floor, but you only have three available, so be quick when solving puzzles!
-. Run-over Damage: 65
-. Overload Damage: 40
-
 > Shattered Reliquary [Relicário Ilusório]
-. Everything you see is mirrored! Going to the right takes you left, and going up makes you go down. The only thing that is crystal clear is that your eyes and instincs are going to have to be just as sharp as the glass shards!
-. Floor Shards Damage: 45
+. Everything you see is mirrored! Going to the right takes you left, and going up makes you go down. The only thing that is crystal clear is that your instincs will have to be just as sharp as the glass spikes!
+. DISRUPTION: Generates more spikes, and the old ones grow(3x3 and shoot projectiles) then disappear.
+. Floor Spikes Damage: 45
 . Shard Shot Damage: 25
 
-> Underbound Crucible [Caldeirão Subterrâneo]
-. Wow... that is a huge Cauldron! Feed it with fuel scattered around, but be careful: it will get hotter and hotter in 
-there the more you feed it!
+> Underbound Crucible [Caldeira Subterrânea]
+. To empty this huge Cauldron of lava, find and start draining all the refill tanks, but watch out for splashing lava, as things will get hotter and hotter!
+. DISRUPTION: Refills all "buckets", starts eruptions, lava rivers start to flow.
 . Eruption Damage: 80
 
 > Caliginous Crypt [Cripta Caliginosa]

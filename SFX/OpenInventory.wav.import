@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Pause.wav-9955b50bb7ebdac1b6feb8895e85995c.sample"
+path="res://.import/OpenInventory.wav-40efda39d0c60091ec27ce7161337e4c.sample"
 
 [deps]
 
-source_file="res://SFX/Pause.wav"
-dest_files=[ "res://.import/Pause.wav-9955b50bb7ebdac1b6feb8895e85995c.sample" ]
+source_file="res://SFX/OpenInventory.wav"
+dest_files=[ "res://.import/OpenInventory.wav-40efda39d0c60091ec27ce7161337e4c.sample" ]
 
 [params]
 

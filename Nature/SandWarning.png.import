@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SandBubbly.png-67e6580a696ba03230ea6f5ef66088e9.stex"
+path="res://.import/SandWarning.png-be39ddb588de1094a86d902876c56a7f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Nature/SandBubbly.png"
-dest_files=[ "res://.import/SandBubbly.png-67e6580a696ba03230ea6f5ef66088e9.stex" ]
+source_file="res://Nature/SandWarning.png"
+dest_files=[ "res://.import/SandWarning.png-be39ddb588de1094a86d902876c56a7f.stex" ]
 
 [params]
 

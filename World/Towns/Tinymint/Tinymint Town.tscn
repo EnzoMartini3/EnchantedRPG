@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://SPRITES/Default Green/GrassBackground.png" type="Texture" id=1]
 [ext_resource path="res://Helpers/MapLimits.tscn" type="PackedScene" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Items/EvilHusk.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Buildings/Dream Tent/Dreambox.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Nature/SandBurst.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Entities/NPC.tscn" type="PackedScene" id=13]
 
 [node name="Tinymint Town" type="Node2D"]
 
@@ -61,9 +62,7 @@ position = Vector2( 224, 24 )
 [node name="Entities" type="YSort" parent="YSort"]
 
 [node name="Direbriar" parent="YSort/Entities" instance=ExtResource( 6 )]
-position = Vector2( 200, -24 )
-
-[node name="NPC" type="KinematicBody2D" parent="YSort/Entities"]
+position = Vector2( 208, -24 )
 
 [node name="HeartEntity" parent="YSort/Entities" instance=ExtResource( 3 )]
 position = Vector2( 120, 24 )
@@ -72,7 +71,14 @@ position = Vector2( 120, 24 )
 position = Vector2( 272, 112 )
 
 [node name="Sand Geyser" parent="YSort/Entities" instance=ExtResource( 12 )]
-position = Vector2( -88, 48 )
+position = Vector2( -136, 88 )
+
+[node name="NPC" parent="YSort/Entities" instance=ExtResource( 13 )]
+position = Vector2( 120, 64 )
+dialogueString = "Trent Test 1"
+
+[node name="Shadow" parent="YSort/Entities/NPC" index="0"]
+position = Vector2( 0, 10 )
 
 [node name="Items" type="YSort" parent="YSort"]
 
@@ -80,13 +86,13 @@ position = Vector2( -88, 48 )
 position = Vector2( 0, 80 )
 
 [node name="Evil Husk" parent="YSort/Items" instance=ExtResource( 10 )]
-position = Vector2( 144, 96 )
+position = Vector2( -64, 120 )
 
 [node name="Evil Husk3" parent="YSort/Items" instance=ExtResource( 10 )]
-position = Vector2( 176, 96 )
+position = Vector2( -32, 120 )
 
 [node name="Evil Husk2" parent="YSort/Items" instance=ExtResource( 10 )]
-position = Vector2( 160, 96 )
+position = Vector2( -48, 120 )
 
 [node name="Map Specs" type="Node" parent="."]
 
@@ -103,10 +109,11 @@ targetScene = "Mintsilk Path"
 targetWarp = "From Tinymint Town"
 
 [node name="Dreambox" parent="Map Specs/Warps" instance=ExtResource( 11 )]
-position = Vector2( 48, -24 )
+position = Vector2( 80, -24 )
 
 [node name="From Mintsilk Path" type="Position2D" parent="Map Specs"]
 position = Vector2( 224, 16 )
 
+[editable path="YSort/Entities/NPC"]
 [editable path="Map Specs/MapLimits"]
 [editable path="Map Specs/Warps/To Mintsilk Path"]
