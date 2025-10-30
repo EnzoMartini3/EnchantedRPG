@@ -1,0 +1,8 @@
+[gd_scene format=2]
+
+[node name="Indoors" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 1
+
+[node name="Warps" type="Node" parent="."]
