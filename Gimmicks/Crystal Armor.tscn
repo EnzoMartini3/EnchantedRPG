@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://SCRIPTS/Crystal Armor.gd" type="Script" id=1]
 [ext_resource path="res://Gimmicks/Crystal Armor.png" type="Texture" id=2]
+[ext_resource path="res://SFX/CrystalArmor.wav" type="AudioStream" id=3]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
@@ -35,3 +36,6 @@ playing = true
 [node name="PowerPunch" type="Sprite" parent="."]
 
 [node name="HyperShield" type="Sprite" parent="."]
+
+[node name="ActivationAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )

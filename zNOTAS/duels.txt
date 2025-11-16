@@ -7,10 +7,10 @@
 
 >>> Enchantments
 > Equipable passives for every type
-. Lightspeed All your light skills are Kinectic.
-. Spiky Spine When attacked by a rushing skill the attacker takes damage equal to 15% of user Defense.
-. Vanguard User receives 30% less damage when in an advanced position.
-. Scout Deals 15% extra damage when in the rear.
+. Lightspeed: All your light skills are Kinectic.
+. Spiky Spine: When attacked by a rushing skill the attacker takes damage equal to 15% of user Defense.
+. Vanguard: User receives 30% less damage when in an advanced position.
+. Scout: Deals 15% extra damage when in the rear.
 
 
 >>> Exploration Passives

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BaseNPC.png-cb2d439bf72a0793cc5bdf6ad8cb0755.stex"
+path="res://.import/Direbriar.png-b34fb8c5db0b94120111216efa5fd82d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/BaseNPC.png"
-dest_files=[ "res://.import/BaseNPC.png-cb2d439bf72a0793cc5bdf6ad8cb0755.stex" ]
+source_file="res://SPRITES/Entities/Direbriar.png"
+dest_files=[ "res://.import/Direbriar.png-b34fb8c5db0b94120111216efa5fd82d.stex" ]
 
 [params]
 

@@ -16,7 +16,7 @@ func healEntity(value):
 
 func collectSun(amount: int):
 	sunCollected += amount
-	print(sunCollected)
+	print("Sun collected: ", sunCollected)
 
 func setMaxHealth(value):
 	maxHealth = value

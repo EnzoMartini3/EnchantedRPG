@@ -7,6 +7,12 @@
 			"text": "yooooooo hello there "
 		},
 		{
+			"character": "character-1760624206.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "i wonder what the Mizule gods are up to today."
+		},
+		{
 			"event_id": "dialogic_015",
 			"id": "anchor-1753061645",
 			"index": 0,
@@ -19,7 +25,7 @@
 
 			],
 			"portrait": "",
-			"question": "do you know what my favorite food is?"
+			"question": "anyway do you know what my favorite food is?"
 		},
 		{
 			"choice": "apple",

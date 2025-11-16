@@ -15,6 +15,10 @@
 shader = ExtResource( 9 )
 shader_param/active = false
 
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 6.00001
+height = 0.0
+
 [sub_resource type="Animation" id=25]
 resource_name = "AttackDown"
 length = 0.4
@@ -1073,10 +1077,6 @@ graph_offset = Vector2( -161.399, -6.42916 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=17]
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 6.00001
-height = 0.0
-
 [sub_resource type="CircleShape2D" id=66]
 radius = 25.0
 
@@ -1144,7 +1144,7 @@ tracks/0/keys = {
 }
 
 [node name="Player" type="KinematicBody2D" groups=["Player"]]
-collision_layer = 2
+collision_layer = 3
 collision_mask = 65
 script = ExtResource( 1 )
 
@@ -1159,6 +1159,11 @@ material = SubResource( 49 )
 position = Vector2( 0, -9 )
 texture = ExtResource( 2 )
 hframes = 60
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -2 )
+rotation = -1.5708
+shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/AttackDown = SubResource( 25 )
@@ -1193,13 +1198,8 @@ parameters/PowerPunch/blend_position = Vector2( 0, 0 )
 parameters/Roll/blend_position = Vector2( 0, 0 )
 parameters/Run/blend_position = Vector2( 0, 0 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2( 0, -2 )
-rotation = -1.5708
-shape = SubResource( 1 )
-
 [node name="InteractionRange" type="Area2D" parent="."]
+visible = false
 collision_layer = 0
 collision_mask = 128
 
@@ -1246,20 +1246,20 @@ __meta__ = {
 }
 
 [node name="Hurtbox" parent="." instance=ExtResource( 5 )]
+visible = false
 collision_layer = 4
 collision_mask = 64
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
-visible = false
 position = Vector2( 0, -6 )
 shape = SubResource( 48 )
 
 [node name="SoftCollision" parent="." instance=ExtResource( 10 )]
+visible = false
 position = Vector2( 0, -2 )
 rotation = -1.5708
 
 [node name="CollisionShape2D" parent="SoftCollision" index="0"]
-visible = false
 shape = SubResource( 53 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

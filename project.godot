@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Area2D",
+"class": "Combustible",
+"language": "GDScript",
+"path": "res://SCRIPTS/Combustible.gd"
+}, {
 "base": "Reference",
 "class": "DTS",
 "language": "GDScript",
@@ -59,7 +64,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/dialogic/Other/DialogicUtil.gd"
 }, {
-"base": "KinematicBody2D",
+"base": "Reference",
 "class": "Enemy",
 "language": "GDScript",
 "path": "res://SCRIPTS/Bat.gd"
@@ -120,6 +125,7 @@ _global_script_classes=[ {
 "path": "res://SCRIPTS/WarpDungeon.gd"
 } ]
 _global_script_class_icons={
+"Combustible": "",
 "DTS": "",
 "Dialogic": "",
 "DialogicAnimaPropertiesHelper": "",

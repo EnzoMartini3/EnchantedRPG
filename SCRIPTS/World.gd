@@ -81,10 +81,10 @@ func adjustMapLimits(mapScene: Node):
 
 func dreamboxTrigger(dreambox: Area2D, targetScene: String, entryPoint: String):
 	dreambox.set_deferred("monitoring", false) 
-	call_deferred("dreamboxDelayedSpecs", dreambox, targetScene, entryPoint)
+	call_deferred("defferedDreamboxDelay", dreambox, targetScene, entryPoint)
 
 
-func dreamboxDelayedSpecs(dreambox: Area2D, targetScene: String, entryPoint: String):
+func defferedDreamboxDelay(dreambox: Area2D, targetScene: String, entryPoint: String):
 	dreambox.get_parent().remove_child(dreambox)
 	add_child(dreambox) #para que ela nao desapareça totalmente
 	dreamboxHolder = dreambox

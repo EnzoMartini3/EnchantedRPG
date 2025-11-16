@@ -1,0 +1,103 @@
+{
+	"events": [
+		{
+			"character": "character-1747750210.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Heyo! Today's the last day of school, huh? Bet you can't wait to finally be free of the SHACKLES OF STUDY!!!!!!!\n*laughs*\n"
+		},
+		{
+			"character": "character-1747750210.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "So, do you have any plans in particular?"
+		},
+		{
+			"choice": "Nah",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1747750210.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Haha! Sounds just like you."
+		},
+		{
+			"character": "character-1763038375.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sometimes, I just wanna take it easy."
+		},
+		{
+			"choice": "Yeah!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1747750210.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wow, really? You must really have been craving freedom!"
+		},
+		{
+			"character": "character-1763038375.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "At last, I can rest in peace."
+		},
+		{
+			"character": "character-1747750210.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "what"
+		},
+		{
+			"choice": "Maybe...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1747750210.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So................. Why don't we hang out at my place?"
+		},
+		{
+			"character": "character-1763038375.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Uh... Sure!"
+		},
+		{
+			"choice": "Man, i just wanna sleep",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1747750210.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "HAHAHAHAHAHA! I can tell. You deserve it, dude."
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1762888582.json",
+		"name": "Ath First Act"
+	}
+}

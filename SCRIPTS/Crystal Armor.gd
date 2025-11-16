@@ -3,11 +3,13 @@ extends Node2D
 onready var sprites = $IdleAnimation
 onready var punchSprite = $PowerPunch
 onready var shieldSprite = $HyperShield
+onready var transformationAudio = $ActivationAudio
 
 var armorActive = false
 var playerSpeed = 0.0  # controlador para o buff de velo
 
 func armorAmplification(player: Node):
+	transformationAudio.play()
 	playerSpeed = player.maxSpeed
 	player.maxSpeed *= 1.5
 	sprites.get_parent().remove_child(sprites)

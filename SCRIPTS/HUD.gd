@@ -10,10 +10,12 @@ var currentNpc = null
 
 func _input(_event):
 	if Input.is_action_just_pressed("inventory"):
-		if inventory.isOpen:
-			inventory.closeInventory()
-		else:
-			inventory.openInventory()
+		var playerCheck = get_tree().get_root().find_node("Player", true, false)
+		if not playerCheck.state == playerCheck.IMMOBILE:  #impede que o inventário seja aberto durante diálogos, cutscenes, etc.
+			if inventory.isOpen:
+				inventory.closeInventory()
+			else:
+				inventory.openInventory()
 
 func startDialogueUI(dialogueString: String, talkingPlayer: Node, talkingNpc: Node):
 	currentPlayer = talkingPlayer

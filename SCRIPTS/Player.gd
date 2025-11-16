@@ -26,9 +26,9 @@ signal armorFuelChanged(value)
 export var maxArmorFuel = 120
 export var fuelUsage = 15
 export var armorRegen = 10
-var crystalArmorInstance = null
 var armorFuel = maxArmorFuel setget setArmorFuel
 var armorActive = false
+var crystalArmorInstance = null
 
 var state = MOVE
 var velocity = Vector2.ZERO
@@ -36,12 +36,12 @@ var rollVector = Vector2.RIGHT
 var stats = PlayerStats
 
 enum {
+	IMMOBILE, #CUTSCENES
 	MOVE,
 	ROLL,
 	ATTACK,
 	POWERPUNCH,
-	IMMOBILE
-	BINDED
+	TRAPPED
 }
 
 func _ready():
@@ -74,7 +74,7 @@ func _physics_process(delta):
 		IMMOBILE:
 			immobileState(delta)
 			
-		BINDED:
+		TRAPPED:
 			trappedState(delta)
 	
 	if Input.is_action_just_pressed("interact"):
@@ -165,6 +165,7 @@ func lookForNPCS():
 		var hudNode = get_tree().get_root().find_node("HUD", true, false)
 		state = IMMOBILE
 		animationState.travel("Idle")
+		closest.lookAtPlayer(self)
 		hudNode.startDialogueUI(closest.dialogueString, self, closest) # chama a HUD enviando o código do dialogo a ser tocado
 
 
@@ -208,6 +209,10 @@ func deactivateArmor():
 	crystalArmor.removeAmplification(self)
 
 
+func fuelUp(amount):
+	self.armorFuel += amount
+	
+
 func armoredAttackState(_delta):
 	velocity = Vector2.ZERO
 	animationState.travel("PowerPunch")
@@ -217,6 +222,7 @@ func armoredAttackState(_delta):
 func immobileState(_delta):
 	velocity = Vector2.ZERO
 
+
 func trappedState(_delta):
 	velocity = Vector2.ZERO
 	# animationState.travel("Preso")
@@ -224,11 +230,12 @@ func trappedState(_delta):
 		if enemyTrapping:
 			enemyTrapping.onPlayerInteraction()
 
+
 func setTrappedState(isTrapped: bool, trappingEntity = null):
 	if isTrapped:
-		state = BINDED
+		state = TRAPPED
 		velocity = Vector2.ZERO
-		#animationState.travel("Preso") # Ou uma animação de "idle" presa
+		#animationState.travel("Trapped")
 		enemyTrapping = trappingEntity # Guarda a referência do inimigo que prendeu
 	else:
 		state = MOVE
