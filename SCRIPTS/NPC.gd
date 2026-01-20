@@ -1,7 +1,7 @@
 extends KinematicBody2D
 class_name NPC
 
-export var dialogueString = ""
+export var dialogueID = ""
 onready var sprite = $Sprite
 enum { IDLE, BUSY }
 var state = IDLE

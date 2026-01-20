@@ -12,6 +12,7 @@ var dreamboxHolder: Node = null
 
 const sceneDreamTent = preload("res://Buildings/Dream Tent/DreamHouse.tscn")
 const sceneTinymintTown = preload("res://World/Towns/Tinymint/Tinymint Town.tscn")
+const sceneTestamintTown = preload("res://World/Towns/Testamint Town.tscn")
 const sceneMintsilkPath = preload("res://World/Open Areas/Mintsilk Path/Mintsilk Path.tscn")
 
 
@@ -98,9 +99,8 @@ func dungeonWarpBack():
 	returnPosition = Vector2.ZERO
 
 
-func _on_InventoryUI_inventoryOpened():
+func _on_InventoryHUD_inventoryOpened():
 	get_tree().paused = true
 
-
-func _on_InventoryUI_inventoryClosed():
+func _on_InventoryHUD_inventoryClosed():
 	get_tree().paused = false

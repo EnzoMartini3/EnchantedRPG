@@ -1,0 +1,63 @@
+{
+	"events": [
+		{
+			"character": "character-1766877737.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bom dia, meu caro."
+		},
+		{
+			"character": "character-1766877737.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Por algum acaso você estaria interessado em fazer compras com seus sóis?"
+		},
+		{
+			"choice": "Claro",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "selfOpenShop",
+				"target_node_path": "Tinymint Town/YSort/Entities/Luke (Shop)"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"choice": "Não, obrigado",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1766877737.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Certamente."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1766877737.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Muito bem, nos vemos por aí então."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1766877695.json",
+		"name": "Luke Shop Tinymint"
+	}
+}

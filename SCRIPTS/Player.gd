@@ -166,7 +166,7 @@ func lookForNPCS():
 		state = IMMOBILE
 		animationState.travel("Idle")
 		closest.lookAtPlayer(self)
-		hudNode.startDialogueUI(closest.dialogueString, self, closest) # chama a HUD enviando o código do dialogo a ser tocado
+		hudNode.startDialogueUI(closest.dialogueID, self, closest) # chama a HUD enviando o código do dialogo a ser tocado
 
 
 func _on_Hurtbox_area_entered(area):
@@ -211,7 +211,8 @@ func deactivateArmor():
 
 func fuelUp(amount):
 	self.armorFuel += amount
-	
+	if self.armorFuel > self.maxArmorFuel:
+		self.armorFuel = maxArmorFuel
 
 func armoredAttackState(_delta):
 	velocity = Vector2.ZERO

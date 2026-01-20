@@ -147,10 +147,12 @@ points = PoolVector2Array( 2, 0, 16, 0, 16, 14, 2, 14 )
 0/z_index = 0
 
 [node name="OutdoorsHouse" type="StaticBody2D"]
+collision_layer = 0
+collision_mask = 0
 
 [node name="Shadow" type="Sprite" parent="."]
 
-[node name="Foundation" type="Sprite" parent="."]
+[node name="HouseFoundation" type="Sprite" parent="."]
 texture = ExtResource( 4 )
 
 [node name="Roof" type="Sprite" parent="."]
@@ -158,6 +160,7 @@ position = Vector2( 0, -23 )
 texture = ExtResource( 2 )
 
 [node name="Door" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 1 )
 
 [node name="INVIS COLLISIONMAP" type="TileMap" parent="."]
 visible = false

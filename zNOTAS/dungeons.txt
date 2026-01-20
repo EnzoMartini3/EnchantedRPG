@@ -8,10 +8,11 @@
 . Specific symbol that will be seen on the screen when a "disruption" happens. (The "disruption" used to be a divine
 call to alert all citizens from natural disasters)
 . Dungeons give a lot of gold? Spread out on each floor?
+. Give dungeons simpler names?
 
 > Overgrown Grove [Gruta Silvestre]
-. Match the Symbols Puzzle + (Winged Gremlin that grabs logs and places them above you, disruption makes them roll. 
-Attack him when he lands to grab another)
+. Match the Symbols Puzzle + (Winged Gremlin that grabs logs and places them above you. Attack him when he lands to grab another)
+. DISRUPTION: Elevates the terrain(North), causing logs to roll down and making it harder to walk upwards.
 . Shock Damage: 10
 . Log Damage: 20
 . Rewards: Foxave Nest
@@ -19,25 +20,26 @@ Attack him when he lands to grab another)
 > Cloudy Sanctum [Capela Nebulosa]
 . Dense fog significantly limits your vision and there are ancient turrets all around, that shoot will down quickly if you get close. Reach the shiny runes to light up the area, and when the disruption starts, make sure to have cover.
 . DISRUPTION: Turrets activate flashlights to increase line of sight.
-. Turret Damage: 30/s
-. Line of Sight Increase: 250%
+. Turret Damage: 30/s (10/0.3s)
+. Disruption Line of Sight: 250%
 . Statue Jumpscare
 
 > Flooded Fortress [Fortaleza Inundada]
 . Everything looks normal, until you hear a noise that foreshadows the quick rise of the water levels. Just make sure not to step over the thick moss.
 . DISRUPTION: Water levels rise and the door to the next room is opened.
 . Ramming Gremlin Damage: 25
-. Thick Moss Slowdown: 70%
+. Thick Moss Slowdown: 80%
 
 > Suburban Citadel [Cidadela Suburbana]
-. In this dungeon, you will see a meter above you, that charges up whenever you are not moving. Once the disruption starts, . It can be depleted by consuming a glowing mushroom from the first floor, but you only have three available, so be quick when solving puzzles!
+. In this dungeon, you will see a meter above you, that charges up whenever you are not moving. It can be depleted by consuming a glowing mushroom from the first floor, but you only have three available.
+. DISRUPTION: 
 . Run Over Damage: 65
 . Overload Damage: 40
 
 > Briar Thicket [Matagal Traiçoeiro]
 . With overgrown moss making the floor slippery and ink attacks coming from all directions, defeating wildvines is
 surely going to be a lot harder.
-. DISRUPTION: Spawns multiple Wildvines in the area.
+. DISRUPTION: Spawns multiple Wildvines in the area (or makes them shoot ink?).
 . Wildvine Damage: 35
 . Wildvine Shot Damage: 20
 . Wall Contact Damage: 25
@@ -56,4 +58,4 @@ surely going to be a lot harder.
 
 > Caliginous Crypt [Cripta Caliginosa]
 . (guy jumpscare)
-. Referenced by the Overgrown Grove puzzle. Shows how many other dungeons are yet to be completed.
+. Foreshadowed by the Overgrown Grove puzzle. Shows how many other dungeons are yet to be completed.

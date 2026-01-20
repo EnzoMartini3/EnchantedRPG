@@ -1,0 +1,63 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Overlaps/Hurtbox.tscn" type="PackedScene" id=1]
+[ext_resource path="res://SCRIPTS/MoneyTree.gd" type="Script" id=2]
+[ext_resource path="res://SPRITES/Shadows/LargeShadow.png" type="Texture" id=3]
+[ext_resource path="res://Nature/Bonances/MoneyTree.png" type="Texture" id=4]
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 6.0
+height = 14.0
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 8.0
+height = 14.0
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 26, 19 )
+
+[node name="MoneyTree" type="StaticBody2D"]
+script = ExtResource( 2 )
+
+[node name="DropArea" type="ReferenceRect" parent="."]
+margin_left = -40.0
+margin_top = 7.0
+margin_right = 40.0
+margin_bottom = 45.0
+border_color = Color( 1, 0.937255, 0, 1 )
+
+[node name="StumpSprite" type="Sprite" parent="."]
+
+[node name="LeavesSprite" type="Sprite" parent="."]
+texture = ExtResource( 4 )
+hframes = 2
+
+[node name="Shadow" type="Sprite" parent="."]
+position = Vector2( -2, 25 )
+texture = ExtResource( 3 )
+
+[node name="BaseCollider" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( -1, 15 )
+shape = SubResource( 4 )
+
+[node name="AttackHurtbox" parent="." instance=ExtResource( 1 )]
+visible = false
+collision_layer = 8
+
+[node name="CollisionShape2D" parent="AttackHurtbox" index="0"]
+position = Vector2( -1, 14 )
+shape = SubResource( 2 )
+
+[node name="OpacityZone" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OpacityZone"]
+position = Vector2( -1, -7 )
+shape = SubResource( 3 )
+
+[connection signal="area_entered" from="AttackHurtbox" to="." method="_on_TreeAttackHurtbox_area_entered"]
+[connection signal="body_entered" from="OpacityZone" to="." method="_on_OpacityZone_body_entered"]
+[connection signal="body_exited" from="OpacityZone" to="." method="_on_OpacityZone_body_exited"]
+
+[editable path="AttackHurtbox"]

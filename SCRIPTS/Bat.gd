@@ -30,7 +30,6 @@ enum {
 func _ready():
 	state = newRandomState([IDLE, WANDER])
 
-
 func _physics_process(delta):
 	knockback = knockback.move_toward(Vector2.ZERO, friction * delta)
 	knockback = move_and_slide(knockback)
@@ -44,7 +43,7 @@ func _physics_process(delta):
 				
 		WANDER:
 			seekPlayer()
-			if wanderController.getTimeLeft()== 0:
+			if wanderController.getTimeLeft() == 0:
 				updateWander()
 			accelerateTowards(wanderController.targetPosition, delta)
 			if global_position.distance_to(wanderController.targetPosition) <= wanderTarget:

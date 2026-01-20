@@ -1,5 +1,6 @@
 ------------------------------------
-
+>>> Player Weapons
+. Cutthroat
 ------------------------------------
 >>> Aspects
 . Shock Response
@@ -14,6 +15,6 @@
 
 
 >>> Exploration Passives
-. With Fire power you can light up campfires without the use of a Lighter.
+. Fire power: Light up campfires without the use of a Lighter.
 . Plant affinity creatures can help you overlook your garden.
 . Water powered creatures can water your plants and overlook water plants.
