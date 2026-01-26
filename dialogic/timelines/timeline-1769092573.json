@@ -1,0 +1,36 @@
+{
+	"events": [
+		{
+			"character": "character-1763038375.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "O que é isso? Uma estátua?\nEstranho, eu nunca tinha visto nada por aqui, tão longe da vila. Não tem um pedestal, nem nada escrito nela.\nNesse caso, só pode ser uma lápide! Uma pena, eu não tenho nenhuma flor aqui comigo.\nAh, tenho sim! A flor branca que a mamãe me deu! Vai ficar ótima aqui.\nAqui está. Descanse em paz, seja-lá-quem-for."
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 2,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1769093051.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1769092573.json",
+		"name": "Mc First Flashback"
+	}
+}

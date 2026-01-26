@@ -1,6 +1,6 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://SPRITES/Green Vegetation/GrassBackground.png" type="Texture" id=1]
+[ext_resource path="res://SPRITES/Vegetation/Mint Vegetation/GrassBackground.png" type="Texture" id=1]
 [ext_resource path="res://Helpers/MapLimits.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Entities/HeartHealer.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/Obstacles/Bush.tscn" type="PackedScene" id=4]
@@ -9,6 +9,7 @@
 [ext_resource path="res://World/Obstacles/Grass.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Helpers/Warp.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Items/Sun Collectable.tscn" type="PackedScene" id=9]
+[ext_resource path="res://World/Open Areas/Mintsilk Path/Mintsilk Path.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Entities/NPC.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Buildings/BasicHouse.tscn" type="PackedScene" id=14]
 [ext_resource path="res://SPRITES/Tilesets/DirtTileset.png" type="Texture" id=15]
@@ -123,22 +124,21 @@ position = Vector2( 72, 8 )
 
 [node name="Map Specs" type="Node" parent="."]
 
-[node name="MapLimits" parent="Map Specs" instance=ExtResource( 2 )]
-
-[node name="BottomRight" parent="Map Specs/MapLimits" index="1"]
-position = Vector2( 576, 256 )
-
 [node name="Warps" type="Node" parent="Map Specs"]
 
 [node name="To Mintsilk Path" parent="Map Specs/Warps" instance=ExtResource( 8 )]
 position = Vector2( 346, 42 )
-targetScene = "Mintsilk Path"
-targetWarp = "From Tinymint Town"
+targetScene = ExtResource( 10 )
+
+[node name="MapLimits" parent="Map Specs" instance=ExtResource( 2 )]
+
+[node name="BottomRight" parent="Map Specs/MapLimits" index="1"]
+position = Vector2( 576, 256 )
 
 [node name="From Mintsilk Path" type="Position2D" parent="Map Specs"]
 position = Vector2( 322, 42 )
 
 [editable path="YSort/Entities/Ath"]
 [editable path="YSort/Entities/Luke (Shop)"]
-[editable path="Map Specs/MapLimits"]
 [editable path="Map Specs/Warps/To Mintsilk Path"]
+[editable path="Map Specs/MapLimits"]

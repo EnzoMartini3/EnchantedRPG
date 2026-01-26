@@ -10,7 +10,7 @@
 [ext_resource path="res://Overlaps/SoftCollision.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Helpers/WanderController.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Overlaps/WhiteShader.tres" type="Shader" id=10]
-[ext_resource path="res://Helpers/RespawnTimer.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Helpers/RespawnHandler.tscn" type="PackedScene" id=11]
 
 [sub_resource type="ShaderMaterial" id=12]
 resource_local_to_scene = true

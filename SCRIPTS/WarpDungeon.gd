@@ -1,11 +1,12 @@
 extends Area2D
 class_name WarpDungeon
 
-export var spawnDirection = "up"
+export(String) var returnName
+export(PackedScene) var targetScene
+export(String) var targetSpawnpoint
+export var spawnDirection = "right"
+signal dungeonEntered(packedScene, spawnPointName, returnName)
 
 func _on_WarpDungeon_body_entered(body):
 	if body is Player:
-		var worldNode = get_tree().get_root().get_node("World")
-		set_deferred("monitoring", false) 
-		worldNode.dungeonWarpBack()
-
+		emit_signal("dungeonEntered", targetScene, targetSpawnpoint, returnName)

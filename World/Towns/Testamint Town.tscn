@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://SPRITES/Tilesets/DirtTileset.png" type="Texture" id=1]
-[ext_resource path="res://SPRITES/Green Vegetation/GrassBackground.png" type="Texture" id=2]
+[ext_resource path="res://SPRITES/Vegetation/Mint Vegetation/GrassBackground.png" type="Texture" id=2]
 [ext_resource path="res://Entities/HeartHealer.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Entities/Bat.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World/Obstacles/Bush.tscn" type="PackedScene" id=5]
@@ -10,7 +10,7 @@
 [ext_resource path="res://Buildings/BasicHouse.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Items/Sun Collectable.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Items/EvilHusk.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Buildings/Dream Tent/Dreambox.tscn" type="PackedScene" id=11]
+[ext_resource path="res://World/ARanch/Dreambox.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Entities/Combustible.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Helpers/MapLimits.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Entities/Direbriar.tscn" type="PackedScene" id=14]
@@ -110,7 +110,6 @@ position = Vector2( -136, 128 )
 
 [node name="NPC" parent="YSort/Entities" instance=ExtResource( 16 )]
 position = Vector2( 152, 96 )
-dialogueString = "Trent Test 1"
 
 [node name="Shadow" parent="YSort/Entities/NPC" index="0"]
 position = Vector2( 0, 10 )

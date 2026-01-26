@@ -18,7 +18,7 @@ call to alert all citizens from natural disasters)
 . Rewards: Foxave Nest
 
 > Cloudy Sanctum [Capela Nebulosa]
-. Dense fog significantly limits your vision and there are ancient turrets all around, that shoot will down quickly if you get close. Reach the shiny runes to light up the area, and when the disruption starts, make sure to have cover.
+. Dense fog significantly limits your vision and there are ancient turrets all around, that will shoot you down quickly if you get close. Reach the shiny runes to light up the area, and when the disruption starts, make sure to take cover.
 . DISRUPTION: Turrets activate flashlights to increase line of sight.
 . Turret Damage: 30/s (10/0.3s)
 . Disruption Line of Sight: 250%

@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Buildings/Door.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Buildings/roof.png" type="Texture" id=2]
+[ext_resource path="res://Buildings/House Roof.png" type="Texture" id=2]
 [ext_resource path="res://Buildings/CollisionMapShades.png" type="Texture" id=3]
 [ext_resource path="res://Buildings/House Foundation.png" type="Texture" id=4]
 

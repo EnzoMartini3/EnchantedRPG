@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Items/Sun Collectable.png" type="Texture" id=1]
+[ext_resource path="res://SPRITES/Items/Ground Items/Sun Collectable.png" type="Texture" id=1]
 [ext_resource path="res://SCRIPTS/SunCollectable.gd" type="Script" id=2]
 [ext_resource path="res://SPRITES/Shadows/SmallShadow.png" type="Texture" id=3]
 

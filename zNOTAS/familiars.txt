@@ -1,6 +1,6 @@
 ------------------------------------
 >> Lotus Kitsune
-. Origin: 
+. Origin: Mundane
 - Washout
 - Flourish
 - Serenity Steps
@@ -21,7 +21,7 @@
 
 -----------
 >> Nessight
-. Origin:
+. Origin: Arcane
 - Water Bomb
 - Sixth Sense
 - Cascade
@@ -31,13 +31,13 @@
 
 -----------
 >> Solug
-. Origin: Abnormal
+. Origin: Arcane
 . Synergies:
 - Spotlight
 - Leaf Attack
+- Refract (Deals damage back)
+- Verdant Growth
 - Sunbeam
-- Verdant Shield (Deals damage back)
-- 
 - PHOTOSYMPHONY (Increases plant damage)
 
 -----------
@@ -52,7 +52,7 @@
 
 -----------
 >> Dark Sentient
-. Origin:
+. Origin: Arcane
 - Broken Blade
 - Gear Up (Defensive)
 - Ghastly Grip
@@ -62,7 +62,7 @@
 
 -----------
 >> Perimoth
-. Origin:
+. Origin: Mundane
 - Sharp Shards
 - Wingstream (Stops target from rushing for 1 turn)
 - Gemstone Glass
@@ -72,27 +72,27 @@
 
 -----------
 >> Majestail
-. Origin:
+. Origin: Mundane
 - Vivify
 - Wingstream (Stops target from rushing for 1 turn)
-- Sunbeam?
+- Sunbeam
 - FIERY WIND
-- Talon Blight
-- ULTIMATE
+- 
+- TALON BLIGHT
 
 -------------
 >> Angloom
-. Origin:
-- Deep Bite
+. Origin: 
+- Deep Bite (2x)
 - Dark Flash
-- Tail Slammer (2x)
+- Tail Slammer (3x)
 - Tough Skin
-- Fang Maul
+- Fang Maul (2x)
 - GAZE OF THE DEEP
 
 -------------
 >> Menacing Centipede
-. Origin: Spiritual
+. Origin: Abnormal
 - Horn Impale
 - Blind Fishing
 - Spikeback
@@ -102,7 +102,7 @@
 
 -------------
 >> Goop Monster
-. Origin: Spiritual
+. Origin: Abnormal
 - 
 - 
 - Bubblegunk
@@ -183,7 +183,6 @@ Vicious Vengeance
 Castle Rock
 Black Fog
 Dragon Gunk
-Talon Blight
 Scalebind
 Viral Fracture
 Crystal Mayhem

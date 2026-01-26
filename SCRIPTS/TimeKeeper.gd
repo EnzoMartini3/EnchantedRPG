@@ -1,7 +1,7 @@
 extends Node
 
 signal dayPassed()
-signal phaseChanged(newPhase)
+signal worldPhaseChanged(newPhase)
 onready var timer = $DayPhaseTimer
 
 enum DayPhase {
@@ -12,42 +12,43 @@ enum DayPhase {
 var dayCount = 1
 var currentPhase = DayPhase.MORNING
 var phaseDuration = {
-	DayPhase.MORNING: 150.0,
-	DayPhase.AFTERNOON: 350.0,
-	DayPhase.NIGHT: 200.0
+	DayPhase.MORNING: 150.0,    #150.0
+	DayPhase.AFTERNOON: 350.0,  #350.0
+	DayPhase.NIGHT: 200.0       #200.0
 }
 
 func _ready():
-	startPhase(DayPhase.MORNING)
+	newPhase(DayPhase.MORNING)
 
 func _on_DayPhaseTimer_timeout():
-	nextPhase()                                # transiciona pra próx. fase quando o tempo da fase atual acaba 
+	startNextPhase()                                # transiciona pra próx. fase quando o tempo da fase atual acaba 
 
-func nextPhase():
+func startNextPhase():
 	match currentPhase:                        # usamos funções startPhase pra não ter que setupar o código intiero em cada variação do match 
 		DayPhase.MORNING:
 			#animação de transição
-			startPhase(DayPhase.AFTERNOON)
-		DayPhase.DAY:
-			startPhase(DayPhase.NIGHT)
+			newPhase(DayPhase.AFTERNOON)
+		DayPhase.AFTERNOON:
+			newPhase(DayPhase.NIGHT)
 		DayPhase.NIGHT:
 			dayCount += 1
 			emit_signal("dayPassed")
-			startPhase(DayPhase.MORNING)
+			newPhase(DayPhase.MORNING)
 
 
-func startPhase(desiredPhase):
-	currentPhase = desiredPhase
-	var duration = phaseDuration[desiredPhase]
+func newPhase(thisPhase):
+	print("Fase do dia atual: ", thisPhase)
+	currentPhase = thisPhase
+	var duration = phaseDuration[thisPhase]
 	timer.start(duration)
-	emit_signal("phaseChanged", currentPhase)               # EMITE SINAL PRO WORLD
+	emit_signal("worldPhaseChanged", currentPhase)               # EMITE SINAL PRO WORLD
 	get_tree().call_group("Respawnables", "_phaseChanged")  # EMITE SINAL PROS RESPAWNÁVEIS
 
 
-func timeSkip(timeToSkip):
-	if timeToSkip > timer.time_left:
-		timeToSkip = timeToSkip - timer.time_left
-		nextPhase()
-		timeSkip(timeToSkip)
+func timeSkip(thisTime):
+	if thisTime > timer.time_left:
+		thisTime = thisTime - timer.time_left
+		startNextPhase()
+		timeSkip(thisTime)
 	else:
-		timer.start(timer.time_left - timeToSkip)      # "time_left" não é uma varíavel, é apenas pra leitura, por isso precisamos fazer timer.start() de novo
+		timer.start(timer.time_left - thisTime)      # "time_left" não é uma varíavel, é apenas pra leitura, por isso precisamos fazer timer.start() de novo

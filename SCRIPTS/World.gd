@@ -4,66 +4,61 @@ onready var player = $Player
 onready var camera = $PlayerCamera
 onready var currentMapNode = $CurrentMap
 
-var currentMapInstance = null
-var nextWarp = ""
-var returnScenePath = ""
-var returnPosition = Vector2.ZERO # Quando o jogador usa a Dreambox, o jogo salva a Cena e a Posição que ele deve retornar
-var dreamboxHolder: Node = null
-
-const sceneDreamTent = preload("res://Buildings/Dream Tent/DreamHouse.tscn")
-const sceneTinymintTown = preload("res://World/Towns/Tinymint/Tinymint Town.tscn")
-const sceneTestamintTown = preload("res://World/Towns/Testamint Town.tscn")
-const sceneMintsilkPath = preload("res://World/Open Areas/Mintsilk Path/Mintsilk Path.tscn")
-
+var returnScenePath: String = ""
+var returnSpawnName: String = ""
 
 func _ready():
 	randomize()
-	loadMap(sceneTinymintTown, Vector2(50, 50))
+	loadMap(preload("res://World/Towns/Tinymint/Tinymint Town.tscn"), "Start") # MAPA INICIAL
 	var playerRemoteTransform = player.find_node("RemoteTransform2D", true, false)
 	playerRemoteTransform.remote_path = "/root/World/PlayerCamera"
 	player.connectToHUD()
 
+# RESUMO DE COMO FUNCIONAM OS MAPAS + WARPS: Quando entramos em um mapa, o jogo prepara todas as warps antes mesmo do jogador entrar nelas, configurando elas à um sinal. Quando são usadas, as warps emitem o sinal e a função loadMap é carregada a partir disso.
+func loadMap(sceneResource: PackedScene, spawnName):
+	for remainingMaps in currentMapNode.get_children():    #limpa o mapa atual
+		remainingMaps.queue_free()
+	var newMap = sceneResource.instance()                  #instanciamos o mapa a ser carregado
+	currentMapNode.add_child(newMap)                       #adicionamos o mapa novo
+		
+	var allWarps = newMap.find_node("Warps", true, false)  #buscamos todas as warps recursivamente
+	for warp in allWarps.get_children():
+		if warp is Warp:
+			warp.connect("warpEntered", self, "activateWarp")   #conectamos as warps as funcoes correspondentes
+		elif warp is WarpDungeon:
+			warp.connect("dungeonEntered", self, "activateDungeonWarp")
+		elif warp is WarpReturn:
+			warp.connect("returnRequested", self, "dungeonReturn")
+		
+	var targetPos = Vector2.ZERO    #posicao vazia
+	var spawns = newMap.find_node(Spawnpoints)             #damos uma olhada em todos os spawnpoints do mapa
+	for spawn in spawns.get_children():
+		if spawn.name == spawnName:                        #para cada resultado, vemos se é esse que procuramos(ou seja, se é a mesma inserida no argumento dessa funcao)
+			targetPos = spawn.global_position
+			break
+	player.global_position = targetPos                     #player é direcionado para a posição encontrada, ou seja, spawna no spawnpoint
+		
+	var mapYsort = newMap.find_node("YSort", true, false)
+	player.get_parent().remove_child(player)               #removemos o player temporariamente
+	mapYsort.add_child(player)                             #e transferimos ele para o ysort do novo mapa
+	adjustMapLimits(newMap)
 
-func loadMap(sceneResource: PackedScene, playerSpawnPos: Vector2):
-	if player.get_parent() != self: # Se o player NÃO é filho direto de World (ou seja, ele está no YSort do mapa anterior)
-		player.get_parent().remove_child(player)
-		add_child(player)
-	
-	if currentMapInstance:
-		currentMapInstance.queue_free()
-		currentMapInstance = null
-	
-	var newMapScene = sceneResource.instance() # nova instância do mapa pra buscar ysort e etc
-	currentMapNode.add_child(newMapScene)
-	currentMapInstance = newMapScene
-	
-	var mapYsort = newMapScene.find_node("YSort", true, false)
-	player.get_parent().remove_child(player) # Remove do World
-	mapYsort.add_child(player) # SE DER ERRO AQUI PODE SER PQ FALTA UM YSORT NO MAPA
-	
-	var finalPlayerPosition = playerSpawnPos # Começa com a posição padrão ou inicial
-	if nextWarp != "": # Warp de destino
-		var targetWarpNode = newMapScene.find_node(nextWarp, true, false)
-		finalPlayerPosition = targetWarpNode.global_position
-		nextWarp = ""
-	player.global_position = finalPlayerPosition
-	adjustMapLimits(currentMapInstance)
 
+func activateWarp(targetScene, targetSpawn):
+	#animacao fade in/out
+	loadMap(targetScene, targetSpawn)
 
-func goToScene(sceneTag: String, targetTag: String):
-	returnScenePath = currentMapInstance.filename
-	returnPosition = player.global_position
-	var loadScene: PackedScene = null
-	match sceneTag:
-		"Dream Tent":
-			loadScene = sceneDreamTent
-		"Tinymint Town":
-			loadScene = sceneTinymintTown
-		"Mintsilk Path":
-			loadScene = sceneMintsilkPath
-	if loadScene != null:
-		nextWarp = targetTag # Armazena a tag do warp de destino
-		call_deferred("loadMap", loadScene, Vector2.ZERO)
+func activateDungeonWarp(targetScene, targetSpawn, returnName):
+	if currentMapNode.get_child_count() > 0:
+		returnScenePath = currentMapNode.get_child(0).filename
+	returnSpawnName = returnName
+	loadMap(targetScene, targetSpawn)
+
+func dungeonReturn():
+	var sceneToGo = load(returnScenePath)
+	loadMap(sceneToGo, returnSpawnName)
+	returnScenePath = ""
+	returnSpawnName = ""
 
 
 func adjustMapLimits(mapScene: Node):
@@ -78,25 +73,6 @@ func adjustMapLimits(mapScene: Node):
 			camera.limit_bottom = bottomRight.global_position.y
 			camera.limit_left = topLeft.global_position.x
 			camera.limit_right = bottomRight.global_position.x 
-
-
-func dreamboxTrigger(dreambox: Area2D, targetScene: String, entryPoint: String):
-	dreambox.set_deferred("monitoring", false) 
-	call_deferred("defferedDreamboxDelay", dreambox, targetScene, entryPoint)
-
-
-func defferedDreamboxDelay(dreambox: Area2D, targetScene: String, entryPoint: String):
-	dreambox.get_parent().remove_child(dreambox)
-	add_child(dreambox) #para que ela nao desapareça totalmente
-	dreamboxHolder = dreambox
-	goToScene(targetScene, entryPoint)
-
-
-func dungeonWarpBack():
-	var sceneResource = load(returnScenePath)
-	call_deferred("loadMap", sceneResource, returnPosition)
-	returnScenePath = ""
-	returnPosition = Vector2.ZERO
 
 
 func _on_InventoryHUD_inventoryOpened():

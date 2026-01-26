@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://SPRITES/Shadows/SmallShadow.png" type="Texture" id=1]
-[ext_resource path="res://Helpers/RespawnTimer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Helpers/RespawnHandler.tscn" type="PackedScene" id=2]
 [ext_resource path="res://SCRIPTS/Combustible.gd" type="Script" id=3]
 [ext_resource path="res://SPRITES/Entities/Combustible.png" type="Texture" id=4]
 

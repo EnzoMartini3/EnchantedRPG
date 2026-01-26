@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://SCRIPTS/WarpDungeon.gd" type="Script" id=1]
+[ext_resource path="res://SCRIPTS/Spawnpoint.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=15]
 extents = Vector2( 8, 8 )
@@ -12,5 +13,6 @@ script = ExtResource( 1 )
 shape = SubResource( 15 )
 
 [node name="Spawnpoint" type="Position2D" parent="."]
+script = ExtResource( 2 )
 
 [connection signal="body_entered" from="." to="." method="_on_WarpDungeon_body_entered"]

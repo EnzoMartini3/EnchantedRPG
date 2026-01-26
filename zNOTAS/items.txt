@@ -1,3 +1,41 @@
+------------------Basic Materials------------------------
+> Sticks
+. Basic Material. Can be converted from Tree Logs.
+
+> Spirit Spores
+. Basic Material. Can only be collected using a Ethereal Effigy to later be materialized using 5 Effigy Points.
+
+> Yarn
+----------------------All Items------------------------
+>> Natural
+
+> Mint
+.
+
+> Blossom Cherry
+.
+
+> Snowdrop Camellia
+.
+
+> Arctic Kiwi
+.
+
+> Tundric Gemstone
+.
+
+> Edible Tulip
+.
+
+> Edible Sprout
+.
+
+>> Tools
+
+> Lighter
+. You guessed it: Lights up a campfire for you, with 6 uses.
+. Can only be bought.
+
 ----------------All Crafting Recipes---------------------
 > Firewood
 . Stick x3
@@ -17,22 +55,6 @@
 
 > Poisonproof Elixir
 . King Agave x3
-
-
-----------------------All Items------------------------
->> 
-
-> Edible Tulip
-.
-
-> Edible Sprout
-.
-
->> Tools
-
-> Lighter
-. Lights up a campfire for you, with 6 uses.
-. Can only be bought.
 
 -----------------Blueprint Packs-------------------------
 > Basic Survival Recipes

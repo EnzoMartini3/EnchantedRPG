@@ -1,5 +1,5 @@
-class_name Player
 extends KinematicBody2D
+class_name Player
 
 onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
@@ -10,7 +10,7 @@ onready var interactionZone = $InteractionRange
 onready var crystalArmor = $CrystalArmor
 onready var swordHitbox = $SwordHitboxPivot/SwordHitbox
 onready var armorHitbox = $ArmorHitboxPivot/ArmorHitbox
-onready var armorHitboxBug = $ArmorHitboxPivot/ArmorHitbox/CollisionShape2D #BUG VISUAL
+onready var armorHitboxColl = $ArmorHitboxPivot/ArmorHitbox/CollisionShape2D
 onready var armorAnimations = $CrystalArmor/IdleAnimation
 
 export var acceleration = 400
@@ -19,6 +19,7 @@ export var friction = 750
 export var maxJumpStamina = 90
 export var staminaRecoveryRate = 15
 export var inventory: Resource
+var dodgeActive = false
 var jumpStamina = maxJumpStamina
 var enemyTrapping = null
 
@@ -49,7 +50,7 @@ func _ready():
 	animationTree.active = true
 	swordHitbox.knockbackVector = rollVector #knockback padrão, por isso nao precisamos multiplicar por knockbackPower
 	armorHitbox.knockbackVector = rollVector * armorHitbox.knockbackPower
-	armorHitboxBug.disabled = true
+	armorHitboxColl.disabled = true
 
 
 func _physics_process(delta):
@@ -170,6 +171,9 @@ func lookForNPCS():
 
 
 func _on_Hurtbox_area_entered(area):
+	if dodgeActive == false:      #se o player NÃO estiver pulando
+	# perfect dodge! effect
+		return
 	if "damage" in area:
 		stats.health -= area.damage
 		hurtbox.makeImmortal(0.5)
@@ -214,6 +218,7 @@ func fuelUp(amount):
 	if self.armorFuel > self.maxArmorFuel:
 		self.armorFuel = maxArmorFuel
 
+
 func armoredAttackState(_delta):
 	velocity = Vector2.ZERO
 	animationState.travel("PowerPunch")
@@ -222,6 +227,13 @@ func armoredAttackState(_delta):
 
 func immobileState(_delta):
 	velocity = Vector2.ZERO
+
+
+func dodgingFramesOn():
+	dodgeActive = true
+
+func dodgingFramesOff():
+	dodgeActive = false
 
 
 func trappedState(_delta):

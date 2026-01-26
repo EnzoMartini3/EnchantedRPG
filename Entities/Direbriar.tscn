@@ -9,7 +9,7 @@
 [ext_resource path="res://SCRIPTS/Direbriar.gd" type="Script" id=7]
 [ext_resource path="res://Overlaps/SoftCollision.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Overlaps/Hitbox.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Helpers/RespawnTimer.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Helpers/RespawnHandler.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Shader" id=13]
 code = "shader_type canvas_item;
