@@ -6,7 +6,7 @@ onready var leavesSprite = $LeavesSprite
 export var maxDrops = 5
 var dropsLeft
 export var fruit: Resource
-const fruitScene = preload("res://Items/Sun Collectable.tscn")
+const fruitScene = preload("res://Item Resources/Collectables/Sun Collectable.tscn")
 
 
 func _ready():

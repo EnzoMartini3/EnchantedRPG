@@ -4,6 +4,23 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 
+[node name="Background" type="Panel" parent="."]
+margin_right = 319.0
+margin_bottom = 179.0
+
 [node name="ShopKeeperPortrait" type="TextureRect" parent="."]
 margin_right = 100.0
 margin_bottom = 100.0
+
+[node name="Button" type="Button" parent="."]
+margin_left = 299.0
+margin_top = 1.0
+margin_right = 319.0
+margin_bottom = 21.0
+text = "X"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+margin_right = 12.0
+margin_bottom = 12.0
+
+[node name="ItemGrid" type="GridContainer" parent="ScrollContainer"]

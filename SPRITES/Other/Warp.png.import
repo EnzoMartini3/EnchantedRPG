@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/InventorySquare.png-c4d0d45dc8b4d043c67d9bf5c9aa25b9.stex"
+path="res://.import/Warp.png-1455bd9f6fa5744170e7c70ff72bbfba.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/InventorySquare.png"
-dest_files=[ "res://.import/InventorySquare.png-c4d0d45dc8b4d043c67d9bf5c9aa25b9.stex" ]
+source_file="res://SPRITES/Other/Warp.png"
+dest_files=[ "res://.import/Warp.png-1455bd9f6fa5744170e7c70ff72bbfba.stex" ]
 
 [params]
 

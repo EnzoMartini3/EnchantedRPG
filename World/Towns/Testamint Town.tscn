@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://SPRITES/Tilesets/DirtTileset.png" type="Texture" id=1]
 [ext_resource path="res://SPRITES/Vegetation/Mint Vegetation/GrassBackground.png" type="Texture" id=2]
@@ -8,9 +8,8 @@
 [ext_resource path="res://Helpers/Warp.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Obstacles/Grass.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Buildings/BasicHouse.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Items/Sun Collectable.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Items/EvilHusk.tscn" type="PackedScene" id=10]
-[ext_resource path="res://World/ARanch/Dreambox.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Item Resources/Collectables/Sun Collectable.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Item Resources/Collectables/EvilHusk.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Entities/Combustible.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Helpers/MapLimits.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Entities/Direbriar.tscn" type="PackedScene" id=14]
@@ -140,10 +139,6 @@ position = Vector2( 384, 192 )
 [node name="To Mintsilk Path" parent="Map Specs/Warps" instance=ExtResource( 6 )]
 position = Vector2( 280, 48 )
 targetScene = "Mintsilk Path"
-targetWarp = "From Tinymint Town"
-
-[node name="Dreambox" parent="Map Specs/Warps" instance=ExtResource( 11 )]
-position = Vector2( 168, -16 )
 
 [node name="From Mintsilk Path" type="Position2D" parent="Map Specs"]
 position = Vector2( 256, 48 )

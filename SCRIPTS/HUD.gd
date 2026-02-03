@@ -32,23 +32,27 @@ func updateFuel(value: float):
 func startDialogueUI(dialogueID: String, talkingPlayer: Node, talkingNpc: Node):
 	currentPlayer = talkingPlayer
 	currentNpc = talkingNpc
-	currentPlayer.state = currentPlayer.IMMOBILE # player congela, em seguida vai fazer o mesmo com o npc mas com palavras diferentes
-	currentNpc.dialogueStarted() # o npc usa uma lógica diferente pro caso de querer adicionar uma reaçãozinha na função dele quando o dialogo acaba
+	currentPlayer.state = currentPlayer.IMMOBILE     # player congela, em seguida vai fazer o mesmo com o npc mas com palavras diferentes
+	if currentNpc.has_method("dialogueStarted"):
+		currentNpc.dialogueStarted()                     # o npc usa uma lógica diferente pro caso de querer adicionar uma reaçãozinha na função dele quando o dialogo acaba
 	crystalBar.visible = false
-	
+			
 	var newDialogue = Dialogic.start(dialogueID)
 	add_child(newDialogue) #trigga o dialogo
 	newDialogue.connect("timeline_end", self, "endDialogueUI")
- 
+	if talkingNpc.has_method("dialogicSignalReceived"):     # Player está falando com um lojista?        
+		newDialogue.connect("dialogic_signal", talkingNpc, "dialogicSignalReceived")
+
 func endDialogueUI(_timelineName):
 	currentPlayer.state = currentPlayer.MOVE
-	currentNpc.dialogueEnded()
+	if currentNpc.has_method("dialogueEnded"):
+		currentNpc.dialogueEnded()
 	currentPlayer = null
 	currentNpc = null
 	crystalBar.visible = true
 
 
-func hudOpenShop(npcPortrait):
+func hudOpenShop(shopID, npcPortrait):
 	shopPortrait.texture = npcPortrait
 	shopUI.visible = true                  # NÃO TESTADO E REQUER MELHOR IMPLEMENTAÇÃO
 	get_tree().paused = true

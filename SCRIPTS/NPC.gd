@@ -15,12 +15,12 @@ func _physics_process(_delta):
 
 func lookAtPlayer(player: KinematicBody2D):
 	var direction = (player.global_position - global_position).normalized()
-	if abs(direction.x) > abs(direction.y):
-			if direction.x < 0: # horizontal
+	if abs(direction.x) > abs(direction.y):     #Horizontal
+			if direction.x < 0:
 				sprite.frame = 0 #ESQUERDA
 			else:
 				sprite.frame = 1 #DIREITA
-	else: #vertical
+	else:                                       #Vertical
 			if direction.y < 0:
 				sprite.frame = 3 #CIMA
 			else:

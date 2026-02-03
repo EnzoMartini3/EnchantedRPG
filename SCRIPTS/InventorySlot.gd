@@ -1,6 +1,34 @@
-extends Resource
+extends CenterContainer
 
-class_name InventorySlot
+var inventory = preload("res://Player/Inventory.tres")
 
-export var item: Resource
-export var amount: int
+onready var itemTexture = $ItemTexture
+
+func slotDisplayItem(thisItem):
+	if thisItem is Item:           #se houver um item no slot, o sprite dele será exibido. Caso contrário, preenchemos com o EMPTY
+		itemTexture.texture = thisItem.texture
+	else:
+		itemTexture.texture = preload("res://SPRITES/Items/EMPTY.png")
+
+
+func get_drag_data(_position):     #(built-in do nó control)
+	var itemIndex = get_index()
+	var itemRemoved = inventory.removeItem(itemIndex)
+	if itemRemoved is Item:
+		var data = {}                #criamos um dicionário
+		data.item = itemRemoved      #criamos variáveis para o dicionário
+		data.itemIndex = itemIndex
+			
+		var dragPreview = TextureRect.new()     #criamos um novo TextureRect pra mostrar o item sendo arrastado
+		dragPreview.texture = itemRemoved.texture
+		set_drag_preview(dragPreview)
+		return data
+
+func can_drop_data(_position, data):
+	return data is Dictionary and data.has("item")
+
+func drop_data(_position, data):
+	var myItemIndex = get_index()
+	var myItem = inventory.items[myItemIndex]
+	inventory.swapItems(myItemIndex, data.itemIndex)     #colocamos o item a ser mexido em um lugar
+	inventory.setItem(myItemIndex, data.item)            #concluímos a troca colocando o item que perdeu seu lugar no lugar do item que tomou seu lugar

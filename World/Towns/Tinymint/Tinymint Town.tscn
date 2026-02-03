@@ -5,10 +5,10 @@
 [ext_resource path="res://Entities/HeartHealer.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/Obstacles/Bush.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Nature/Bonances/MoneyTree.tscn" type="PackedScene" id=5]
-[ext_resource path="res://SPRITES/Entities/Luke.png" type="Texture" id=6]
+[ext_resource path="res://Entities/ShopNPC.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Obstacles/Grass.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Helpers/Warp.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Items/Sun Collectable.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Item Resources/Collectables/Sun Collectable.tscn" type="PackedScene" id=9]
 [ext_resource path="res://World/Open Areas/Mintsilk Path/Mintsilk Path.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Entities/NPC.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Buildings/BasicHouse.tscn" type="PackedScene" id=14]
@@ -41,6 +41,28 @@
 0/z_index = 0
 
 [node name="Tinymint Town" type="Node2D"]
+
+[node name="Map Specs" type="Node" parent="."]
+
+[node name="Warps" type="Node" parent="Map Specs"]
+
+[node name="To Mintsilk Path" parent="Map Specs/Warps" instance=ExtResource( 8 )]
+position = Vector2( 346, 42 )
+targetScene = ExtResource( 10 )
+targetSpawnpoint = "Tinymint Town"
+
+[node name="Spawnpoints" type="Node" parent="Map Specs"]
+
+[node name="Start" type="Position2D" parent="Map Specs/Spawnpoints"]
+position = Vector2( 50, 50 )
+
+[node name="Mintsilk Path" type="Position2D" parent="Map Specs/Spawnpoints"]
+position = Vector2( 322, 42 )
+
+[node name="MapLimits" parent="Map Specs" instance=ExtResource( 2 )]
+
+[node name="BottomRight" parent="Map Specs/MapLimits" index="1"]
+position = Vector2( 576, 256 )
 
 [node name="GrassBackground" type="Sprite" parent="."]
 position = Vector2( -344, -208 )
@@ -80,12 +102,10 @@ dialogueID = "Ath First Act"
 [node name="Shadow" parent="YSort/Entities/Ath" index="0"]
 position = Vector2( 0, 10 )
 
-[node name="Luke (Shop)" parent="YSort/Entities" instance=ExtResource( 13 )]
-position = Vector2( -35, 43 )
+[node name="Luke Shop" parent="YSort/Entities" instance=ExtResource( 6 )]
+position = Vector2( -42, 40 )
 dialogueID = "Luke Shop Tinymint"
-
-[node name="Sprite" parent="YSort/Entities/Luke (Shop)" index="1"]
-texture = ExtResource( 6 )
+shopID = "LukeShop"
 
 [node name="Items" type="YSort" parent="YSort"]
 
@@ -122,23 +142,7 @@ position = Vector2( 208, 16 )
 [node name="Grass5" parent="YSort/Decorations" instance=ExtResource( 7 )]
 position = Vector2( 72, 8 )
 
-[node name="Map Specs" type="Node" parent="."]
-
-[node name="Warps" type="Node" parent="Map Specs"]
-
-[node name="To Mintsilk Path" parent="Map Specs/Warps" instance=ExtResource( 8 )]
-position = Vector2( 346, 42 )
-targetScene = ExtResource( 10 )
-
-[node name="MapLimits" parent="Map Specs" instance=ExtResource( 2 )]
-
-[node name="BottomRight" parent="Map Specs/MapLimits" index="1"]
-position = Vector2( 576, 256 )
-
-[node name="From Mintsilk Path" type="Position2D" parent="Map Specs"]
-position = Vector2( 322, 42 )
-
-[editable path="YSort/Entities/Ath"]
-[editable path="YSort/Entities/Luke (Shop)"]
 [editable path="Map Specs/Warps/To Mintsilk Path"]
 [editable path="Map Specs/MapLimits"]
+[editable path="YSort/Entities/Ath"]
+[editable path="YSort/Entities/Luke Shop"]

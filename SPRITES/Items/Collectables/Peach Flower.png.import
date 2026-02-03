@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Peach Flower.png-c061fcd6879b63a31d1cac3ef2856350.stex"
+path="res://.import/Peach Flower.png-b1528a55e6a8297e50fa624c86f50776.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SPRITES/Items/Ground Items/Peach Flower.png"
-dest_files=[ "res://.import/Peach Flower.png-c061fcd6879b63a31d1cac3ef2856350.stex" ]
+source_file="res://SPRITES/Items/Collectables/Peach Flower.png"
+dest_files=[ "res://.import/Peach Flower.png-b1528a55e6a8297e50fa624c86f50776.stex" ]
 
 [params]
 

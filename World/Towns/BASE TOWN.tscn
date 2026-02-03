@@ -1,10 +1,22 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://SPRITES/Green Vegetation/GrassBackground.png" type="Texture" id=1]
+[ext_resource path="res://SPRITES/Vegetation/Mint Vegetation/GrassBackground.png" type="Texture" id=1]
 [ext_resource path="res://Helpers/Warp.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Helpers/MapLimits.tscn" type="PackedScene" id=3]
 
 [node name="EXAMPLE TOWN" type="Node2D"]
+
+[node name="Map Specs" type="Node" parent="."]
+
+[node name="MapLimits" parent="Map Specs" instance=ExtResource( 3 )]
+
+[node name="Warps" type="Node" parent="Map Specs"]
+
+[node name="Warp1" parent="Map Specs/Warps" instance=ExtResource( 2 )]
+
+[node name="Spawnpoints" type="Node" parent="Map Specs"]
+
+[node name="FROM XXX" type="Position2D" parent="Map Specs/Spawnpoints"]
 
 [node name="TileMap" type="TileMap" parent="."]
 format = 1
@@ -27,16 +39,6 @@ region_rect = Rect2( -1, -296, 1099, 562 )
 [node name="KinematicBody2D" type="KinematicBody2D" parent="YSort/Entities"]
 
 [node name="Decorations" type="YSort" parent="YSort"]
-
-[node name="Map Specs" type="Node" parent="."]
-
-[node name="MapLimits" parent="Map Specs" instance=ExtResource( 3 )]
-
-[node name="Warps" type="Node" parent="Map Specs"]
-
-[node name="Warp1" parent="Map Specs/Warps" instance=ExtResource( 2 )]
-
-[node name="FROM XXX" type="Position2D" parent="Map Specs"]
 
 [editable path="Map Specs/MapLimits"]
 [editable path="Map Specs/Warps/Warp1"]

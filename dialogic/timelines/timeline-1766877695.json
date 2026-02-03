@@ -23,14 +23,8 @@
 			"value": ""
 		},
 		{
-			"call_node": {
-				"arguments": [
-
-				],
-				"method_name": "selfOpenShop",
-				"target_node_path": "Tinymint Town/YSort/Entities/Luke (Shop)"
-			},
-			"event_id": "dialogic_042"
+			"emit_signal": "openShop",
+			"event_id": "dialogic_040"
 		},
 		{
 			"choice": "Não, obrigado",

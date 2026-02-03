@@ -1,7 +1,15 @@
 -----------------------------------------------
 >>>> Mainline Flux
 . Tinymint
-
+. Mintsilk Path
+. (shortcross)
+. Cherrysilk City
+. Mintgrove
+. (cave?)
+. foggy path
+. Bripbale
+. Arrange Path
+. Akairis
 
 >>> Towns
 . Tinymint Town

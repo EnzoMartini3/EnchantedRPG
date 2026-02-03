@@ -1,31 +1,9 @@
-extends Control
+extends ColorRect
 
-signal inventoryOpened
-signal inventoryClosed
-onready var inventory: Inventory = preload("res://Player/playerInventory.tres")
-onready var slots: Array = $NinePatchRect/GridContainer.get_children()
-onready var audioOpen = $AudioOpen
-onready var audioClose = $AudioClose
-var isOpen: bool = false
+var inventory = preload("res://Player/Inventory.tres")
 
-func _ready():
-	inventory.connect("inventoryChanged", self, "itemShift")
-	audioClose.stream_paused = true
-	#itemShift()
+func can_drop_data(_position, data):               #caso o jogador jogue um item pra fora do inventário, o container percebe
+	return data is Dictionary and data.has("item")
 
-#func itemShift():
-#	for i in range(min(inventory.items.size(), slots.size())):
-#		slots[i].itemShift(inventory.items[i])
-
-func openInventory():
-	visible = true
-	isOpen = true
-	emit_signal("inventoryOpened")
-	audioOpen.play()
-
-func closeInventory():
-	visible = false
-	isOpen = false
-	emit_signal("inventoryClosed")
-	audioClose.stream_paused = false
-	audioClose.play()
+func drop_data(_position, data):
+	inventory.setItem(data.itemIndex, data.item)   #ele pega o item e o insere de volta no inventário

@@ -162,7 +162,7 @@ func lookForNPCS():
 		if distance < minDistance:
 				minDistance = distance
 				closest = npcNode
-	if closest is NPC:
+	if closest is NPC or NPCShop:
 		var hudNode = get_tree().get_root().find_node("HUD", true, false)
 		state = IMMOBILE
 		animationState.travel("Idle")
@@ -173,16 +173,14 @@ func lookForNPCS():
 func _on_Hurtbox_area_entered(area):
 	if dodgeActive == false:      #se o player NÃO estiver pulando
 	# perfect dodge! effect
-		return
-	if "damage" in area:
-		stats.health -= area.damage
-		hurtbox.makeImmortal(0.5)
-		hurtbox.createHitEffect()
+		if "damage" in area:
+			stats.health -= area.damage
+			hurtbox.makeImmortal(0.5)
+			hurtbox.createHitEffect()
 
 
 func _on_Hurtbox_immortalStart():
 	hitFlash.play("Start")
-
 
 func _on_Hurtbox_immortalEnd():
 	hitFlash.play("Stop")
@@ -198,7 +196,6 @@ func setArmorFuel(value):
 	armorFuel = value
 	emit_signal("armorFuelChanged", armorFuel)
 
-
 func activateArmor():
 	armorActive = true
 	if armorFuel >= 0:
@@ -207,11 +204,9 @@ func activateArmor():
 		self.armorFuel = 0
 	crystalArmor.armorAmplification(self)
 
-
 func deactivateArmor():
 	armorActive = false
 	crystalArmor.removeAmplification(self)
-
 
 func fuelUp(amount):
 	self.armorFuel += amount

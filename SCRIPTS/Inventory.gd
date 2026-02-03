@@ -1,20 +1,27 @@
 extends Resource
 class_name Inventory
 
-export var slots: Array = [InventoryItem]
-signal inventoryChanged
+signal itemsChanged(indexes)   #indexes é um array
 
-# LEMBRETE: COMENTEI A FUNCAO ITEMSHIFT DO INVENTORY HUD PQ NAO TAVA RECEBEDNDO A VARIAVEL ITEM. NAO SEI OQ ACONTECEU NESSA AQUI PQ ELA NAO ACHA O ITEM TBM MAS RECEBE NA FUNCAO, TALVEZ O PROBLEMA SEJA COMO ELA RECEBE.
+export(Array, Resource) var items = [
+	null, null, null, null, null, null, null, null, null
+]
 
-func insertItem(item: InventoryItem):
-#	for slot in slots:
-#		if slot.item == item:
-#			slot.amount += 1
-#			emit_signal("inventoryChanged")
-#			return
-	for i in range(slots.size()):
-		if !slots[i].item:
-			slots[i] = item
-			slots[i].amount = 1
-			emit_signal("inventoryChanged")
-			return
+func setItem(itemIndex, thisItem):
+	var previousItem = items[itemIndex]      #guardamos o item que estava ali
+	items[itemIndex] = thisItem
+	emit_signal("itemsChanged", [itemIndex])
+	return previousItem
+
+func swapItems(itemIndex, targetItemIndex):
+	var targetItem = items[targetItemIndex]
+	var itemOnHands = items[itemIndex]
+	items[targetItemIndex] = itemOnHands
+	items[itemIndex] = targetItem
+	emit_signal("itemsChanged", [itemIndex, targetItemIndex])
+
+func removeItem(itemIndex):
+	var previousItem = items[itemIndex]
+	items[itemIndex] = null
+	emit_signal("itemsChanged", [itemIndex])
+	return previousItem

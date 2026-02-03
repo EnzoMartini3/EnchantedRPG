@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://SPRITES/Items/Inventory Items/Blossom Cherry.png" type="Texture" id=1]
+[ext_resource path="res://SCRIPTS/Item.gd" type="Script" id=2]
+
+[resource]
+script = ExtResource( 2 )
+name = "Blossom Cherry"
+description = "Cerejas cor-de-rosa madurinhas. Seu gosto é doce, sutil, e agradável, e por isso é usada para receitas refinadas."
+texture = ExtResource( 1 )
+count = 1
