@@ -8,4 +8,4 @@ script = ExtResource( 2 )
 name = "Ethereal Effigy"
 description = ""
 texture = ExtResource( 1 )
-count = 1
+stackable = true

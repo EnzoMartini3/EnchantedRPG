@@ -8,4 +8,4 @@ script = ExtResource( 2 )
 name = "Blossom Cherry"
 description = "Cerejas cor-de-rosa madurinhas. Seu gosto é doce, sutil, e agradável, e por isso é usada para receitas refinadas."
 texture = ExtResource( 1 )
-count = 1
+stackable = true

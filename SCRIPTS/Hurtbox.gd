@@ -1,4 +1,4 @@
-	extends Area2D
+extends Area2D
 
 const HitEffect = preload("res://Effects/HitEffect.tscn")
 

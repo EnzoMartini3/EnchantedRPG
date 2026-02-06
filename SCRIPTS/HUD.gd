@@ -4,11 +4,15 @@ onready var crystalBar = $CrystalBar
 onready var inventory = $InventoryHUD
 onready var shopUI = $ShopUI
 onready var shopPortrait = $ShopUI/ShopKeeperPortrait   # seria um animated sprite, mantemos TextureRect ou mudamos?
+onready var audioOpen = $InventoryHUD/AudioOpen
+onready var audioClose = $InventoryHUD/AudioClose
 
+var inventoryOpen = false
 var currentPlayer = null
 var currentNpc = null
 
-# aqui tinha um _ready que chamava inventario fechado. tirei pq ficava tocando o som quando o jogo iniciava.
+func _ready():
+	closeInventory()
 
 func _input(_event):
 	#### FECHAR LOJA
@@ -21,10 +25,10 @@ func _input(_event):
 	if Input.is_action_just_pressed("inventory"):
 		var playerCheck = get_tree().get_root().find_node("Player", true, false)
 		if not playerCheck.state == playerCheck.IMMOBILE:  #impede que o inventário seja aberto durante diálogos, cutscenes, etc.
-			if inventory.isOpen:
-				inventory.closeInventory()
+			if inventoryOpen:
+				closeInventory()
 			else:
-				inventory.openInventory()
+				openInventory()
 
 func updateFuel(value: float):
 	crystalBar.value = value
@@ -51,6 +55,18 @@ func endDialogueUI(_timelineName):
 	currentNpc = null
 	crystalBar.visible = true
 
+
+func openInventory():
+	get_tree().paused = true
+	audioOpen.play()
+	inventory.visible = true
+	inventoryOpen = true
+
+func closeInventory():
+	get_tree().paused = false
+	audioClose.play()
+	inventory.visible = false
+	inventoryOpen = false
 
 func hudOpenShop(shopID, npcPortrait):
 	shopPortrait.texture = npcPortrait

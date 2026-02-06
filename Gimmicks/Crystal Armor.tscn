@@ -39,3 +39,4 @@ playing = true
 
 [node name="ActivationAudio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
+volume_db = -10.0

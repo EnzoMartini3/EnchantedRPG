@@ -1,9 +1,16 @@
 extends ColorRect
 
-var inventory = preload("res://Player/Inventory.tres")
 
-func can_drop_data(_position, data):               #caso o jogador jogue um item pra fora do inventário, o container percebe
-	return data is Dictionary and data.has("item")
+# Declare member variables here. Examples:
+# var a = 2
+# var b = "text"
 
-func drop_data(_position, data):
-	inventory.setItem(data.itemIndex, data.item)   #ele pega o item e o insere de volta no inventário
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass

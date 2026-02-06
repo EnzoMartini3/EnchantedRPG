@@ -3,6 +3,9 @@ class_name Inventory
 
 signal itemsChanged(indexes)   #indexes é um array
 
+var dragData = null
+var isOpen = false
+
 export(Array, Resource) var items = [
 	null, null, null, null, null, null, null, null, null
 ]
@@ -25,3 +28,12 @@ func removeItem(itemIndex):
 	items[itemIndex] = null
 	emit_signal("itemsChanged", [itemIndex])
 	return previousItem
+
+func singularize():          #passa por todos os itens do inventário e os torna únicos (conserta bugs e melhora o funcionamento em geral)
+	var uniqueItems = []
+	for item in items:
+		if item is Item:                           #se houver um item ali,
+			uniqueItems.append(item.duplicate())   #adicione ao novo array
+		else:
+			uniqueItems.append(null)               #adicionamos também os espaços vazios pra refletir perfeitamente 
+	items = uniqueItems                            #reescrevemos o inventário inteiro
