@@ -2,13 +2,19 @@ extends Resource
 class_name Inventory
 
 signal itemsChanged(indexes)   #indexes é um array
-
-var dragData = null
-var isOpen = false
+signal matterChanged(mat, amount)
 
 export(Array, Resource) var items = [
 	null, null, null, null, null, null, null, null, null
 ]
+var dragData = null
+var originalPrimeMatter: Dictionary = {
+	"wood": 1,
+	"stone": 1,
+	"yarn": 1,
+	"inky": 1
+}
+var primeMatter: Dictionary = {}
 
 func setItem(itemIndex, thisItem):
 	var previousItem = items[itemIndex]      #guardamos o item que estava ali
@@ -37,3 +43,21 @@ func singularize():          #passa por todos os itens do inventário e os torna
 		else:
 			uniqueItems.append(null)               #adicionamos também os espaços vazios pra refletir perfeitamente 
 	items = uniqueItems                            #reescrevemos o inventário inteiro
+
+
+func addMatter(thisMatter, amount):
+	if primeMatter.has(thisMatter):
+		primeMatter[thisMatter] += amount
+		emit_signal("matterChanged", thisMatter, primeMatter[thisMatter])
+	elif originalPrimeMatter.has(thisMatter):      #desbloqueia este item caso seja a primeira vez produzindo
+		primeMatter[thisMatter] = amount
+		emit_signal("matterChanged", thisMatter, primeMatter[thisMatter])
+
+func spendMatter(thisMatter, amount):
+	if primeMatter.has(thisMatter):
+		if primeMatter[thisMatter] >= amount:
+			primeMatter[thisMatter] -= amount
+			emit_signal("matterChanged", thisMatter, primeMatter[thisMatter])
+
+func hasEnough(thisMatter, amount) -> bool:
+	return primeMatter.get(thisMatter, 0) >= amount
