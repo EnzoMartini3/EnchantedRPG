@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://SPRITES/Items/Sand.png" type="Texture" id=1]
+[ext_resource path="res://SCRIPTS/ItemPrimeMatter.gd" type="Script" id=2]
+
+[resource]
+script = ExtResource( 2 )
+name = "Sandstone"
+description = "Can be used in the refinery to obtain Sand."
+texture = ExtResource( 1 )
+stackable = true
+refineMaterial = "Sand"
+yieldMultiplier = 1.0

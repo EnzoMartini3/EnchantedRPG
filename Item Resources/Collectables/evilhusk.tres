@@ -5,5 +5,7 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "evilhusk"
+name = "Evil Husk"
+description = ""
 texture = ExtResource( 2 )
+stackable = true

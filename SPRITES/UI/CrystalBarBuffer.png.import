@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Item4.png-7acd7ecafb0f3115f0a3d6469ecbcaa9.stex"
+path="res://.import/CrystalBarBuffer.png-de2fd8b4e70c23b6e9ae86f0c37661c4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SPRITES/Items/Item4.png"
-dest_files=[ "res://.import/Item4.png-7acd7ecafb0f3115f0a3d6469ecbcaa9.stex" ]
+source_file="res://SPRITES/UI/CrystalBarBuffer.png"
+dest_files=[ "res://.import/CrystalBarBuffer.png-de2fd8b4e70c23b6e9ae86f0c37661c4.stex" ]
 
 [params]
 

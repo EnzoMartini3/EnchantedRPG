@@ -1,9 +1,14 @@
 extends KinematicBody2D
 class_name NPC
 
-export var dialogueID = ""
 onready var sprite = $Sprite
+
+export var dialogueID = ""
+export var residentTown= "Tinymint"
+
 enum { IDLE, BUSY }
+var talkChance = 40
+var currentRep = "Neutral"
 var state = IDLE
 
 func _physics_process(_delta):
@@ -31,3 +36,7 @@ func dialogueStarted():
 
 func dialogueEnded():
 	state = IDLE
+
+func _onReputationChanged(_thisTown, _newReputation):
+	pass
+	#NPCS.currentRep = newReputation

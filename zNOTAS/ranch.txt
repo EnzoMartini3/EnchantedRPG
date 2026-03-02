@@ -1,0 +1,12 @@
+---------------------------------------
+>>> Waterlog Garden
+. Cost: (Lot of Wood)
+
+>>> Battle Expeditions
+. Cost: (Lot of Sand)
+
+>>> Caretaking & Mon Contest
+. Cost: (Lot of Yarn)
+
+>>> 
+. Cost: (Lot of Ore)

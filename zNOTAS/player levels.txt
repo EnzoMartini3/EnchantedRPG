@@ -1,0 +1,9 @@
+
+# Dont make levels increase too much in exp, but make a lot of levels for consistent unlockables
+---------------------------------
+> Lifelight Flute (Meditate on Rivers)
+
+
+> Flute Rewards: 2x
+
+> Flute Rewards: 3x

@@ -68,7 +68,7 @@ func closeInventory():
 	inventory.visible = false
 	inventoryOpen = false
 
-func hudOpenShop(shopID, npcPortrait):
+func hudOpenShop(_shopID, npcPortrait):
 	shopPortrait.texture = npcPortrait
 	shopUI.visible = true                  # NÃO TESTADO E REQUER MELHOR IMPLEMENTAÇÃO
 	get_tree().paused = true

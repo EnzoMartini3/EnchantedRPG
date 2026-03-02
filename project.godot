@@ -94,6 +94,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://SCRIPTS/Item.gd"
 }, {
+"base": "Resource",
+"class": "LifelightLily",
+"language": "GDScript",
+"path": "res://SCRIPTS/LifelightLily.gd"
+}, {
 "base": "KinematicBody2D",
 "class": "NPC",
 "language": "GDScript",
@@ -108,6 +113,11 @@ _global_script_classes=[ {
 "class": "Player",
 "language": "GDScript",
 "path": "res://SCRIPTS/Player.gd"
+}, {
+"base": "Item",
+"class": "PrimeMatter",
+"language": "GDScript",
+"path": "res://SCRIPTS/ItemPrimeMatter.gd"
 }, {
 "base": "Node",
 "class": "Respawnables",
@@ -157,9 +167,11 @@ _global_script_class_icons={
 "HistoryRow": "",
 "Inventory": "",
 "Item": "",
+"LifelightLily": "",
 "NPC": "",
 "NPCShop": "",
 "Player": "",
+"PrimeMatter": "",
 "Respawnables": "",
 "Spawnpoints": "",
 "SunCollectable": "",
@@ -189,7 +201,7 @@ window/stretch/aspect="keep"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg" )
+enabled=PoolStringArray(  )
 
 [global]
 
@@ -315,7 +327,3 @@ ui_m1={
 [physics]
 
 common/enable_pause_aware_picking=true
-
-[rendering]
-
-environment/default_environment="res://default_env.tres"

@@ -73,7 +73,7 @@ tracks/3/keys = {
 "values": [ false, true ]
 }
 tracks/4/type = "audio"
-tracks/4/path = NodePath("AudioStreamPlayer")
+tracks/4/path = NodePath("DodgeSound")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -141,7 +141,7 @@ tracks/3/keys = {
 "values": [ false, true ]
 }
 tracks/4/type = "audio"
-tracks/4/path = NodePath("AudioStreamPlayer")
+tracks/4/path = NodePath("DodgeSound")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -209,7 +209,7 @@ tracks/3/keys = {
 "values": [ false, true ]
 }
 tracks/4/type = "audio"
-tracks/4/path = NodePath("AudioStreamPlayer")
+tracks/4/path = NodePath("DodgeSound")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -277,7 +277,7 @@ tracks/3/keys = {
 "values": [ false, true ]
 }
 tracks/4/type = "audio"
-tracks/4/path = NodePath("AudioStreamPlayer")
+tracks/4/path = NodePath("DodgeSound")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -371,7 +371,7 @@ tracks/0/keys = {
 "values": [ 20 ]
 }
 tracks/1/type = "audio"
-tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/path = NodePath("DodgeSound")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -439,7 +439,7 @@ tracks/0/keys = {
 "values": [ 14 ]
 }
 tracks/1/type = "audio"
-tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/path = NodePath("DodgeSound")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -507,7 +507,7 @@ tracks/0/keys = {
 "values": [ 5 ]
 }
 tracks/1/type = "audio"
-tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/path = NodePath("DodgeSound")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -575,7 +575,7 @@ tracks/0/keys = {
 "values": [ 11 ]
 }
 tracks/1/type = "audio"
-tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/path = NodePath("DodgeSound")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -708,7 +708,7 @@ tracks/1/keys = {
 } ]
 }
 tracks/2/type = "audio"
-tracks/2/path = NodePath("AudioStreamPlayer")
+tracks/2/path = NodePath("DodgeSound")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -753,7 +753,7 @@ tracks/1/keys = {
 } ]
 }
 tracks/2/type = "audio"
-tracks/2/path = NodePath("AudioStreamPlayer")
+tracks/2/path = NodePath("DodgeSound")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -783,7 +783,7 @@ tracks/0/keys = {
 "values": [ 40, 41, 42, 43, 44 ]
 }
 tracks/1/type = "audio"
-tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/path = NodePath("DodgeSound")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -869,7 +869,7 @@ tracks/1/keys = {
 } ]
 }
 tracks/2/type = "audio"
-tracks/2/path = NodePath("AudioStreamPlayer")
+tracks/2/path = NodePath("DodgeSound")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -1226,7 +1226,6 @@ parameters/Roll/blend_position = Vector2( 0, 0 )
 parameters/Run/blend_position = Vector2( 0, 0 )
 
 [node name="InteractionRange" type="Area2D" parent="."]
-visible = false
 collision_layer = 0
 collision_mask = 128
 
@@ -1235,7 +1234,6 @@ position = Vector2( 0, -8 )
 shape = SubResource( 66 )
 
 [node name="SwordHitboxPivot" type="Position2D" parent="."]
-visible = false
 position = Vector2( 0, -4 )
 __meta__ = {
 "_gizmo_extents_": 8.0
@@ -1293,7 +1291,7 @@ rotation = -1.5708
 [node name="CollisionShape2D" parent="SoftCollision" index="0"]
 shape = SubResource( 53 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="DodgeSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
 
 [node name="HitFlash" type="AnimationPlayer" parent="."]

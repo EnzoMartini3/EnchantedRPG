@@ -1,12 +1,18 @@
 extends Area2D
 class_name GroundItem
 
-export var itemPath: Resource
+export var item: Resource
+onready var sprite = $Sprite
+var inventory = preload("res://Player/Inventory.tres")
 
-func _on_GroundItem_area_entered(area):
-	collectItem(area.get_parent().inventory)
+func _ready():
+	if item.texture:
+		sprite.texture = item.texture
 
-func collectItem(inventory: Inventory):
-	inventory.insertItem(itemPath)
-	queue_free()
+func _on_GroundItem_area_entered(_area):
+	collectItem()
+
+func collectItem():
+	if inventory.insertItem(item):      #se o inventário não estiver cheio
+		queue_free()
 

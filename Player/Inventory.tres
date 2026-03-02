@@ -1,10 +1,12 @@
-[gd_resource type="Resource" load_steps=5 format=2]
+[gd_resource type="Resource" load_steps=6 format=2]
 
 [ext_resource path="res://Item Resources/Inventory Items/Blossom Cherry.tres" type="Resource" id=1]
 [ext_resource path="res://Item Resources/Inventory Items/Ethereal Effigy.tres" type="Resource" id=2]
 [ext_resource path="res://Item Resources/Inventory Items/Spirit Spores.tres" type="Resource" id=3]
 [ext_resource path="res://SCRIPTS/Inventory.gd" type="Script" id=4]
+[ext_resource path="res://Item Resources/Lifelight Lily.tres" type="Resource" id=5]
 
 [resource]
 script = ExtResource( 4 )
 items = [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 2 ), null, ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), null, ExtResource( 3 ) ]
+lifelightLily = ExtResource( 5 )

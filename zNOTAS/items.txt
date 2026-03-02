@@ -1,4 +1,24 @@
-------------------Basic Materials------------------------
+---------------------Prime Matter----------------------
+> Wood
+. Thin Log
+. Tree Log
+. Bontiful Log:
+
+> Yarn
+. Cotton: Um pequeno amontoado de linha, branquinho, fofo e delicado. Rende 50% menos amarra do que o normal.
+. Cattail Fiber: Fibras
+. Silk
+
+> Sand
+. Wet Sandstone: A small desert rock that has been soaked, which makes it harder to extract Sand out of. Yields only 50% Sand in comparison to regular Sandstone.
+. Sandstone: Can be used in the refinery to obtain Sand.
+. Sandstone Chunk: A big rock with a whole lot of sand on the inside. Yields 150% Sand in comparison to regular Sandstone.
+
+> Ore
+. Ore Shard:
+. Ore Rock:
+. Ore Vein: Gives
+----------------------Materials------------------------
 > Sticks
 . Basic Material. Can be converted from Tree Logs.
 
@@ -19,6 +39,9 @@
 .
 
 > Arctic Kiwi
+.
+
+> Iciclaw
 .
 
 > Tundric Gemstone

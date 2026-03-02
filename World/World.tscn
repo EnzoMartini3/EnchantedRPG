@@ -6,7 +6,7 @@
 [ext_resource path="res://SCRIPTS/World.gd" type="Script" id=4]
 [ext_resource path="res://UI/Crystal Bar.tscn" type="PackedScene" id=5]
 [ext_resource path="res://SCRIPTS/HUD.gd" type="Script" id=6]
-[ext_resource path="res://UI/InventoryHUD.tscn" type="PackedScene" id=7]
+[ext_resource path="res://UI/Inventory/InventoryHUD.tscn" type="PackedScene" id=7]
 [ext_resource path="res://SCRIPTS/AudioManager.gd" type="Script" id=8]
 [ext_resource path="res://UI/BaseShop.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Helpers/DayTimeKeeper.tscn" type="PackedScene" id=10]
@@ -21,6 +21,13 @@ position = Vector2( 160, 89 )
 pause_mode = 2
 script = ExtResource( 6 )
 
+[node name="InventoryHUD" parent="HUD" instance=ExtResource( 7 )]
+visible = false
+margin_left = -112.0
+margin_top = -66.0
+margin_right = 104.0
+margin_bottom = 70.0
+
 [node name="HealthUI" parent="HUD" instance=ExtResource( 3 )]
 margin_left = 3.0
 margin_top = 3.0
@@ -28,17 +35,6 @@ margin_right = 43.0
 margin_bottom = 43.0
 
 [node name="CrystalBar" parent="HUD" instance=ExtResource( 5 )]
-
-[node name="InventoryHUD" parent="HUD" instance=ExtResource( 7 )]
-visible = false
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -112.0
-margin_top = -66.0
-margin_right = 104.0
-margin_bottom = 70.0
 
 [node name="ShopUI" parent="HUD" instance=ExtResource( 9 )]
 visible = false

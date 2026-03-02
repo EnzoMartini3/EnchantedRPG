@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CrystalBarOverlay.png-5ff918a6dd21566c312cee537c5612e8.stex"
+path="res://.import/CrystalBarProgress.png-3aa1ef89afabc7c60115f174763c32ce.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/CrystalBarOverlay.png"
-dest_files=[ "res://.import/CrystalBarOverlay.png-5ff918a6dd21566c312cee537c5612e8.stex" ]
+source_file="res://SPRITES/UI/CrystalBarProgress.png"
+dest_files=[ "res://.import/CrystalBarProgress.png-3aa1ef89afabc7c60115f174763c32ce.stex" ]
 
 [params]
 

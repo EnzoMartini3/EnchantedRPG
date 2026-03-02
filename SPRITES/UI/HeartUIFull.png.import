@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Cursor.png-ef013b0a2ad0dd6e65216d00c37e5a2f.stex"
+path="res://.import/HeartUIFull.png-c3130b8dea2a4783d2e9c02891d465c0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Cursor.png"
-dest_files=[ "res://.import/Cursor.png-ef013b0a2ad0dd6e65216d00c37e5a2f.stex" ]
+source_file="res://SPRITES/UI/HeartUIFull.png"
+dest_files=[ "res://.import/HeartUIFull.png-c3130b8dea2a4783d2e9c02891d465c0.stex" ]
 
 [params]
 

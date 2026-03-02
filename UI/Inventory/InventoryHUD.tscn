@@ -1,0 +1,116 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://SCRIPTS/PrimeMatterDisplay.gd" type="Script" id=2]
+[ext_resource path="res://SPRITES/UI/Inventory.png" type="Texture" id=3]
+[ext_resource path="res://SFX/OpenInventory.wav" type="AudioStream" id=4]
+[ext_resource path="res://SPRITES/Items/Sand.png" type="Texture" id=5]
+[ext_resource path="res://SPRITES/Items/Power Prism.png" type="Texture" id=6]
+[ext_resource path="res://SPRITES/Items/Yarn.png" type="Texture" id=7]
+[ext_resource path="res://SFX/Unpause.wav" type="AudioStream" id=8]
+[ext_resource path="res://SPRITES/Items/Ore.png" type="Texture" id=9]
+[ext_resource path="res://UI/Inventory/PrimeMatterDisplay.tscn" type="PackedScene" id=10]
+[ext_resource path="res://UI/Inventory/InventoryDisplay.tscn" type="PackedScene" id=11]
+
+[node name="InventoryHUD" type="TextureRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -160.0
+margin_top = -90.0
+margin_right = 160.0
+margin_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource( 3 )
+stretch_mode = 4
+
+[node name="VerticalStacker" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.35
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -160.0
+margin_top = -90.0
+margin_right = 160.0
+margin_bottom = 90.0
+alignment = 1
+
+[node name="PrimeMatter" type="HBoxContainer" parent="VerticalStacker"]
+margin_top = 62.0
+margin_right = 320.0
+margin_bottom = 62.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+custom_constants/separation = 35
+alignment = 1
+script = ExtResource( 2 )
+
+[node name="Wood" parent="VerticalStacker/PrimeMatter" instance=ExtResource( 10 )]
+margin_left = 90.0
+margin_right = 90.0
+margin_bottom = 0.0
+
+[node name="Yarn" parent="VerticalStacker/PrimeMatter" instance=ExtResource( 10 )]
+margin_left = 125.0
+margin_right = 125.0
+margin_bottom = 0.0
+
+[node name="Sprite" parent="VerticalStacker/PrimeMatter/Yarn" index="0"]
+texture = ExtResource( 7 )
+
+[node name="Sand" parent="VerticalStacker/PrimeMatter" instance=ExtResource( 10 )]
+margin_left = 160.0
+margin_right = 160.0
+margin_bottom = 0.0
+
+[node name="Sprite" parent="VerticalStacker/PrimeMatter/Sand" index="0"]
+texture = ExtResource( 5 )
+
+[node name="Ore" parent="VerticalStacker/PrimeMatter" instance=ExtResource( 10 )]
+margin_left = 195.0
+margin_right = 195.0
+margin_bottom = 0.0
+
+[node name="Sprite" parent="VerticalStacker/PrimeMatter/Ore" index="0"]
+texture = ExtResource( 9 )
+
+[node name="PowerPrism" parent="VerticalStacker/PrimeMatter" instance=ExtResource( 10 )]
+margin_left = 230.0
+margin_right = 230.0
+margin_bottom = 0.0
+
+[node name="Sprite" parent="VerticalStacker/PrimeMatter/PowerPrism" index="0"]
+texture = ExtResource( 6 )
+
+[node name="MidSpacer" type="Control" parent="VerticalStacker"]
+margin_top = 66.0
+margin_right = 320.0
+margin_bottom = 92.0
+rect_min_size = Vector2( 26, 26 )
+
+[node name="CenterContainer" type="CenterContainer" parent="VerticalStacker"]
+margin_top = 96.0
+margin_right = 320.0
+margin_bottom = 144.0
+mouse_filter = 2
+
+[node name="InventoryDisplay" parent="VerticalStacker/CenterContainer" instance=ExtResource( 11 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_right = 184.0
+margin_bottom = 48.0
+
+[node name="AudioOpen" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="AudioClose" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+stream_paused = true
+
+[editable path="VerticalStacker/PrimeMatter/Wood"]
+[editable path="VerticalStacker/PrimeMatter/Yarn"]
+[editable path="VerticalStacker/PrimeMatter/Sand"]
+[editable path="VerticalStacker/PrimeMatter/Ore"]
+[editable path="VerticalStacker/PrimeMatter/PowerPrism"]
