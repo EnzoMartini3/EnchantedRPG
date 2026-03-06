@@ -7,7 +7,7 @@
 [ext_resource path="res://UI/Crystal Bar.tscn" type="PackedScene" id=5]
 [ext_resource path="res://SCRIPTS/HUD.gd" type="Script" id=6]
 [ext_resource path="res://UI/Inventory/InventoryHUD.tscn" type="PackedScene" id=7]
-[ext_resource path="res://SCRIPTS/AudioManager.gd" type="Script" id=8]
+[ext_resource path="res://SFX/AudioManager.tscn" type="PackedScene" id=8]
 [ext_resource path="res://UI/BaseShop.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Helpers/DayTimeKeeper.tscn" type="PackedScene" id=10]
 
@@ -43,14 +43,7 @@ visible = false
 
 [node name="CurrentMap" type="Node" parent="."]
 
-[node name="AudioManager" type="Node" parent="."]
-script = ExtResource( 8 )
-
-[node name="Music" type="AudioStreamPlayer" parent="AudioManager"]
-
-[node name="SFX" type="AudioStreamPlayer" parent="AudioManager"]
-
-[node name="Positional Audio" type="AudioStreamPlayer2D" parent="AudioManager"]
+[node name="AudioManager" parent="." instance=ExtResource( 8 )]
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 160, 89 )
@@ -60,3 +53,4 @@ remote_path = NodePath("../../PlayerCamera")
 
 [editable path="PlayerCamera"]
 [editable path="PlayerCamera/MapLimits"]
+[editable path="AudioManager"]

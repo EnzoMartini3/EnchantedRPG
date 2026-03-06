@@ -1,5 +1,5 @@
-class_name Enemy
 extends KinematicBody2D
+class_name Enemy
 
 onready var sprite = $AnimatedSprite
 onready var stats = $Stats

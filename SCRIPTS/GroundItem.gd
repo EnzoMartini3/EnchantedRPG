@@ -15,4 +15,3 @@ func _on_GroundItem_area_entered(_area):
 func collectItem():
 	if inventory.insertItem(item):      #se o inventário não estiver cheio
 		queue_free()
-

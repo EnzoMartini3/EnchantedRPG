@@ -46,8 +46,9 @@ func loadMap(sceneResource: PackedScene, spawnName):
 	adjustMapLimits(newMap)
 
 
-func activateWarp(targetScene, targetSpawn):
+func activateWarp(thisTargetScene: String, targetSpawn: String):
 	#animacao fade in/out
+	var targetScene = load(thisTargetScene)
 	call_deferred("loadMap", targetScene, targetSpawn)
 
 func activateDungeonWarp(targetScene, targetSpawn, returnName):

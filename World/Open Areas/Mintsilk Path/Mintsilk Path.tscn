@@ -533,6 +533,7 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 
 [node name="To Tinymint Town" parent="Map Specs/Warps" instance=ExtResource( 5 )]
 position = Vector2( 8, 72 )
+targetScene = "res://World/Towns/Tinymint/Tinymint Town.tscn"
 targetSpawnpoint = "Mintsilk Path"
 spawnDirection = "left"
 

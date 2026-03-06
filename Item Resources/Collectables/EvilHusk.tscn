@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Item Resources/Collectables/BASEGroundItem.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Item Resources/Collectables/GroundItem.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Item Resources/Collectables/evilhusk.tres" type="Resource" id=2]
 [ext_resource path="res://SPRITES/Items/Collectables/Evil Husk.png" type="Texture" id=3]
 
