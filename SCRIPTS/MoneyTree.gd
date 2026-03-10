@@ -3,27 +3,34 @@ extends StaticBody2D
 onready var dropArea = $DropArea
 onready var leavesSprite = $LeavesSprite
 
-export var maxDrops = 5
+export var maxDrops = 8
 var dropsLeft
-export var fruit: Resource
-const fruitScene = preload("res://Item Resources/Collectables/Sun Collectable.tscn")
-
+export var fruit: Resource = preload("res://Item Resources/Scenes/Sun Collectable.tscn")
+var groundItem = preload("res://Item Resources/GroundItem.tscn")
 
 func _ready():
-	dropsLeft = maxDrops
+	resetTree()
 
+func _onDayReset():
+	resetTree()
 
-func dayReset():
+func resetTree():
 	dropsLeft = maxDrops
 	leavesSprite.frame = 0
-
 
 func _on_TreeAttackHurtbox_area_entered(_area):
 	if dropsLeft > 0:
 		spawnFruit()
 
 func spawnFruit():
-	var newFruit = fruitScene.instance()
+	var newFruit
+	if fruit is Resource:
+		newFruit = groundItem.instance()
+		newFruit.item = fruit
+		
+	elif fruit is PackedScene:
+		newFruit = fruit.instance()
+
 	newFruit.global_position = getNewDropPosition()
 	get_parent().call_deferred("add_child", newFruit)
 	dropsLeft -= 1

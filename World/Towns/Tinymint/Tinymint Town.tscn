@@ -8,9 +8,9 @@
 [ext_resource path="res://Entities/ShopNPC.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Obstacles/Grass.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Helpers/Warp.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Item Resources/Collectables/Sun Collectable.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Item Resources/Collectables/GroundItem.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Item Resources/Inventory Items/Blossom Cherry.tres" type="Resource" id=12]
+[ext_resource path="res://Item Resources/Scenes/Sun Collectable.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Item Resources/GroundItem.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Item Resources/General Items/Blossom Cherry.tres" type="Resource" id=12]
 [ext_resource path="res://Entities/NPC.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Buildings/BasicHouse.tscn" type="PackedScene" id=14]
 [ext_resource path="res://SPRITES/Tilesets/DirtTileset.png" type="Texture" id=15]
@@ -115,7 +115,7 @@ position = Vector2( 112, -32 )
 
 [node name="MoneyTree" parent="YSort/Items" instance=ExtResource( 5 )]
 position = Vector2( 216, 96 )
-maxDrops = 15
+fruit = ExtResource( 12 )
 
 [node name="BlossomCherry1" parent="YSort/Items" instance=ExtResource( 11 )]
 position = Vector2( 70, 104 )

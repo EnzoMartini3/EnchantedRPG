@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://SCRIPTS/Item.gd" type="Script" id=1]
+[ext_resource path="res://SPRITES/Items/Inventory Items/Ethereal Effigy.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+name = "Ethereal Effigy"
+description = "Uma estátua peculiar que irradia uma luz reconfortante. Certamente parece ter propriedades místicas interligadas à Magia Vítrea."
+texture = ExtResource( 2 )

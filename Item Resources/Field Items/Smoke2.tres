@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://SCRIPTS/UsableItem.gd" type="Script" id=1]
+[ext_resource path="res://SPRITES/Items/Usables/Smoke2.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+name = ""
+description = "Precisa de uma saída triunfal? Não há nada melhor!"
+texture = ExtResource( 2 )
+stackable = true

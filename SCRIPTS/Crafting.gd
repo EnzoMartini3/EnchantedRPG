@@ -3,7 +3,6 @@ extends Node2D
 var inventory = preload("res://Player/Inventory.tres")
 
 func _on_CraftButton_pressed():
-	# Exemplo: Refinar 5 Madeiras para criar 1 Carvão
 	var custo_madeira = 5
 	if inventory.hasEnough("wood", custo_madeira):
 		

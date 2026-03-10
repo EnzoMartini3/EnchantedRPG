@@ -68,6 +68,10 @@ func singularize():          #passa por todos os itens do inventário e os torna
 	items = uniqueItems                            #reescrevemos o inventário inteiro
 
 
+func expendItem(thisItem):
+	if thisItem is Usable:
+		thisItem.triggerEffect()
+
 func addMatter(thisMatter, amount):
 	if not primeMatter.has(thisMatter):            #iniciamos um item ao obter ele
 		primeMatter[thisMatter] = 0

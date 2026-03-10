@@ -77,7 +77,7 @@ _global_script_classes=[ {
 "base": "Area2D",
 "class": "HeartEntity",
 "language": "GDScript",
-"path": "res://SCRIPTS/HeartEntity.gd"
+"path": "res://SCRIPTS/HeartHealer.gd"
 }, {
 "base": "PanelContainer",
 "class": "HistoryRow",
@@ -115,9 +115,9 @@ _global_script_classes=[ {
 "path": "res://SCRIPTS/Player.gd"
 }, {
 "base": "Item",
-"class": "PrimeMatter",
+"class": "Refineable",
 "language": "GDScript",
-"path": "res://SCRIPTS/ItemPrimeMatter.gd"
+"path": "res://SCRIPTS/ItemRefineable.gd"
 }, {
 "base": "Node",
 "class": "Respawnables",
@@ -143,6 +143,11 @@ _global_script_classes=[ {
 "class": "ToxlingStats",
 "language": "GDScript",
 "path": "res://SCRIPTS/ToxlingStats.gd"
+}, {
+"base": "Item",
+"class": "Usable",
+"language": "GDScript",
+"path": "res://SCRIPTS/UsableItem.gd"
 }, {
 "base": "Area2D",
 "class": "Warp",
@@ -181,12 +186,13 @@ _global_script_class_icons={
 "NPC": "",
 "NPCShop": "",
 "Player": "",
-"PrimeMatter": "",
+"Refineable": "",
 "Respawnables": "",
 "Spawnpoints": "",
 "Stats": "",
 "SunCollectable": "",
 "ToxlingStats": "",
+"Usable": "",
 "Warp": "",
 "WarpDungeon": "",
 "WarpReturn": ""

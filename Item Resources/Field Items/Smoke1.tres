@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://SPRITES/Items/Usables/Smoke1.png" type="Texture" id=1]
+[ext_resource path="res://SCRIPTS/UsableItem.gd" type="Script" id=2]
+
+[resource]
+script = ExtResource( 2 )
+name = "Smoke Bomb"
+description = "Uma granada caseira que pode ser usada em campo para criar uma névoa densa à sua volta, permitindo fuga facilitada e infinitas piadas de pum."
+texture = ExtResource( 1 )
+stackable = true

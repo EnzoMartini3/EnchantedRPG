@@ -9,7 +9,7 @@ const HealerDeathEffect = preload("res://Effects/HeartyHealEffect.tscn")
 func _on_Combustible_area_entered(area): 
 	if area.get_parent() is Player: #area detectada é o Player? Ótimo.
 		var playerRef = area.get_parent()
-		if playerRef.armorFuel != playerRef.maxArmorFuel:  #IMPEDE A COLETA CASO FULL FUEL
+		if playerRef.armorFuel <= playerRef.maxArmorFuel:  #IMPEDE A COLETA CASO FULL FUEL
 			area.get_parent().fuelUp(fuelProvided)   #efetivação do efeito
 			
 			queue_free() #efeitos de morte
