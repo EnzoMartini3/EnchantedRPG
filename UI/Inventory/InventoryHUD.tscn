@@ -1,5 +1,6 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
+[ext_resource path="res://UI/Inventory/LilyDisplay.tscn" type="PackedScene" id=1]
 [ext_resource path="res://SCRIPTS/PrimeMatterDisplay.gd" type="Script" id=2]
 [ext_resource path="res://SPRITES/UI/Inventory.png" type="Texture" id=3]
 [ext_resource path="res://SFX/OpenInventory.wav" type="AudioStream" id=4]
@@ -31,15 +32,15 @@ anchor_top = 0.35
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -160.0
-margin_top = -90.0
+margin_top = -63.0
 margin_right = 160.0
 margin_bottom = 90.0
 alignment = 1
 
 [node name="PrimeMatter" type="HBoxContainer" parent="VerticalStacker"]
-margin_top = 59.0
+margin_top = 33.0
 margin_right = 320.0
-margin_bottom = 59.0
+margin_bottom = 33.0
 grow_horizontal = 2
 size_flags_horizontal = 3
 custom_constants/separation = 35
@@ -84,23 +85,39 @@ margin_bottom = 0.0
 texture = ExtResource( 6 )
 
 [node name="MidSpacer" type="Control" parent="VerticalStacker"]
+margin_top = 37.0
+margin_right = 320.0
+margin_bottom = 59.0
+rect_min_size = Vector2( 22, 22 )
+
+[node name="InventoryItems" type="CenterContainer" parent="VerticalStacker"]
 margin_top = 63.0
 margin_right = 320.0
-margin_bottom = 89.0
-rect_min_size = Vector2( 26, 26 )
-
-[node name="CenterContainer" type="CenterContainer" parent="VerticalStacker"]
-margin_top = 93.0
-margin_right = 320.0
-margin_bottom = 147.0
+margin_bottom = 117.0
 mouse_filter = 2
 
-[node name="InventoryDisplay" parent="VerticalStacker/CenterContainer" instance=ExtResource( 11 )]
+[node name="InventoryDisplay" parent="VerticalStacker/InventoryItems" instance=ExtResource( 11 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 133.0
 margin_right = 187.0
 margin_bottom = 54.0
+
+[node name="BottomSpacer" type="Control" parent="VerticalStacker"]
+margin_top = 121.0
+margin_right = 320.0
+margin_bottom = 143.0
+rect_min_size = Vector2( 22, 22 )
+
+[node name="Lily Display" parent="VerticalStacker" instance=ExtResource( 1 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 147.0
+margin_right = 320.0
+margin_bottom = 147.0
 
 [node name="AudioOpen" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )

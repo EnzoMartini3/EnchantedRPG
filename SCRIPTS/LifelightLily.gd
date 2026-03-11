@@ -17,6 +17,8 @@ func usePetal():
 	if petals > 0:
 		petals -= 1
 		emit_signal("petalsChanged", petals, maxPetals)
+	else:
+		ErrorHandler.launchError("Nenhuma Pétala restante.")
 
 func restorePetals():
 	petals = maxPetals

@@ -61,12 +61,14 @@ func openInventory():
 	audioOpen.play()
 	inventory.visible = true
 	inventoryOpen = true
+	crystalBar.visible = false
 
 func closeInventory():
 	get_tree().paused = false
 	audioClose.play()
 	inventory.visible = false
 	inventoryOpen = false
+	crystalBar.visible = true
 
 func hudOpenShop(_shopID, npcPortrait):
 	shopPortrait.texture = npcPortrait

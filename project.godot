@@ -207,6 +207,7 @@ run/main_scene="res://World/World.tscn"
 
 PlayerStats="*res://Player/PlayerStats.tscn"
 AudioManager="*res://SCRIPTS/AudioManager.gd"
+ErrorHandler="*res://SCRIPTS/ErrorHandler.gd"
 
 [display]
 
