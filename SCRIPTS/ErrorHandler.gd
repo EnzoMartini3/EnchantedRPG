@@ -1,14 +1,12 @@
 extends CanvasLayer
 
-onready var control = $Control
-onready var bar = $Control/BarSprite
 onready var label = $Control/Text
 onready var animationPlayer = $AnimationPlayer
 
 func _ready():
-	control.modulate.a = 0
+	visible = false
 
 func launchError(errorMessage):
+	visible = true
 	label.text = errorMessage
-	animationPlayer.stop()
 	animationPlayer.play("showError")
